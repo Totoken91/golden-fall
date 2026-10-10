@@ -183,6 +183,58 @@
    ],
    "wet": false,
    "texels_per_m": 64.0
+  },
+  "trunk": {
+   "material": "res://assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/material.tres",
+   "source_key": "polyhaven/bark_brown_02/town_psx_64_45035809",
+   "tile_m": [
+    0.999999,
+    0.999999
+   ],
+   "tint": [
+    0.62,
+    0.55,
+    0.48
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  },
+  "foundation": {
+   "material": "res://assets/textures/library/polyhaven/rough_concrete/town_psx_128_f91d557a/material.tres",
+   "source_key": "polyhaven/rough_concrete/town_psx_128_f91d557a",
+   "tile_m": [
+    1.23,
+    1.23
+   ],
+   "tint": [
+    0.55,
+    0.53,
+    0.49
+   ],
+   "wet": false,
+   "texels_per_m": 104.1
+  },
+  "coping": {
+   "material": "res://assets/textures/library/polyhaven/rough_concrete/town_psx_128_f91d557a/material.tres",
+   "source_key": "polyhaven/rough_concrete/town_psx_128_f91d557a",
+   "tile_m": [
+    1.23,
+    1.23
+   ],
+   "tint": [
+    0.7,
+    0.68,
+    0.63
+   ],
+   "wet": false,
+   "texels_per_m": 104.1
   }
+ },
+ "foliage": {
+  "maple_orange": "res://assets/town/foliage/maple_orange.png",
+  "maple_amber": "res://assets/town/foliage/maple_amber.png",
+  "maple_copper": "res://assets/town/foliage/maple_copper.png",
+  "fir_tier": "res://assets/town/foliage/fir_tier.png",
+  "leaf_litter": "res://assets/town/foliage/leaf_litter.png"
  }
 }

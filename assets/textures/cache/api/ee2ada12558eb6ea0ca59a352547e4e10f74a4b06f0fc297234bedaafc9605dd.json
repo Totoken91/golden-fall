@@ -1,0 +1,40 @@
+{
+  "url": "https://api.polyhaven.com/search?q=bark&t=textures&limit=6&future=false",
+  "fetched_at": 1791652718.8627002,
+  "data": {
+    "query": "bark",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 534,
+    "considered": 886,
+    "keywordMatches": 25,
+    "results": [
+      {
+        "slug": "bark_brown_01",
+        "score": 0.6686
+      },
+      {
+        "slug": "metasequoia_bark",
+        "score": 0.6401
+      },
+      {
+        "slug": "sakura_bark",
+        "score": 0.611
+      },
+      {
+        "slug": "bark_brown_02",
+        "score": 0.6795
+      },
+      {
+        "slug": "jolcham_oak_bark_01",
+        "score": 0.5893
+      },
+      {
+        "slug": "japanese_zelkova_bark",
+        "score": 0.5902
+      }
+    ]
+  }
+}

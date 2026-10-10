@@ -34,7 +34,13 @@ BINDINGS = {
 	'siding_sage':  {'derived': 'siding', 'tint': [.47, .52, .40]},
 	'siding_rust':  {'derived': 'siding', 'tint': [.60, .30, .19]},
 	'trim':         {'derived': 'siding', 'tint': [.80, .76, .66]},
+	'trunk':        {'key': 'polyhaven/bark_brown_02/town_psx_64_45035809', 'tint': [.62, .55, .48]},
+	'foundation':   {'key': 'polyhaven/rough_concrete/town_psx_128_f91d557a', 'tint': [.55, .53, .49]},
+	'coping':       {'key': 'polyhaven/rough_concrete/town_psx_128_f91d557a', 'tint': [.70, .68, .63]},
 }
+# Original alpha-cutout foliage (scripts/assets/prepare_town_foliage.py); UVs authored per card.
+FOLIAGE = {name: 'res://assets/town/foliage/%s.png' % name for name in
+	('maple_orange', 'maple_amber', 'maple_copper', 'fir_tier', 'leaf_litter')}
 DERIVATIONS = {
 	'siding': {'key': 'polyhaven/blue_painted_planks/town_psx_128_6b50a0a6',
 		'albedo': 'luminance only (blue hue removed), stretched to mean 0.72 so the per-house tint sets the paint colour; 64 px'},
@@ -81,7 +87,7 @@ for material, b in BINDINGS.items():
 	side = Image.open(albedo_path).size
 	bindings[material] = {'material': path, 'source_key': source, 'tile_m': tile, 'tint': b['tint'],
 		'wet': b.get('wet', False), 'texels_per_m': round(side[0]/tile[0], 1)}
-(ROOT/'game/data/town_materials.json').write_text(json.dumps({'uv_period_m': [1, 1], 'bindings': bindings}, indent=1), encoding='utf-8')
+(ROOT/'game/data/town_materials.json').write_text(json.dumps({'uv_period_m': [1, 1], 'bindings': bindings, 'foliage': FOLIAGE}, indent=1), encoding='utf-8')
 (ROOT/'assets/textures/town_derived_manifest.json').write_text(json.dumps({'schema_version': 1,
 	'purpose': 'Golden Fall town: hue-neutral siding so one real plank texture serves every house', 'derivations': derived}, indent=1), encoding='utf-8')
 for m, b in bindings.items(): print(f'{m:13s} {b["texels_per_m"]:6.1f} texels/m  {b["source_key"]}')

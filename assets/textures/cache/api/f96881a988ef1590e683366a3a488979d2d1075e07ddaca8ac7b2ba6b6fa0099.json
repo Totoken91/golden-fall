@@ -1,0 +1,54 @@
+{
+  "url": "https://api.polyhaven.com/info/metasequoia_bark",
+  "fetched_at": 1791652719.041045,
+  "data": {
+    "type": 1,
+    "name": "Metasequoia Bark",
+    "categories": [
+      "natural",
+      "bark"
+    ],
+    "tags": [
+      "bark",
+      "tree bark",
+      "natural",
+      "bark texture",
+      "forestry",
+      "tree",
+      "tree trunk",
+      "tree texture",
+      "nature",
+      "organic",
+      "metasequoia"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1939.9999380111694,
+      1939.9999380111694
+    ],
+    "files_hash": "b83ef581ee2a5f0d428828745788807844318fed",
+    "date_published": 1756166400,
+    "staging": null,
+    "description": "Free 8K Metasequoia bark texture with deep vertical furrows, weathered brown tones and lichen patches - versatile for realistic tree trunks in games, film, and archviz.",
+    "category_id": "8d2e6acd-922e-5774-89f1-3988e37758c3",
+    "category": "Wood/Bark/Furrowed Bark",
+    "attributes": {
+      "surface_use": "object",
+      "condition": [
+        "weathered",
+        "mossy"
+      ],
+      "origin": "natural",
+      "setting": "outdoor"
+    },
+    "img_version": "c92741e0",
+    "download_count": 1806,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/metasequoia_bark.png?width=256&height=256&format=webp&v=c92741e0"
+  }
+}

@@ -32,11 +32,13 @@ for side in (-1, 1):
 	box(f'C_Curb_{side}', (4 if side > 0 else -4.15), (4.15 if side > 0 else -4), -22, 98, -.2, .16, 'curb')
 	box(f'C_Lawn_{side}', (6.5 if side > 0 else -40), (40 if side > 0 else -6.5), -30, 105, -.2, .14, 'lawn', 3)
 	ramp(f'Ramp_Curb_{side}', 3.55*side, 4.0*side, -22, 98, 0, .16)
-# Fallen-leaf drifts in the gutters and on lawns (flat, no collision).
-for i in range(40):
-	side = rng.choice((-1, 1)); x = side*rng.uniform(3.6, 4.0) if i < 24 else side*rng.uniform(7, 14)
-	y = rng.uniform(-18, 94); s = rng.uniform(.6, 1.8)
-	box(f'Leaves_{i}', x-s/2, x+s/2, y-s, y+s, .0, .02 if i < 24 else .07, 'leaves_ground')
+# Fallen-leaf drifts: alpha decals in the gutters, on the sidewalks and on the lawns (no collision).
+for i in range(46):
+	side = rng.choice((-1, 1))
+	if i < 22: x, z = side*rng.uniform(3.3, 3.85), 0.0
+	elif i < 30: x, z = side*rng.uniform(4.6, 6.2), .15
+	else: x, z = side*rng.uniform(7, 15), .14
+	litter(f'Litter_{i}', x, rng.uniform(-18, 94), z, rng.uniform(1.0, 2.2))
 
 # ---------- player's house (east, porch faces the street): two-storey side-gable with a gabled porch ----------
 house('Home', 8, -7, 7, 9, 6.0, 'siding_cream', roof='side', ridge=8.6, door_u=0, door_id=True,
@@ -150,26 +152,20 @@ car('CarRust', 3.0, 20, 'car_rust')
 car('CarCream', -3.0, 44, 'car_cream', wagon=True)
 car('CarGreen', -3.0, 64.5, 'car_green')
 
-# ---------- trees: orange deciduous along lawns, dark spruce walls ----------
-def deciduous(name, x, y, h):
-	cyl(f'C_{name}_Trunk', x, y, 0, h*.55, .16, 'trunk', 6, .1)
-	for k in range(3):
-		ox, oy, oz = rng.uniform(-.8, .8), rng.uniform(-.8, .8), h*(.55+.13*k)
-		bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1, radius=h*rng.uniform(.22, .3), location=(x+ox, y+oy, oz))
-		c = bpy.context.object; c.name = f'{name}_Crown_{k}'; c.scale = (1, 1, .8); bpy.ops.object.transform_apply(scale=True)
-		finish(c, rng.choice(('leaf_orange', 'leaf_amber', 'leaf_copper')))
-def spruce(name, x, y, h):
-	cyl(f'{name}_Trunk', x, y, 0, h*.25, .14, 'trunk', 5)
-	for k, (z0, r) in enumerate([(.18, .30), (.42, .22), (.65, .14)]):
-		cyl(f'{name}_Tier_{k}', x, y, h*z0, h*(z0+.42), h*r, 'spruce', 6, 0)
+# ---------- trees: bigleaf maples along the lawns, Douglas-fir walls closing every view ----------
 for i, (x, y) in enumerate([(7.6, 11), (7.6, 31), (8.2, 52), (7.6, 60), (8.0, 88), (-7.4, 19), (-7.6, 42), (-7.2, 86)]):
-	deciduous(f'Maple_{i}', x, y, rng.uniform(5.5, 7.5))
+	maple(f'Maple_{i}', x, y, rng.uniform(6.5, 8.5), ('maple_orange', 'maple_amber', 'maple_copper')[i % 3])
 i = 0
+# Stratified placement (guide 22 §14): cells of ~6 m with jitter, so no accidental holes or clumps.
 for x0, x1, y0, y1 in [(22, 40, -30, 105), (-40, -24, -30, 105), (-20, 20, 100, 115), (-20, 20, -38, -26)]:
-	for _ in range(int(abs(x1-x0)*abs(y1-y0)/38)):
-		spruce(f'Spruce_{i}', rng.uniform(x0, x1), rng.uniform(y0, y1), rng.uniform(9, 16)); i += 1
+	cell = 6.2
+	nx, ny = max(1, round((x1-x0)/cell)), max(1, round((y1-y0)/cell))
+	for gx in range(nx):
+		for gy in range(ny):
+			x = x0+(gx+rng.uniform(.15, .85))*(x1-x0)/nx; y = y0+(gy+rng.uniform(.15, .85))*(y1-y0)/ny
+			fir(f'Fir_{i}', x, y, rng.uniform(13, 22)); i += 1
 for x, y in [(-20, 40), (-19, 47), (-25, 58), (-26, 66), (20, 30), (21, 60), (19, -5)]:
-	spruce(f'Spruce_{i}', x, y, rng.uniform(10, 14)); i += 1
+	fir(f'Fir_{i}', x, y, rng.uniform(12, 17)); i += 1
 
 # ---------- bounds: guardrails at both road ends, rail fences at lawn edges ----------
 for y in (-21.5, 97.5):

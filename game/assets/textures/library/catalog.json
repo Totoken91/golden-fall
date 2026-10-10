@@ -328,5 +328,15 @@
     ],
     "material": "res://assets/textures/library/polyhaven/asphalt_04/town_psx_128_4ea6ba35/material.tres",
     "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/bark_brown_02/town_psx_64_45035809": {
+    "provider": "polyhaven",
+    "id": "bark_brown_02",
+    "tile_m": [
+      0.999999,
+      0.999999
+    ],
+    "material": "res://assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
   }
 }

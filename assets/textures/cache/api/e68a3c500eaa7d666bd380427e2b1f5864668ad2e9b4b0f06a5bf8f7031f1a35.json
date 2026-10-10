@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/japanese_zelkova_bark",
+  "fetched_at": 1791652719.6398144,
+  "data": {
+    "name": "Japanese Zelkova Bark",
+    "type": 1,
+    "tags": [
+      "japanese",
+      "bark",
+      "tree bark",
+      "tree",
+      "tree trunk",
+      "natural",
+      "environment",
+      "bark texture",
+      "organic",
+      "forestry",
+      "trunk"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "info": null,
+    "dimensions": [
+      1799.999713897705,
+      1799.999713897705
+    ],
+    "date_published": 1692835200,
+    "staging": null,
+    "categories": [
+      "natural",
+      "bark",
+      "wood"
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "2a3fb1f54f38b8286ed7d51a0036413fe89f7890",
+    "description": "Free 8K texture of Japanese Zelkova bark: coarse, flaky trunk surface with peeling patches, warm brown-orange underlayers and subtle fine-grain roughness.",
+    "category_id": "a965cbdc-272f-5c31-8e9d-fe415bf467fd",
+    "category": "Wood/Bark/Smooth & Peeling Bark",
+    "attributes": {
+      "surface_use": "object",
+      "origin": "natural",
+      "setting": "outdoor",
+      "condition": [
+        "weathered"
+      ]
+    },
+    "img_version": "57cfc619",
+    "download_count": 9495,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/japanese_zelkova_bark.png?width=256&height=256&format=webp&v=57cfc619"
+  }
+}

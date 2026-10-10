@@ -8416,6 +8416,259 @@
         "applied_to_game_scene": false
       },
       "visual_reviews": []
+    },
+    "polyhaven/bark_brown_02/town_psx_64_45035809": {
+      "provider": "polyhaven",
+      "id": "bark_brown_02",
+      "name": "Bark Brown 02",
+      "created_at": "2026-10-10T17:18:51.085426+00:00",
+      "status": "downloaded_optimized_pending_visual_review",
+      "request_signature": "45035809e00017de20b5c23e848b899bbe66391cd02d3c04ef01a20907c9c4e5",
+      "brief": {
+        "query": "bark",
+        "ambientcg_query": "bark",
+        "usage": "Bigleaf maple and Douglas fir trunks along the street",
+        "require_any": [
+          "bark",
+          "tree"
+        ],
+        "prefer": [
+          "brown",
+          "rough",
+          "pine",
+          "tree",
+          "trunk"
+        ],
+        "avoid": [
+          "moss",
+          "white",
+          "birch",
+          "cut"
+        ]
+      },
+      "selection": "Rough brown conifer and maple bark",
+      "source_page": "https://polyhaven.com/a/bark_brown_02",
+      "metadata_url": "https://api.polyhaven.com/info/bark_brown_02",
+      "files_metadata_url": "https://api.polyhaven.com/files/bark_brown_02",
+      "license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "tile_m": [
+        0.999999,
+        0.999999
+      ],
+      "tile_basis": "API dimensions in millimeters",
+      "seamless": {
+        "api_evidence": {
+          "status": "candidate",
+          "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+        },
+        "measurements": {
+          "edge_x_mean_abs": 0.055413,
+          "edge_y_mean_abs": 0.020098,
+          "inner_x_mean_abs": 0.034457,
+          "inner_y_mean_abs": 0.028145,
+          "visual_review_required": true
+        },
+        "approved": false
+      },
+      "source_files": {
+        "albedo": {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/albedo_1k.jpg",
+          "sha256": "920fa0bed0c9d78c1d530e99795113afd532d7db746de440f4a85d7c83ed0f1a",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+          "normal_convention": null
+        },
+        "normal": {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/normal_1k.png",
+          "sha256": "45c632c61b642759ee935a4300b71aa1e6097d2b2d8aae42376c4661ecc518eb",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/bark_brown_02/bark_brown_02_nor_gl_1k.png",
+          "normal_convention": "OpenGL"
+        },
+        "roughness": {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/roughness_1k.jpg",
+          "sha256": "68125592de36e15bae7aa6db85c4d135aeb7e5653199ba226483a70f6d69837d",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_rough_1k.jpg",
+          "normal_convention": null
+        },
+        "ao": {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/ao_1k.jpg",
+          "sha256": "f3572613f143ca84885f4b4e03332d9a8723420c740a12750ab538fad7f39552",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_ao_1k.jpg",
+          "normal_convention": null
+        }
+      },
+      "download_receipts": [
+        {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/albedo_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+          "resolved_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+          "bytes": 659592,
+          "sha256": "920fa0bed0c9d78c1d530e99795113afd532d7db746de440f4a85d7c83ed0f1a",
+          "source_md5": "6669cca520594bdca19f94084984ab72",
+          "content_type": "image/jpeg",
+          "downloaded_at": 1791652727.1225536
+        },
+        {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/normal_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/bark_brown_02/bark_brown_02_nor_gl_1k.png",
+          "resolved_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/bark_brown_02/bark_brown_02_nor_gl_1k.png",
+          "bytes": 2436328,
+          "sha256": "45c632c61b642759ee935a4300b71aa1e6097d2b2d8aae42376c4661ecc518eb",
+          "source_md5": "00616c5620413e714ea8a35848c6b2fc",
+          "content_type": "image/png",
+          "downloaded_at": 1791652729.6377058
+        },
+        {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/roughness_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_rough_1k.jpg",
+          "resolved_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_rough_1k.jpg",
+          "bytes": 337946,
+          "sha256": "68125592de36e15bae7aa6db85c4d135aeb7e5653199ba226483a70f6d69837d",
+          "source_md5": "bbcde696e5b9418cdcb2abe638965417",
+          "content_type": "image/jpeg",
+          "downloaded_at": 1791652730.0593245
+        },
+        {
+          "path": "assets/textures/sources/polyhaven/bark_brown_02/ao_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_ao_1k.jpg",
+          "resolved_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_ao_1k.jpg",
+          "bytes": 514586,
+          "sha256": "f3572613f143ca84885f4b4e03332d9a8723420c740a12750ab538fad7f39552",
+          "source_md5": "6034e9a388be7d4774da4671993ebb61",
+          "content_type": "image/jpeg",
+          "downloaded_at": 1791652730.7751627
+        }
+      ],
+      "optimized_maps": {
+        "albedo": {
+          "path": "assets/textures/optimized/polyhaven/bark_brown_02/town_psx_64_45035809/albedo.png",
+          "sha256": "c125928bfc8d34f73b7ea1b0425f4a68a913765bec86ca05da3aa12bfadfd565",
+          "bytes": 7963,
+          "source_dimensions": [
+            1024,
+            1024
+          ],
+          "output_dimensions": [
+            64,
+            64
+          ],
+          "color_space": "sRGB",
+          "steps": [
+            "resize keeping aspect ratio; no upscaling",
+            "sRGB albedo only: mild saturation and RGB gains; no baked light"
+          ]
+        },
+        "normal": {
+          "path": "assets/textures/optimized/polyhaven/bark_brown_02/town_psx_64_45035809/normal.png",
+          "sha256": "75aac25884c6c33411954c77f68d7892056c0d2a134f1535a3ba7364b3bf2f9f",
+          "bytes": 6845,
+          "source_dimensions": [
+            1024,
+            1024
+          ],
+          "output_dimensions": [
+            64,
+            64
+          ],
+          "color_space": "linear",
+          "steps": [
+            "resize keeping aspect ratio; no upscaling",
+            "linear vector map; DirectX Y flipped if needed; renormalized after resize"
+          ]
+        },
+        "roughness": {
+          "path": "assets/textures/optimized/polyhaven/bark_brown_02/town_psx_64_45035809/roughness.png",
+          "sha256": "15c8d90f8f528345c74878e63d04784fc59d614530217851bb622aa4f7f942ca",
+          "bytes": 2621,
+          "source_dimensions": [
+            1024,
+            1024
+          ],
+          "output_dimensions": [
+            64,
+            64
+          ],
+          "color_space": "linear",
+          "steps": [
+            "resize keeping aspect ratio; no upscaling",
+            "linear grayscale; no palette or gamma adjustment"
+          ]
+        },
+        "ao": {
+          "path": "assets/textures/optimized/polyhaven/bark_brown_02/town_psx_64_45035809/ao.png",
+          "sha256": "4e1d8ad1da376b5ac00c21885bf12500ceba223c3717879fa5b7318803bc8608",
+          "bytes": 2954,
+          "source_dimensions": [
+            1024,
+            1024
+          ],
+          "output_dimensions": [
+            64,
+            64
+          ],
+          "color_space": "linear",
+          "steps": [
+            "resize keeping aspect ratio; no upscaling",
+            "linear grayscale; no palette or gamma adjustment"
+          ]
+        }
+      },
+      "transformation": {
+        "processor_version": 1,
+        "profile_name": "town_psx",
+        "profile": {
+          "saturation": 0.88,
+          "rgb_gain": [
+            1.02,
+            1.0,
+            0.94
+          ],
+          "normal_scale": 0.3,
+          "filter_enum": 2,
+          "filter_name": "nearest with mipmaps; Golden Fall outdoor surfaces, 128px, ~64-96 texels/m"
+        },
+        "max_side": 64
+      },
+      "godot": {
+        "material": "game/assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/material.tres",
+        "sha256": "4f40e5111d03beb66be5ad9332e6c619770690de6e85f89a71035f1900011aa8",
+        "maps": {
+          "albedo": {
+            "path": "game/assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/albedo.png",
+            "sha256": "c125928bfc8d34f73b7ea1b0425f4a68a913765bec86ca05da3aa12bfadfd565"
+          },
+          "normal": {
+            "path": "game/assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/normal.png",
+            "sha256": "75aac25884c6c33411954c77f68d7892056c0d2a134f1535a3ba7364b3bf2f9f"
+          },
+          "roughness": {
+            "path": "game/assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/roughness.png",
+            "sha256": "15c8d90f8f528345c74878e63d04784fc59d614530217851bb622aa4f7f942ca"
+          },
+          "ao": {
+            "path": "game/assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/ao.png",
+            "sha256": "4e1d8ad1da376b5ac00c21885bf12500ceba223c3717879fa5b7318803bc8608"
+          }
+        },
+        "tile_m": [
+          0.999999,
+          0.999999
+        ],
+        "surface_m": [
+          0.999999,
+          0.999999
+        ],
+        "uv_scale": [
+          1.0,
+          1.0
+        ],
+        "uv_contract": "UV 0..1 spans surface_m; change scale per target surface",
+        "applied_to_game_scene": false
+      },
+      "visual_reviews": []
     }
   },
   "runs": [
@@ -35217,6 +35470,1135 @@
         "requests": 0,
         "downloaded_bytes": 0,
         "cache_hits": 14,
+        "offline": false
+      }
+    },
+    {
+      "at": "2026-10-10T17:18:38.505236+00:00",
+      "command": "search",
+      "status": "searched",
+      "brief": {
+        "query": "bark",
+        "ambientcg_query": "bark",
+        "usage": "Bigleaf maple and Douglas fir trunks along the street",
+        "require_any": [
+          "bark",
+          "tree"
+        ],
+        "prefer": [
+          "brown",
+          "rough",
+          "pine",
+          "tree",
+          "trunk"
+        ],
+        "avoid": [
+          "moss",
+          "white",
+          "birch",
+          "cut"
+        ]
+      },
+      "candidates": [
+        {
+          "provider": "polyhaven",
+          "id": "sakura_bark",
+          "name": "Sakura Bark",
+          "tags": [
+            "rough",
+            "bark",
+            "tree",
+            "tree bark",
+            "nature",
+            "japanese",
+            "trunk",
+            "wood",
+            "natural",
+            "bark texture",
+            "tree trunk",
+            "forestry",
+            "organic"
+          ],
+          "description": "Free 8K texture: Sakura bark - rough, layered cherry trunk surface with horizontal striations, flaky ridges and matte earthy brown tones.",
+          "tile_m": [
+            1.6,
+            1.6
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 2,
+          "source_page": "https://polyhaven.com/a/sakura_bark",
+          "metadata_url": "https://api.polyhaven.com/info/sakura_bark",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 13.6667,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "bark_brown_02",
+          "name": "Bark Brown 02",
+          "tags": [
+            "bark",
+            "tree",
+            "forest",
+            "knots",
+            "wooden knots",
+            "tree trunk"
+          ],
+          "description": "Free 8K bark texture showing rough brown tree bark with deep vertical furrows, wooden knots and subtle mossy green patches, high-detail surface relief.",
+          "tile_m": [
+            0.999999,
+            0.999999
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 3,
+          "source_page": "https://polyhaven.com/a/bark_brown_02",
+          "metadata_url": "https://api.polyhaven.com/info/bark_brown_02",
+          "authors": {
+            "Rob Tuytel": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 13.5,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "bark_brown_01",
+          "name": "Bark Brown 01",
+          "tags": [
+            "bark",
+            "tree",
+            "forest",
+            "knots",
+            "bark grooves",
+            "tree bark",
+            "tree trunk"
+          ],
+          "description": "Free 8K bark texture with deep vertical grooves, rugged fibrous surface, warm brown weathered tones, visible knots and subtle mossy highlights.",
+          "tile_m": [
+            0.999999,
+            0.999999
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 0,
+          "source_page": "https://polyhaven.com/a/bark_brown_01",
+          "metadata_url": "https://api.polyhaven.com/info/bark_brown_01",
+          "authors": {
+            "Rob Tuytel": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 12.0,
+            "preferred_matches": [
+              "brown",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark015",
+          "name": "Bark 015",
+          "tags": [
+            "015",
+            "15",
+            "bark",
+            "beige",
+            "brown",
+            "damaged",
+            "forest",
+            "layered",
+            "natural",
+            "old",
+            "organic",
+            "outdoor",
+            "rough",
+            "rustic",
+            "striped",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 1,
+          "source_page": "https://ambientcg.com/a/Bark015",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark015&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 11.0,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "metasequoia_bark",
+          "name": "Metasequoia Bark",
+          "tags": [
+            "bark",
+            "tree bark",
+            "natural",
+            "bark texture",
+            "forestry",
+            "tree",
+            "tree trunk",
+            "tree texture",
+            "nature",
+            "organic",
+            "metasequoia"
+          ],
+          "description": "Free 8K Metasequoia bark texture with deep vertical furrows, weathered brown tones and lichen patches - versatile for realistic tree trunks in games, film, and archviz.",
+          "tile_m": [
+            1.94,
+            1.94
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 1,
+          "source_page": "https://polyhaven.com/a/metasequoia_bark",
+          "metadata_url": "https://api.polyhaven.com/info/metasequoia_bark",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 11.0,
+            "preferred_matches": [
+              "brown",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "japanese_zelkova_bark",
+          "name": "Japanese Zelkova Bark",
+          "tags": [
+            "japanese",
+            "bark",
+            "tree bark",
+            "tree",
+            "tree trunk",
+            "natural",
+            "environment",
+            "bark texture",
+            "organic",
+            "forestry",
+            "trunk"
+          ],
+          "description": "Free 8K texture of Japanese Zelkova bark: coarse, flaky trunk surface with peeling patches, warm brown-orange underlayers and subtle fine-grain roughness.",
+          "tile_m": [
+            1.8,
+            1.8
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 5,
+          "source_page": "https://polyhaven.com/a/japanese_zelkova_bark",
+          "metadata_url": "https://api.polyhaven.com/info/japanese_zelkova_bark",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 10.3333,
+            "preferred_matches": [
+              "brown",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "jolcham_oak_bark_01",
+          "name": "Jolcham Oak Bark 01",
+          "tags": [
+            "rough",
+            "weathered",
+            "uneven",
+            "moss",
+            "mossy",
+            "mosscovered",
+            "bark",
+            "tree",
+            "tree bark",
+            "organic",
+            "fissured",
+            "bark texture",
+            "tree trunk",
+            "trunk",
+            "tree texture",
+            "non square"
+          ],
+          "description": "Free 8k texture of Jolcham oak bark: rough, weathered, uneven bark with mossy, lichen-covered patches, deep fissures and coarse organic brown-green tones.",
+          "tile_m": [
+            1.0,
+            2.0
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 4,
+          "source_page": "https://polyhaven.com/a/jolcham_oak_bark_01",
+          "metadata_url": "https://api.polyhaven.com/info/jolcham_oak_bark_01",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 9.4,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [
+              "moss"
+            ],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark014",
+          "name": "Bark 014",
+          "tags": [
+            "14",
+            "bark",
+            "brown",
+            "fir",
+            "forest",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": [
+            1.2,
+            1.2
+          ],
+          "dimension_basis": "API dimensions in centimeters",
+          "api_rank": 0,
+          "source_page": "https://ambientcg.com/a/Bark014",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark014&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 9.0,
+            "preferred_matches": [
+              "brown",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark012",
+          "name": "Bark 012",
+          "tags": [
+            "12",
+            "bark",
+            "brown",
+            "oak",
+            "tree"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 2,
+          "source_page": "https://ambientcg.com/a/Bark012",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark012&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 7.6667,
+            "preferred_matches": [
+              "brown",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark006",
+          "name": "Bark 006",
+          "tags": [
+            "6",
+            "bark",
+            "brown",
+            "dark",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 5,
+          "source_page": "https://ambientcg.com/a/Bark006",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark006&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRApproximated"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 7.3333,
+            "preferred_matches": [
+              "brown",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark001",
+          "name": "Bark 001",
+          "tags": [
+            "1",
+            "bark",
+            "forest",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 3,
+          "source_page": "https://ambientcg.com/a/Bark001",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark001&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRApproximated"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 4.5,
+            "preferred_matches": [
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark013",
+          "name": "Bark 013",
+          "tags": [
+            "13",
+            "bark",
+            "green",
+            "mossy",
+            "tree"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 4,
+          "source_page": "https://ambientcg.com/a/Bark013",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark013&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 4.4,
+            "preferred_matches": [
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        }
+      ],
+      "search_errors": {},
+      "network": {
+        "requests": 8,
+        "downloaded_bytes": 0,
+        "cache_hits": 0,
+        "offline": false
+      }
+    },
+    {
+      "at": "2026-10-10T17:18:46.306575+00:00",
+      "command": "acquire",
+      "status": "downloaded_optimized",
+      "brief": {
+        "query": "bark",
+        "ambientcg_query": "bark",
+        "usage": "Bigleaf maple and Douglas fir trunks along the street",
+        "require_any": [
+          "bark",
+          "tree"
+        ],
+        "prefer": [
+          "brown",
+          "rough",
+          "pine",
+          "tree",
+          "trunk"
+        ],
+        "avoid": [
+          "moss",
+          "white",
+          "birch",
+          "cut"
+        ]
+      },
+      "search_errors": {},
+      "candidates": [
+        {
+          "provider": "polyhaven",
+          "id": "sakura_bark",
+          "name": "Sakura Bark",
+          "tags": [
+            "rough",
+            "bark",
+            "tree",
+            "tree bark",
+            "nature",
+            "japanese",
+            "trunk",
+            "wood",
+            "natural",
+            "bark texture",
+            "tree trunk",
+            "forestry",
+            "organic"
+          ],
+          "description": "Free 8K texture: Sakura bark - rough, layered cherry trunk surface with horizontal striations, flaky ridges and matte earthy brown tones.",
+          "tile_m": [
+            1.6,
+            1.6
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 2,
+          "source_page": "https://polyhaven.com/a/sakura_bark",
+          "metadata_url": "https://api.polyhaven.com/info/sakura_bark",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 13.6667,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "bark_brown_02",
+          "name": "Bark Brown 02",
+          "tags": [
+            "bark",
+            "tree",
+            "forest",
+            "knots",
+            "wooden knots",
+            "tree trunk"
+          ],
+          "description": "Free 8K bark texture showing rough brown tree bark with deep vertical furrows, wooden knots and subtle mossy green patches, high-detail surface relief.",
+          "tile_m": [
+            0.999999,
+            0.999999
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 3,
+          "source_page": "https://polyhaven.com/a/bark_brown_02",
+          "metadata_url": "https://api.polyhaven.com/info/bark_brown_02",
+          "authors": {
+            "Rob Tuytel": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 13.5,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "bark_brown_01",
+          "name": "Bark Brown 01",
+          "tags": [
+            "bark",
+            "tree",
+            "forest",
+            "knots",
+            "bark grooves",
+            "tree bark",
+            "tree trunk"
+          ],
+          "description": "Free 8K bark texture with deep vertical grooves, rugged fibrous surface, warm brown weathered tones, visible knots and subtle mossy highlights.",
+          "tile_m": [
+            0.999999,
+            0.999999
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 0,
+          "source_page": "https://polyhaven.com/a/bark_brown_01",
+          "metadata_url": "https://api.polyhaven.com/info/bark_brown_01",
+          "authors": {
+            "Rob Tuytel": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 12.0,
+            "preferred_matches": [
+              "brown",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark015",
+          "name": "Bark 015",
+          "tags": [
+            "015",
+            "15",
+            "bark",
+            "beige",
+            "brown",
+            "damaged",
+            "forest",
+            "layered",
+            "natural",
+            "old",
+            "organic",
+            "outdoor",
+            "rough",
+            "rustic",
+            "striped",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 1,
+          "source_page": "https://ambientcg.com/a/Bark015",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark015&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 11.0,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "metasequoia_bark",
+          "name": "Metasequoia Bark",
+          "tags": [
+            "bark",
+            "tree bark",
+            "natural",
+            "bark texture",
+            "forestry",
+            "tree",
+            "tree trunk",
+            "tree texture",
+            "nature",
+            "organic",
+            "metasequoia"
+          ],
+          "description": "Free 8K Metasequoia bark texture with deep vertical furrows, weathered brown tones and lichen patches - versatile for realistic tree trunks in games, film, and archviz.",
+          "tile_m": [
+            1.94,
+            1.94
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 1,
+          "source_page": "https://polyhaven.com/a/metasequoia_bark",
+          "metadata_url": "https://api.polyhaven.com/info/metasequoia_bark",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 11.0,
+            "preferred_matches": [
+              "brown",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "japanese_zelkova_bark",
+          "name": "Japanese Zelkova Bark",
+          "tags": [
+            "japanese",
+            "bark",
+            "tree bark",
+            "tree",
+            "tree trunk",
+            "natural",
+            "environment",
+            "bark texture",
+            "organic",
+            "forestry",
+            "trunk"
+          ],
+          "description": "Free 8K texture of Japanese Zelkova bark: coarse, flaky trunk surface with peeling patches, warm brown-orange underlayers and subtle fine-grain roughness.",
+          "tile_m": [
+            1.8,
+            1.8
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 5,
+          "source_page": "https://polyhaven.com/a/japanese_zelkova_bark",
+          "metadata_url": "https://api.polyhaven.com/info/japanese_zelkova_bark",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 10.3333,
+            "preferred_matches": [
+              "brown",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "polyhaven",
+          "id": "jolcham_oak_bark_01",
+          "name": "Jolcham Oak Bark 01",
+          "tags": [
+            "rough",
+            "weathered",
+            "uneven",
+            "moss",
+            "mossy",
+            "mosscovered",
+            "bark",
+            "tree",
+            "tree bark",
+            "organic",
+            "fissured",
+            "bark texture",
+            "tree trunk",
+            "trunk",
+            "tree texture",
+            "non square"
+          ],
+          "description": "Free 8k texture of Jolcham oak bark: rough, weathered, uneven bark with mossy, lichen-covered patches, deep fissures and coarse organic brown-green tones.",
+          "tile_m": [
+            1.0,
+            2.0
+          ],
+          "dimension_basis": "API dimensions in millimeters",
+          "api_rank": 4,
+          "source_page": "https://polyhaven.com/a/jolcham_oak_bark_01",
+          "metadata_url": "https://api.polyhaven.com/info/jolcham_oak_bark_01",
+          "authors": {
+            "Charlotte Baglioni": "All"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "PBR texture category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 9.4,
+            "preferred_matches": [
+              "brown",
+              "rough",
+              "tree",
+              "trunk"
+            ],
+            "avoided_matches": [
+              "moss"
+            ],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark014",
+          "name": "Bark 014",
+          "tags": [
+            "14",
+            "bark",
+            "brown",
+            "fir",
+            "forest",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": [
+            1.2,
+            1.2
+          ],
+          "dimension_basis": "API dimensions in centimeters",
+          "api_rank": 0,
+          "source_page": "https://ambientcg.com/a/Bark014",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark014&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 9.0,
+            "preferred_matches": [
+              "brown",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark012",
+          "name": "Bark 012",
+          "tags": [
+            "12",
+            "bark",
+            "brown",
+            "oak",
+            "tree"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 2,
+          "source_page": "https://ambientcg.com/a/Bark012",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark012&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 7.6667,
+            "preferred_matches": [
+              "brown",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark006",
+          "name": "Bark 006",
+          "tags": [
+            "6",
+            "bark",
+            "brown",
+            "dark",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 5,
+          "source_page": "https://ambientcg.com/a/Bark006",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark006&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRApproximated"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 7.3333,
+            "preferred_matches": [
+              "brown",
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark001",
+          "name": "Bark 001",
+          "tags": [
+            "1",
+            "bark",
+            "forest",
+            "tree",
+            "wood"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 3,
+          "source_page": "https://ambientcg.com/a/Bark001",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark001&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRApproximated"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 4.5,
+            "preferred_matches": [
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        },
+        {
+          "provider": "ambientcg",
+          "id": "Bark013",
+          "name": "Bark 013",
+          "tags": [
+            "13",
+            "bark",
+            "green",
+            "mossy",
+            "tree"
+          ],
+          "description": "",
+          "tile_m": null,
+          "dimension_basis": "unknown",
+          "api_rank": 4,
+          "source_page": "https://ambientcg.com/a/Bark013",
+          "metadata_url": "https://ambientcg.com/api/v2/full_json?id=Bark013&include=downloadData%2CtagData%2CdimensionsData",
+          "authors": {
+            "ambientCG": "PBRPhotogrammetry"
+          },
+          "seamless": {
+            "status": "candidate",
+            "basis": "Material category; verify edge continuity and 2x2 tiling"
+          },
+          "ranking": {
+            "score": 4.4,
+            "preferred_matches": [
+              "tree"
+            ],
+            "avoided_matches": [],
+            "query_matches": [
+              "bark"
+            ],
+            "method": "metadata heuristic; visual review still required"
+          }
+        }
+      ],
+      "selection_reason": "Rough brown conifer and maple bark",
+      "preflight_errors": [],
+      "key": "polyhaven/bark_brown_02/town_psx_64_45035809",
+      "material": "game/assets/textures/library/polyhaven/bark_brown_02/town_psx_64_45035809/material.tres",
+      "selected": {
+        "provider": "polyhaven",
+        "id": "bark_brown_02"
+      },
+      "visual_review_required": true,
+      "network": {
+        "requests": 5,
+        "downloaded_bytes": 3948452,
+        "cache_hits": 9,
         "offline": false
       }
     }

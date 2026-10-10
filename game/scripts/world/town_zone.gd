@@ -51,6 +51,18 @@ func load_materials() -> void:
 			material.specular_mode = BaseMaterial3D.SPECULAR_DISABLED
 		material.resource_name = name
 		textured[name] = material
+	# Cutout foliage: alpha scissor, both faces, no specular; card normals are authored in Blender.
+	for name in config.get("foliage",{}):
+		var leaves := StandardMaterial3D.new()
+		leaves.albedo_texture = load(config.foliage[name])
+		leaves.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA_SCISSOR
+		leaves.alpha_scissor_threshold = .5
+		leaves.cull_mode = BaseMaterial3D.CULL_DISABLED
+		leaves.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS
+		leaves.specular_mode = BaseMaterial3D.SPECULAR_DISABLED
+		leaves.roughness = 1.0
+		leaves.resource_name = name
+		textured[name] = leaves
 
 func prepare(node: Node) -> void:
 	if node is MeshInstance3D:
@@ -86,7 +98,7 @@ func prepare(node: Node) -> void:
 			mi.set_meta("interaction",interaction)
 			if interaction in ["dinerdoor","homedoor"]: doors[interaction] = mi
 		if id.begins_with("Lamp_"): add_lamp(mi)
-		if id.begins_with("Vis_spruce") or id.begins_with("Vis_leaf"): mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		if id.begins_with("Vis_leaf_litter"): mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	for child in node.get_children(): prepare(child)
 
 func add_lamp(mi: MeshInstance3D) -> void:

@@ -468,6 +468,28 @@
         "slab",
         "pavement"
       ]
+    },
+    "tree_bark": {
+      "query": "bark",
+      "ambientcg_query": "bark",
+      "usage": "Bigleaf maple and Douglas fir trunks along the street",
+      "require_any": [
+        "bark",
+        "tree"
+      ],
+      "prefer": [
+        "brown",
+        "rough",
+        "pine",
+        "tree",
+        "trunk"
+      ],
+      "avoid": [
+        "moss",
+        "white",
+        "birch",
+        "cut"
+      ]
     }
   }
 }

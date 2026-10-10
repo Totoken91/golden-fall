@@ -16,6 +16,8 @@ const VIEWS := [
 	["10_house_facade",Vector3(5.2,.15,-21),Vector3(10,2.2,-21)],
 	["11_records_brick",Vector3(-4.6,.15,-24),Vector3(-6.5,1.8,-29)],
 	["12_home_roofline",Vector3(-5.2,.15,6),Vector3(9,4.5,0)],
+	["13_maple_close",Vector3(4.8,.15,-17),Vector3(7.6,3.6,-11)],
+	["14_fir_wall",Vector3(-2.0,.15,-58),Vector3(28,7,-64)],
 ]
 var game: Node
 

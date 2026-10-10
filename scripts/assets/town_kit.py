@@ -294,3 +294,121 @@ def storefront(name, front, back, y0, y1, height, wall, display=(), door_y=None,
 	if door_y is not None:
 		door(w, f'{name}_Door', door_y, .05, 1.05, 2.25)
 		w.block(f'{name}_DoorTransom', door_y-.52, door_y+.52, 2.42, 2.75, 0, .01, 'glass')
+
+# ---------- trees: low-poly wood, alpha-cutout foliage (guide 22 §7/§14: no stacked opaque cones) ----------
+for name, c in [('maple_orange', (.78,.38,.12)), ('maple_amber', (.89,.60,.24)), ('maple_copper', (.56,.23,.09)),
+		('fir_tier', (.12,.18,.14)), ('leaf_litter', (.6,.3,.1))]:
+	mat(name, c)
+TEXTURED |= {'trunk'}
+
+def raw_mesh(name, verts, faces, uvs, material, normals=None):
+	"""Mesh with authored UVs (cards, cones) instead of the planar metric projection.
+	normals: optional per-vertex custom normals (foliage lit as a volume, not as flat cards)."""
+	me = bpy.data.meshes.new(name); me.from_pydata(verts, [], faces); me.update()
+	uv = me.uv_layers.new(name='UVMap')
+	for poly in me.polygons:
+		for li in poly.loop_indices: uv.data[li].uv = uvs[me.loops[li].vertex_index]
+	if normals: me.normals_split_custom_set_from_vertices([Vector(n).normalized() for n in normals])
+	o = bpy.data.objects.new(name, me); bpy.context.collection.objects.link(o)
+	o.data.materials.append(mats[material])
+	return o
+
+def beam(name, a, b, r0, r1, material, sides=5):
+	"""Tapered tube from a to b (trunks and limbs), faces oriented away from the axis, capped at b."""
+	a, b = Vector(a), Vector(b); axis = (b-a).normalized()
+	side = axis.cross(Vector((0, 0, 1)) if abs(axis.z) < .95 else Vector((1, 0, 0))).normalized(); up = axis.cross(side)
+	verts = []
+	for p, r in ((a, r0), (b, r1)):
+		for k in range(sides):
+			t = k*math.tau/sides; verts.append(tuple(p + (side*math.cos(t) + up*math.sin(t))*r))
+	faces = []
+	for k in range(sides):
+		f = [k, (k+1) % sides, sides+(k+1) % sides, sides+k]
+		mid = sum((Vector(verts[i]) for i in f), Vector())/4
+		axis_pt = a + axis*((mid-a).dot(axis))
+		n = (Vector(verts[f[1]])-Vector(verts[f[0]])).cross(Vector(verts[f[2]])-Vector(verts[f[0]]))
+		if n.dot(mid-axis_pt) < 0: f.reverse()
+		faces.append(f)
+	cap = list(range(sides, 2*sides))
+	if (Vector(verts[cap[1]])-Vector(verts[cap[0]])).cross(Vector(verts[cap[2]])-Vector(verts[cap[0]])).dot(axis) < 0: cap.reverse()
+	faces.append(cap)
+	me = bpy.data.meshes.new(name); me.from_pydata(verts, [], faces); me.update()
+	o = bpy.data.objects.new(name, me); bpy.context.collection.objects.link(o)
+	return finish(o, material)
+
+def card(name, centre, width, height, yaw, material, volume_centre, pitch=0.0):
+	"""Upright cutout card; normals bend away from the crown centre so the crown shades as a mass."""
+	c = Vector(centre); u = Vector((math.cos(yaw), math.sin(yaw), 0)); v = Vector((0, 0, 1))
+	if pitch: v = (v*math.cos(pitch) + Vector((-math.sin(yaw), math.cos(yaw), 0))*math.sin(pitch)).normalized()
+	pts = [c-u*width/2-v*height/2, c+u*width/2-v*height/2, c+u*width/2+v*height/2, c-u*width/2+v*height/2]
+	vc = Vector(volume_centre)
+	normals = [((p-vc).normalized()*.65 + Vector((0, 0, .35))) for p in pts]
+	return raw_mesh(name, [tuple(p) for p in pts], [(0, 1, 2, 3)], [(0, 0), (1, 0), (1, 1), (0, 1)], material, normals)
+
+def maple(name, x, y, h, tint):
+	"""Bigleaf maple: flared trunk, four to five limbs, a crown of crossed leaf-clump cards at the limb ends."""
+	fork = h*rng.uniform(.34, .42)
+	beam(f'C_{name}_Trunk', (x, y, -.05), (x+rng.uniform(-.15, .15), y+rng.uniform(-.15, .15), fork), .24, .15, 'trunk', 6)
+	top = Vector((x, y, fork))
+	crown = Vector((x, y, h*.66)); R = h*.34
+	limbs = rng.randint(4, 5)
+	ends = []
+	for k in range(limbs):
+		a = k*math.tau/limbs + rng.uniform(-.4, .4); reach = R*rng.uniform(.45, .75)
+		end = Vector((x+math.cos(a)*reach, y+math.sin(a)*reach, h*rng.uniform(.6, .82)))
+		beam(f'{name}_Limb{k}', top, end, .11, .04, 'trunk', 4)
+		ends.append(end)
+	ends.append(Vector((x, y, h*.9)))
+	clumps = []
+	for e in ends:
+		clumps.append(e)
+		for _ in range(3):
+			clumps.append(e + Vector((rng.uniform(-1, 1), rng.uniform(-1, 1), rng.uniform(-.5, .7)))*R*.38)
+	for k, p in enumerate(clumps):
+		s = h*rng.uniform(.33, .43)
+		yaw = rng.uniform(0, math.pi)
+		material = tint if rng.random() < .7 else rng.choice(('maple_orange', 'maple_amber', 'maple_copper'))
+		card(f'{name}_Clump{k}a', p, s, s*.9, yaw, material, crown, rng.uniform(-.2, .2))
+		card(f'{name}_Clump{k}b', p, s, s*.9, yaw+math.pi/2, material, crown, rng.uniform(-.2, .2))
+	# Fallen leaves gathered under the crown.
+	for k in range(3):
+		a = rng.uniform(0, math.tau); r = rng.uniform(.3, R*.6)
+		litter(f'{name}_Litter{k}', x+math.cos(a)*r, y+math.sin(a)*r, .145, rng.uniform(1.6, 2.6))
+
+def fir(name, x, y, h):
+	"""Douglas fir: thin trunk and ten to twelve drooping tiers, each an open cone wrapped with a
+	needle texture whose alpha fringe makes the ragged branch tips."""
+	beam(f'{name}_Trunk', (x, y, -.1), (x, y, h*.92), max(.12, h*.018), .04, 'trunk', 5)
+	tiers = rng.randint(10, 12)
+	base_r = h*rng.uniform(.2, .25)
+	sides = 8
+	verts, faces, uvs, normals = [], [], [], []
+	for k in range(tiers):
+		t = k/(tiers-1)                        # 0 top .. 1 bottom
+		r = base_r*(.18 + .82*t**.85)*rng.uniform(.9, 1.1)
+		apex_z = h*(1.0 - .8*t) + (.25 if k == 0 else 0)
+		# Each tier droops past the next apex, so no trunk shows between tiers (no pagoda look).
+		spacing = h*.8/(tiers-1)
+		drop = max(r*rng.uniform(.8, 1.0), spacing*rng.uniform(1.7, 2.0))
+		apex = Vector((x+rng.uniform(-.08, .08), y+rng.uniform(-.08, .08), apex_z))
+		phase = rng.uniform(0, math.tau)
+		for s in range(sides):
+			a0, a1 = phase+s*math.tau/sides, phase+(s+1)*math.tau/sides
+			ra, rb = r*rng.uniform(.88, 1.08), r*rng.uniform(.88, 1.08)
+			p0 = Vector((x+math.cos(a0)*ra, y+math.sin(a0)*ra, apex_z-drop))
+			p1 = Vector((x+math.cos(a1)*rb, y+math.sin(a1)*rb, apex_z-drop))
+			i = len(verts)
+			verts += [tuple(apex), tuple(p1), tuple(p0)]
+			u0 = (s % 4)/4; u1 = u0+.25
+			uvs += [((u0+u1)/2, 1), (u1, 0), (u0, 0)]
+			faces.append((i, i+1, i+2))
+			for p in (apex, p1, p0):
+				out = Vector((p.x-x, p.y-y, 0))
+				normals.append((out.normalized() if out.length > .01 else Vector()) * .7 + Vector((0, 0, .5)))
+	raw_mesh(f'{name}_Tiers', verts, faces, uvs, 'fir_tier', normals)
+
+def litter(name, x, y, z, size):
+	"""Flat decal of fallen leaves, 1 cm above the surface it lies on."""
+	a = rng.uniform(0, math.tau); c, s = math.cos(a)*size/2, math.sin(a)*size/2
+	pts = [(x-c+s, y-s-c, z+.01), (x+c+s, y+s-c, z+.01), (x+c-s, y+s+c, z+.01), (x-c-s, y-s+c, z+.01)]
+	return raw_mesh(name, pts, [(0, 1, 2, 3)], [(0, 0), (1, 0), (1, 1), (0, 1)], 'leaf_litter', [(0, 0, 1)]*4)

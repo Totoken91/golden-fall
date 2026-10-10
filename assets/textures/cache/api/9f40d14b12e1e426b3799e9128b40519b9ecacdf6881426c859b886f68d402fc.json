@@ -1,0 +1,1109 @@
+{
+  "url": "https://ambientcg.com/api/v2/full_json?q=bark&type=Material&limit=6&sort=Popular&include=downloadData%2CtagData%2CdimensionsData",
+  "fetched_at": 1791652720.371098,
+  "data": {
+    "searchQuery": {
+      "forceSpecificAssetId": false,
+      "category": [],
+      "assetId": [],
+      "dataType": [
+        "Material"
+      ],
+      "creationMethod": null,
+      "queryString": "bark",
+      "sort": "Popular",
+      "createdUsingAssetId": null,
+      "basedOnAssetId": null,
+      "variationsOfAssetId": null,
+      "limit": 6,
+      "offset": 0
+    },
+    "numberOfResults": 15,
+    "nextPageHttp": "https://ambientcg.com/api/v2/full_json?type=material&q=bark&sort=popular&limit=6&offset=6&include=statisticsData%2ClabelData%2CpreviewData%2CtechnicalData%2CfileData",
+    "currentPageHttp": "https://ambientcg.com/api/v2/full_json?type=material&q=bark&sort=popular&limit=6&include=statisticsData%2ClabelData%2CpreviewData%2CtechnicalData%2CfileData",
+    "foundAssets": [
+      {
+        "assetId": "Bark014",
+        "releaseDate": "2024-02-23 12:00:00",
+        "earlyReleaseDate": "2024-01-28 21:40:00",
+        "dataType": "Material",
+        "creationMethod": "PBRPhotogrammetry",
+        "category": null,
+        "downloadCount": 89024,
+        "downloadCountMonth": 7104,
+        "downloadCountWeek": 2028,
+        "popularityScore": 19.971793181895773,
+        "tags": [
+          "14",
+          "bark",
+          "brown",
+          "fir",
+          "forest",
+          "tree",
+          "wood"
+        ],
+        "dataTypeName": "Material",
+        "dataTypeDescription": "A photo texture with PBR maps.",
+        "creationMethodName": "Height field photogrammetry",
+        "creationMethodDescription": "Displacement generated using photogrammetry.",
+        "displayName": "Bark 014",
+        "customDisplayName": "",
+        "description": "",
+        "displayCategory": "Bark",
+        "shortLink": "https://ambientcg.com/a/Bark014",
+        "dimensionX": 120,
+        "dimensionY": 120,
+        "dimensionZ": 0,
+        "createdUsing": [],
+        "basedOnThis": [],
+        "variations": [],
+        "nextVariationAssetId": null,
+        "previousVariationAssetId": null,
+        "nextAssetId": null,
+        "previousAssetId": null,
+        "downloadFolders": {
+          "default": {
+            "title": "default",
+            "downloadFiletypeCategories": {
+              "zip": {
+                "title": "zip",
+                "downloads": [
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_1K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_1K-JPG.zip",
+                    "fileName": "Bark014_1K-JPG.zip",
+                    "size": 8700607,
+                    "filetype": "zip",
+                    "attribute": "1K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_2K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_2K-JPG.zip",
+                    "fileName": "Bark014_2K-JPG.zip",
+                    "size": 29750598,
+                    "filetype": "zip",
+                    "attribute": "2K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_4K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_4K-JPG.zip",
+                    "fileName": "Bark014_4K-JPG.zip",
+                    "size": 109951227,
+                    "filetype": "zip",
+                    "attribute": "4K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_8K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_8K-JPG.zip",
+                    "fileName": "Bark014_8K-JPG.zip",
+                    "size": 440144593,
+                    "filetype": "zip",
+                    "attribute": "8K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_1K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_1K-PNG.zip",
+                    "fileName": "Bark014_1K-PNG.zip",
+                    "size": 17756190,
+                    "filetype": "zip",
+                    "attribute": "1K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_2K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_2K-PNG.zip",
+                    "fileName": "Bark014_2K-PNG.zip",
+                    "size": 65596585,
+                    "filetype": "zip",
+                    "attribute": "2K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_4K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_4K-PNG.zip",
+                    "fileName": "Bark014_4K-PNG.zip",
+                    "size": 251926393,
+                    "filetype": "zip",
+                    "attribute": "4K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark014_8K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark014_8K-PNG.zip",
+                    "fileName": "Bark014_8K-PNG.zip",
+                    "size": 992649854,
+                    "filetype": "zip",
+                    "attribute": "8K-PNG",
+                    "zipContent": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "previewLinks": [
+          {
+            "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_Color.jpg?73002&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_Displacement.jpg?34077&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_NormalDX.jpg?16274&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_Roughness.jpg?62553&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_AmbientOcclusion.jpg?69808",
+            "name": {
+              "id": 4,
+              "slug": "pbr-one-material-shading",
+              "title": "3D Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          },
+          {
+            "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_Color.jpg?44404,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_Displacement.jpg?23422,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_NormalDX.jpg?25067,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_Roughness.jpg?94434,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark014/Bark014_SQ_AmbientOcclusion.jpg?12128&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+            "name": {
+              "id": 3,
+              "slug": "pbr-one-material-maps",
+              "title": "Tiling Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          }
+        ],
+        "previewType": "Default",
+        "maps": [
+          "color",
+          "displacement",
+          "normal",
+          "roughness",
+          "ambient-occlusion"
+        ],
+        "hasUsd": false,
+        "previewImage": {
+          "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Bark014.png",
+          "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Bark014.png",
+          "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Bark014.png",
+          "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Bark014.png",
+          "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Bark014.png",
+          "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Bark014.png",
+          "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Bark014.jpg",
+          "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Bark014.jpg",
+          "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Bark014.jpg",
+          "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Bark014.jpg",
+          "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Bark014.jpg",
+          "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Bark014.jpg",
+          "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Bark014.jpg",
+          "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Bark014.jpg",
+          "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Bark014.jpg",
+          "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Bark014.jpg",
+          "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Bark014.jpg",
+          "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Bark014.jpg",
+          "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Bark014.webp",
+          "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Bark014.webp",
+          "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Bark014.webp",
+          "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Bark014.webp",
+          "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Bark014.webp",
+          "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Bark014.webp"
+        }
+      },
+      {
+        "assetId": "Bark015",
+        "releaseDate": "2025-10-02 13:00:00",
+        "earlyReleaseDate": "2025-09-23 15:00:00",
+        "dataType": "Material",
+        "creationMethod": "PBRPhotogrammetry",
+        "category": null,
+        "downloadCount": 11795,
+        "downloadCountMonth": 2192,
+        "downloadCountWeek": 676,
+        "popularityScore": 9.586646217238702,
+        "tags": [
+          "015",
+          "15",
+          "bark",
+          "beige",
+          "brown",
+          "damaged",
+          "forest",
+          "layered",
+          "natural",
+          "old",
+          "organic",
+          "outdoor",
+          "rough",
+          "rustic",
+          "striped",
+          "tree",
+          "wood"
+        ],
+        "dataTypeName": "Material",
+        "dataTypeDescription": "A photo texture with PBR maps.",
+        "creationMethodName": "Height field photogrammetry",
+        "creationMethodDescription": "Displacement generated using photogrammetry.",
+        "displayName": "Bark 015",
+        "customDisplayName": "",
+        "description": "",
+        "displayCategory": "Bark",
+        "shortLink": "https://ambientcg.com/a/Bark015",
+        "dimensionX": 0,
+        "dimensionY": 0,
+        "dimensionZ": 0,
+        "createdUsing": [],
+        "basedOnThis": [],
+        "variations": [],
+        "nextVariationAssetId": null,
+        "previousVariationAssetId": null,
+        "nextAssetId": null,
+        "previousAssetId": null,
+        "downloadFolders": {
+          "default": {
+            "title": "default",
+            "downloadFiletypeCategories": {
+              "zip": {
+                "title": "zip",
+                "downloads": [
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_1K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_1K-JPG.zip",
+                    "fileName": "Bark015_1K-JPG.zip",
+                    "size": 9728825,
+                    "filetype": "zip",
+                    "attribute": "1K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_2K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_2K-JPG.zip",
+                    "fileName": "Bark015_2K-JPG.zip",
+                    "size": 33896591,
+                    "filetype": "zip",
+                    "attribute": "2K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_4K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_4K-JPG.zip",
+                    "fileName": "Bark015_4K-JPG.zip",
+                    "size": 122949263,
+                    "filetype": "zip",
+                    "attribute": "4K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_8K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_8K-JPG.zip",
+                    "fileName": "Bark015_8K-JPG.zip",
+                    "size": 444276858,
+                    "filetype": "zip",
+                    "attribute": "8K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_1K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_1K-PNG.zip",
+                    "fileName": "Bark015_1K-PNG.zip",
+                    "size": 18739217,
+                    "filetype": "zip",
+                    "attribute": "1K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_2K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_2K-PNG.zip",
+                    "fileName": "Bark015_2K-PNG.zip",
+                    "size": 69715674,
+                    "filetype": "zip",
+                    "attribute": "2K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_4K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_4K-PNG.zip",
+                    "fileName": "Bark015_4K-PNG.zip",
+                    "size": 267341725,
+                    "filetype": "zip",
+                    "attribute": "4K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark015_8K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark015_8K-PNG.zip",
+                    "fileName": "Bark015_8K-PNG.zip",
+                    "size": 1025550854,
+                    "filetype": "zip",
+                    "attribute": "8K-PNG",
+                    "zipContent": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "previewLinks": [
+          {
+            "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_Color.jpg?98683&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_Displacement.jpg?57357&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_NormalDX.jpg?53382&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_Roughness.jpg?32959&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_AmbientOcclusion.jpg?40825",
+            "name": {
+              "id": 4,
+              "slug": "pbr-one-material-shading",
+              "title": "3D Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          },
+          {
+            "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_Color.jpg?62122,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_Displacement.jpg?13122,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_NormalDX.jpg?5480,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_Roughness.jpg?68911,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark015/Bark015_SQ_AmbientOcclusion.jpg?38712&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+            "name": {
+              "id": 3,
+              "slug": "pbr-one-material-maps",
+              "title": "Tiling Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          }
+        ],
+        "previewType": "Default",
+        "maps": [
+          "color",
+          "displacement",
+          "normal",
+          "roughness",
+          "ambient-occlusion"
+        ],
+        "hasUsd": false,
+        "previewImage": {
+          "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Bark015.png",
+          "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Bark015.png",
+          "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Bark015.png",
+          "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Bark015.png",
+          "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Bark015.png",
+          "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Bark015.png",
+          "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Bark015.jpg",
+          "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Bark015.jpg",
+          "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Bark015.jpg",
+          "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Bark015.jpg",
+          "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Bark015.jpg",
+          "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Bark015.jpg",
+          "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Bark015.jpg",
+          "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Bark015.jpg",
+          "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Bark015.jpg",
+          "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Bark015.jpg",
+          "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Bark015.jpg",
+          "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Bark015.jpg",
+          "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Bark015.webp",
+          "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Bark015.webp",
+          "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Bark015.webp",
+          "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Bark015.webp",
+          "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Bark015.webp",
+          "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Bark015.webp"
+        }
+      },
+      {
+        "assetId": "Bark012",
+        "releaseDate": "2022-08-07 00:00:00",
+        "earlyReleaseDate": "2022-07-07 20:37:00",
+        "dataType": "Material",
+        "creationMethod": "PBRPhotogrammetry",
+        "category": null,
+        "downloadCount": 71342,
+        "downloadCountMonth": 5719,
+        "downloadCountWeek": 1832,
+        "popularityScore": 9.327734211732812,
+        "tags": [
+          "12",
+          "bark",
+          "brown",
+          "oak",
+          "tree"
+        ],
+        "dataTypeName": "Material",
+        "dataTypeDescription": "A photo texture with PBR maps.",
+        "creationMethodName": "Height field photogrammetry",
+        "creationMethodDescription": "Displacement generated using photogrammetry.",
+        "displayName": "Bark 012",
+        "customDisplayName": "",
+        "description": "",
+        "displayCategory": "Bark",
+        "shortLink": "https://ambientcg.com/a/Bark012",
+        "dimensionX": 0,
+        "dimensionY": 0,
+        "dimensionZ": 0,
+        "createdUsing": [],
+        "basedOnThis": [],
+        "variations": [],
+        "nextVariationAssetId": null,
+        "previousVariationAssetId": null,
+        "nextAssetId": null,
+        "previousAssetId": null,
+        "downloadFolders": {
+          "default": {
+            "title": "default",
+            "downloadFiletypeCategories": {
+              "zip": {
+                "title": "zip",
+                "downloads": [
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_1K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_1K-JPG.zip",
+                    "fileName": "Bark012_1K-JPG.zip",
+                    "size": 10336310,
+                    "filetype": "zip",
+                    "attribute": "1K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_2K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_2K-JPG.zip",
+                    "fileName": "Bark012_2K-JPG.zip",
+                    "size": 33676387,
+                    "filetype": "zip",
+                    "attribute": "2K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_4K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_4K-JPG.zip",
+                    "fileName": "Bark012_4K-JPG.zip",
+                    "size": 108316890,
+                    "filetype": "zip",
+                    "attribute": "4K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_8K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_8K-JPG.zip",
+                    "fileName": "Bark012_8K-JPG.zip",
+                    "size": 342182981,
+                    "filetype": "zip",
+                    "attribute": "8K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_1K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_1K-PNG.zip",
+                    "fileName": "Bark012_1K-PNG.zip",
+                    "size": 19153778,
+                    "filetype": "zip",
+                    "attribute": "1K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_2K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_2K-PNG.zip",
+                    "fileName": "Bark012_2K-PNG.zip",
+                    "size": 69768713,
+                    "filetype": "zip",
+                    "attribute": "2K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_4K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_4K-PNG.zip",
+                    "fileName": "Bark012_4K-PNG.zip",
+                    "size": 257881170,
+                    "filetype": "zip",
+                    "attribute": "4K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark012_8K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark012_8K-PNG.zip",
+                    "fileName": "Bark012_8K-PNG.zip",
+                    "size": 932349252,
+                    "filetype": "zip",
+                    "attribute": "8K-PNG",
+                    "zipContent": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "previewLinks": [
+          {
+            "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_Color.jpg?75982&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_Displacement.jpg?50391&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_NormalDX.jpg?67577&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_Roughness.jpg?44425&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_AmbientOcclusion.jpg?47836",
+            "name": {
+              "id": 4,
+              "slug": "pbr-one-material-shading",
+              "title": "3D Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          },
+          {
+            "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_Color.jpg?90133,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_Displacement.jpg?5219,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_NormalDX.jpg?47461,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_Roughness.jpg?64621,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark012/Bark012_SQ_AmbientOcclusion.jpg?19508&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+            "name": {
+              "id": 3,
+              "slug": "pbr-one-material-maps",
+              "title": "Tiling Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          }
+        ],
+        "previewType": "Default",
+        "maps": [
+          "color",
+          "displacement",
+          "normal",
+          "roughness",
+          "ambient-occlusion"
+        ],
+        "hasUsd": false,
+        "previewImage": {
+          "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Bark012.png",
+          "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Bark012.png",
+          "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Bark012.png",
+          "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Bark012.png",
+          "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Bark012.png",
+          "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Bark012.png",
+          "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Bark012.jpg",
+          "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Bark012.jpg",
+          "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Bark012.jpg",
+          "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Bark012.jpg",
+          "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Bark012.jpg",
+          "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Bark012.jpg",
+          "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Bark012.jpg",
+          "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Bark012.jpg",
+          "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Bark012.jpg",
+          "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Bark012.jpg",
+          "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Bark012.jpg",
+          "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Bark012.jpg",
+          "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Bark012.webp",
+          "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Bark012.webp",
+          "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Bark012.webp",
+          "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Bark012.webp",
+          "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Bark012.webp",
+          "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Bark012.webp"
+        }
+      },
+      {
+        "assetId": "Bark001",
+        "releaseDate": "2018-01-15 12:00:00",
+        "earlyReleaseDate": "2018-01-15 12:00:00",
+        "dataType": "Material",
+        "creationMethod": "PBRApproximated",
+        "category": null,
+        "downloadCount": 116090,
+        "downloadCountMonth": 3709,
+        "downloadCountWeek": 1278,
+        "popularityScore": 6.194463400909374,
+        "tags": [
+          "1",
+          "bark",
+          "forest",
+          "tree",
+          "wood"
+        ],
+        "dataTypeName": "Material",
+        "dataTypeDescription": "A photo texture with PBR maps.",
+        "creationMethodName": "Height field photogrammetry",
+        "creationMethodDescription": "Displacement generated using photogrammetry.",
+        "displayName": "Bark 001",
+        "customDisplayName": "",
+        "description": "",
+        "displayCategory": "Bark",
+        "shortLink": "https://ambientcg.com/a/Bark001",
+        "dimensionX": 0,
+        "dimensionY": 0,
+        "dimensionZ": 0,
+        "createdUsing": [],
+        "basedOnThis": [],
+        "variations": [],
+        "nextVariationAssetId": null,
+        "previousVariationAssetId": null,
+        "nextAssetId": null,
+        "previousAssetId": null,
+        "downloadFolders": {
+          "default": {
+            "title": "default",
+            "downloadFiletypeCategories": {
+              "zip": {
+                "title": "zip",
+                "downloads": [
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark001_1K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark001_1K-JPG.zip",
+                    "fileName": "Bark001_1K-JPG.zip",
+                    "size": 5744336,
+                    "filetype": "zip",
+                    "attribute": "1K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark001_2K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark001_2K-JPG.zip",
+                    "fileName": "Bark001_2K-JPG.zip",
+                    "size": 18138376,
+                    "filetype": "zip",
+                    "attribute": "2K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark001_4K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark001_4K-JPG.zip",
+                    "fileName": "Bark001_4K-JPG.zip",
+                    "size": 59717788,
+                    "filetype": "zip",
+                    "attribute": "4K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark001_1K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark001_1K-PNG.zip",
+                    "fileName": "Bark001_1K-PNG.zip",
+                    "size": 10212060,
+                    "filetype": "zip",
+                    "attribute": "1K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark001_2K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark001_2K-PNG.zip",
+                    "fileName": "Bark001_2K-PNG.zip",
+                    "size": 35669404,
+                    "filetype": "zip",
+                    "attribute": "2K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark001_4K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark001_4K-PNG.zip",
+                    "fileName": "Bark001_4K-PNG.zip",
+                    "size": 65731358,
+                    "filetype": "zip",
+                    "attribute": "4K-PNG",
+                    "zipContent": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "previewLinks": [
+          {
+            "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_Color.jpg?15216&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_Displacement.jpg?2286&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_NormalDX.jpg?94024&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_Roughness.jpg?59422",
+            "name": {
+              "id": 4,
+              "slug": "pbr-one-material-shading",
+              "title": "3D Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          },
+          {
+            "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_Color.jpg?15484,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_Displacement.jpg?58594,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_NormalDX.jpg?61136,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark001/Bark001_SQ_Roughness.jpg?51416&texture_name=Color,Displacement,Normal,Roughness",
+            "name": {
+              "id": 3,
+              "slug": "pbr-one-material-maps",
+              "title": "Tiling Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          }
+        ],
+        "previewType": "Default",
+        "maps": [
+          "color",
+          "displacement",
+          "normal",
+          "roughness"
+        ],
+        "hasUsd": false,
+        "previewImage": {
+          "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Bark001.png",
+          "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Bark001.png",
+          "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Bark001.png",
+          "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Bark001.png",
+          "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Bark001.png",
+          "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Bark001.png",
+          "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Bark001.jpg",
+          "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Bark001.jpg",
+          "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Bark001.jpg",
+          "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Bark001.jpg",
+          "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Bark001.jpg",
+          "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Bark001.jpg",
+          "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Bark001.jpg",
+          "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Bark001.jpg",
+          "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Bark001.jpg",
+          "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Bark001.jpg",
+          "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Bark001.jpg",
+          "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Bark001.jpg",
+          "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Bark001.webp",
+          "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Bark001.webp",
+          "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Bark001.webp",
+          "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Bark001.webp",
+          "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Bark001.webp",
+          "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Bark001.webp"
+        }
+      },
+      {
+        "assetId": "Bark013",
+        "releaseDate": "2023-06-16 10:00:00",
+        "earlyReleaseDate": "2023-06-04 19:33:00",
+        "dataType": "Material",
+        "creationMethod": "PBRPhotogrammetry",
+        "category": null,
+        "downloadCount": 17694,
+        "downloadCountMonth": 1503,
+        "downloadCountWeek": 506,
+        "popularityScore": 3.7849881054909944,
+        "tags": [
+          "13",
+          "bark",
+          "green",
+          "mossy",
+          "tree"
+        ],
+        "dataTypeName": "Material",
+        "dataTypeDescription": "A photo texture with PBR maps.",
+        "creationMethodName": "Height field photogrammetry",
+        "creationMethodDescription": "Displacement generated using photogrammetry.",
+        "displayName": "Bark 013",
+        "customDisplayName": "",
+        "description": "",
+        "displayCategory": "Bark",
+        "shortLink": "https://ambientcg.com/a/Bark013",
+        "dimensionX": 0,
+        "dimensionY": 0,
+        "dimensionZ": 0,
+        "createdUsing": [],
+        "basedOnThis": [],
+        "variations": [],
+        "nextVariationAssetId": null,
+        "previousVariationAssetId": null,
+        "nextAssetId": null,
+        "previousAssetId": null,
+        "downloadFolders": {
+          "default": {
+            "title": "default",
+            "downloadFiletypeCategories": {
+              "zip": {
+                "title": "zip",
+                "downloads": [
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_1K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_1K-JPG.zip",
+                    "fileName": "Bark013_1K-JPG.zip",
+                    "size": 9635454,
+                    "filetype": "zip",
+                    "attribute": "1K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_2K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_2K-JPG.zip",
+                    "fileName": "Bark013_2K-JPG.zip",
+                    "size": 33526224,
+                    "filetype": "zip",
+                    "attribute": "2K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_4K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_4K-JPG.zip",
+                    "fileName": "Bark013_4K-JPG.zip",
+                    "size": 126368264,
+                    "filetype": "zip",
+                    "attribute": "4K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_8K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_8K-JPG.zip",
+                    "fileName": "Bark013_8K-JPG.zip",
+                    "size": 457866858,
+                    "filetype": "zip",
+                    "attribute": "8K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_1K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_1K-PNG.zip",
+                    "fileName": "Bark013_1K-PNG.zip",
+                    "size": 18554930,
+                    "filetype": "zip",
+                    "attribute": "1K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_2K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_2K-PNG.zip",
+                    "fileName": "Bark013_2K-PNG.zip",
+                    "size": 69110579,
+                    "filetype": "zip",
+                    "attribute": "2K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_4K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_4K-PNG.zip",
+                    "fileName": "Bark013_4K-PNG.zip",
+                    "size": 267331692,
+                    "filetype": "zip",
+                    "attribute": "4K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark013_8K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark013_8K-PNG.zip",
+                    "fileName": "Bark013_8K-PNG.zip",
+                    "size": 1016453543,
+                    "filetype": "zip",
+                    "attribute": "8K-PNG",
+                    "zipContent": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "previewLinks": [
+          {
+            "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_Color.jpg?60224&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_Displacement.jpg?82801&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_NormalDX.jpg?53705&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_Roughness.jpg?95958&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_AmbientOcclusion.jpg?95500",
+            "name": {
+              "id": 4,
+              "slug": "pbr-one-material-shading",
+              "title": "3D Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          },
+          {
+            "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_Color.jpg?7546,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_Displacement.jpg?18490,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_NormalDX.jpg?90883,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_Roughness.jpg?29119,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark013/Bark013_SQ_AmbientOcclusion.jpg?49045&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+            "name": {
+              "id": 3,
+              "slug": "pbr-one-material-maps",
+              "title": "Tiling Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          }
+        ],
+        "previewType": "Default",
+        "maps": [
+          "color",
+          "displacement",
+          "normal",
+          "roughness",
+          "ambient-occlusion"
+        ],
+        "hasUsd": false,
+        "previewImage": {
+          "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Bark013.png",
+          "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Bark013.png",
+          "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Bark013.png",
+          "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Bark013.png",
+          "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Bark013.png",
+          "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Bark013.png",
+          "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Bark013.jpg",
+          "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Bark013.jpg",
+          "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Bark013.jpg",
+          "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Bark013.jpg",
+          "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Bark013.jpg",
+          "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Bark013.jpg",
+          "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Bark013.jpg",
+          "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Bark013.jpg",
+          "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Bark013.jpg",
+          "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Bark013.jpg",
+          "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Bark013.jpg",
+          "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Bark013.jpg",
+          "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Bark013.webp",
+          "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Bark013.webp",
+          "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Bark013.webp",
+          "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Bark013.webp",
+          "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Bark013.webp",
+          "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Bark013.webp"
+        }
+      },
+      {
+        "assetId": "Bark006",
+        "releaseDate": "2019-03-29 00:00:00",
+        "earlyReleaseDate": "2019-03-29 00:00:00",
+        "dataType": "Material",
+        "creationMethod": "PBRApproximated",
+        "category": null,
+        "downloadCount": 49092,
+        "downloadCountMonth": 2096,
+        "downloadCountWeek": 718,
+        "popularityScore": 3.6609135370589105,
+        "tags": [
+          "6",
+          "bark",
+          "brown",
+          "dark",
+          "tree",
+          "wood"
+        ],
+        "dataTypeName": "Material",
+        "dataTypeDescription": "A photo texture with PBR maps.",
+        "creationMethodName": "Height field photogrammetry",
+        "creationMethodDescription": "Displacement generated using photogrammetry.",
+        "displayName": "Bark 006",
+        "customDisplayName": "",
+        "description": "",
+        "displayCategory": "Bark",
+        "shortLink": "https://ambientcg.com/a/Bark006",
+        "dimensionX": 0,
+        "dimensionY": 0,
+        "dimensionZ": 0,
+        "createdUsing": [],
+        "basedOnThis": [],
+        "variations": [],
+        "nextVariationAssetId": null,
+        "previousVariationAssetId": null,
+        "nextAssetId": null,
+        "previousAssetId": null,
+        "downloadFolders": {
+          "default": {
+            "title": "default",
+            "downloadFiletypeCategories": {
+              "zip": {
+                "title": "zip",
+                "downloads": [
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_1K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_1K-JPG.zip",
+                    "fileName": "Bark006_1K-JPG.zip",
+                    "size": 9549383,
+                    "filetype": "zip",
+                    "attribute": "1K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_2K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_2K-JPG.zip",
+                    "fileName": "Bark006_2K-JPG.zip",
+                    "size": 29185375,
+                    "filetype": "zip",
+                    "attribute": "2K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_4K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_4K-JPG.zip",
+                    "fileName": "Bark006_4K-JPG.zip",
+                    "size": 89310762,
+                    "filetype": "zip",
+                    "attribute": "4K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_8K-JPG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_8K-JPG.zip",
+                    "fileName": "Bark006_8K-JPG.zip",
+                    "size": 323506544,
+                    "filetype": "zip",
+                    "attribute": "8K-JPG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_1K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_1K-PNG.zip",
+                    "fileName": "Bark006_1K-PNG.zip",
+                    "size": 18465290,
+                    "filetype": "zip",
+                    "attribute": "1K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_2K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_2K-PNG.zip",
+                    "fileName": "Bark006_2K-PNG.zip",
+                    "size": 66072916,
+                    "filetype": "zip",
+                    "attribute": "2K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_4K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_4K-PNG.zip",
+                    "fileName": "Bark006_4K-PNG.zip",
+                    "size": 240837176,
+                    "filetype": "zip",
+                    "attribute": "4K-PNG",
+                    "zipContent": []
+                  },
+                  {
+                    "fullDownloadPath": "https://ambientcg.com/get?file=Bark006_8K-PNG.zip",
+                    "downloadLink": "https://ambientcg.com/get?file=Bark006_8K-PNG.zip",
+                    "fileName": "Bark006_8K-PNG.zip",
+                    "size": 586046394,
+                    "filetype": "zip",
+                    "attribute": "8K-PNG",
+                    "zipContent": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "previewLinks": [
+          {
+            "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_Color.jpg?98805&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_Displacement.jpg?58048&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_NormalDX.jpg?54581&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_Roughness.jpg?47598&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_AmbientOcclusion.jpg?79912",
+            "name": {
+              "id": 4,
+              "slug": "pbr-one-material-shading",
+              "title": "3D Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          },
+          {
+            "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_Color.jpg?38618,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_Displacement.jpg?99123,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_NormalDX.jpg?63675,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_Roughness.jpg?98545,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Bark006/Bark006_SQ_AmbientOcclusion.jpg?94229&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+            "name": {
+              "id": 3,
+              "slug": "pbr-one-material-maps",
+              "title": "Tiling Preview",
+              "description": "description"
+            },
+            "displayName": "",
+            "iconName": ""
+          }
+        ],
+        "previewType": "Default",
+        "maps": [
+          "color",
+          "displacement",
+          "normal",
+          "roughness",
+          "ambient-occlusion"
+        ],
+        "hasUsd": false,
+        "previewImage": {
+          "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Bark006.png",
+          "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Bark006.png",
+          "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Bark006.png",
+          "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Bark006.png",
+          "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Bark006.png",
+          "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Bark006.png",
+          "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Bark006.jpg",
+          "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Bark006.jpg",
+          "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Bark006.jpg",
+          "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Bark006.jpg",
+          "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Bark006.jpg",
+          "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Bark006.jpg",
+          "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Bark006.jpg",
+          "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Bark006.jpg",
+          "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Bark006.jpg",
+          "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Bark006.jpg",
+          "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Bark006.jpg",
+          "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Bark006.jpg",
+          "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Bark006.webp",
+          "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Bark006.webp",
+          "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Bark006.webp",
+          "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Bark006.webp",
+          "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Bark006.webp",
+          "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Bark006.webp"
+        }
+      }
+    ]
+  }
+}
