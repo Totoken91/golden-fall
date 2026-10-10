@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=brick+wall&t=textures&limit=8&future=false",
+  "fetched_at": 1791650316.2579901,
+  "data": {
+    "query": "brick wall",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 527,
+    "considered": 886,
+    "keywordMatches": 316,
+    "results": [
+      {
+        "slug": "dark_brick_wall",
+        "score": 0.6908
+      },
+      {
+        "slug": "brick_wall_02",
+        "score": 0.6783
+      },
+      {
+        "slug": "brick_wall_07",
+        "score": 0.6717
+      },
+      {
+        "slug": "brick_wall_13",
+        "score": 0.663
+      },
+      {
+        "slug": "brick_wall_10",
+        "score": 0.6603
+      },
+      {
+        "slug": "brick_wall_003",
+        "score": 0.6877
+      },
+      {
+        "slug": "patterned_brick_wall_03",
+        "score": 0.6737
+      },
+      {
+        "slug": "brick_wall_04",
+        "score": 0.6627
+      }
+    ]
+  }
+}

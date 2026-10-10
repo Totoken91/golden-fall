@@ -16,6 +16,7 @@ var model: Node3D
 var doors := {}
 var door_open := {}
 var rain: MultiMeshInstance3D
+var textured := {}   # blockout material name -> real textured material (game/data/town_materials.json)
 
 func _init(controller: Node) -> void:
 	game = controller
@@ -25,8 +26,31 @@ func _init(controller: Node) -> void:
 func build() -> void:
 	model = load("res://assets/town/town.glb").instantiate()
 	add_child(model)
+	load_materials()
 	prepare(model)
 	build_rain()
+
+# Real Poly Haven / ambientCG materials bound by blockout material name. Town UVs are authored in
+# metres, so one UV unit = 1 m and the scale is 1 / source tile. Tints come from the moodboard.
+func load_materials() -> void:
+	var config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/town_materials.json"))
+	var period: Array = config.uv_period_m
+	for name in config.bindings:
+		var binding: Dictionary = config.bindings[name]
+		var material := (load(binding.material) as StandardMaterial3D).duplicate() as StandardMaterial3D
+		var tile: Array = binding.tile_m
+		material.uv1_scale = Vector3(float(period[0])/float(tile[0]),float(period[1])/float(tile[1]),1)
+		var tint: Array = binding.tint
+		material.albedo_color = Color(tint[0],tint[1],tint[2])
+		material.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS
+		if binding.wet:
+			# Rain-soaked asphalt: a soft sheen that catches the sodium lamps.
+			material.roughness = .8
+			material.metallic_specular = .35
+		else:
+			material.specular_mode = BaseMaterial3D.SPECULAR_DISABLED
+		material.resource_name = name
+		textured[name] = material
 
 func prepare(node: Node) -> void:
 	if node is MeshInstance3D:
@@ -35,6 +59,9 @@ func prepare(node: Node) -> void:
 		for i in mi.mesh.get_surface_count():
 			var source := mi.get_active_material(i) as StandardMaterial3D
 			if source == null: continue
+			if textured.has(str(source.resource_name)):
+				mi.set_surface_override_material(i,textured[str(source.resource_name)])
+				continue
 			var material := source.duplicate() as StandardMaterial3D
 			material.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
 			material.roughness = .95

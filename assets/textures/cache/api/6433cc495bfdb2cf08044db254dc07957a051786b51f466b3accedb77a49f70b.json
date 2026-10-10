@@ -1,0 +1,53 @@
+{
+  "url": "https://api.polyhaven.com/info/winter_leaves",
+  "fetched_at": 1791650312.270781,
+  "data": {
+    "name": "Winter Leaves",
+    "categories": [
+      "outdoor",
+      "floor",
+      "natural"
+    ],
+    "type": 1,
+    "tags": [
+      "leaves",
+      "forest",
+      "dry",
+      "sticks",
+      "winter",
+      "dead grass",
+      "twigs",
+      "nature",
+      "leaf litter"
+    ],
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "info": null,
+    "dimensions": [
+      1999.9996423721313,
+      1999.9996423721313
+    ],
+    "date_published": 1692057600,
+    "staging": null,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "1b1b601581664680e4111483b26cb36d7096ab8c",
+    "description": "Free 8K texture of winter leaf litter - dry brown leaves, twigs and dead grass with layered, rough, low-sheen surface and fine organic bump detail.",
+    "category_id": "b9a51c27-1499-5f4d-b28f-0d96ef8e0319",
+    "category": "Ground & Terrain/Forest Floor/Leaf Litter",
+    "attributes": {
+      "surface_use": "ground",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "natural",
+      "setting": "outdoor"
+    },
+    "img_version": "b093c95a",
+    "download_count": 7779,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/winter_leaves.png?width=256&height=256&format=webp&v=b093c95a"
+  }
+}

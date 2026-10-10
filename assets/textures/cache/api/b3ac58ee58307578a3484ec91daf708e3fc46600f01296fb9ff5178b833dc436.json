@@ -1,0 +1,40 @@
+{
+  "url": "https://api.polyhaven.com/search?q=grass+leaves&t=textures&limit=6&future=false",
+  "fetched_at": 1791650396.5116458,
+  "data": {
+    "query": "grass leaves",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 417,
+    "considered": 886,
+    "keywordMatches": 43,
+    "results": [
+      {
+        "slug": "leafy_grass",
+        "score": 0.6894
+      },
+      {
+        "slug": "forrest_ground_01",
+        "score": 0.6299
+      },
+      {
+        "slug": "dry_decay_leaves",
+        "score": 0.6683
+      },
+      {
+        "slug": "leaves_forest_ground",
+        "score": 0.6412
+      },
+      {
+        "slug": "forest_leaves_03",
+        "score": 0.6678
+      },
+      {
+        "slug": "winter_leaves",
+        "score": 0.6145
+      }
+    ]
+  }
+}

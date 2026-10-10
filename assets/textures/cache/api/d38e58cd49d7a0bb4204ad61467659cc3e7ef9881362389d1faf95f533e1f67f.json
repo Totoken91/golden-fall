@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/roof_tiles",
+  "fetched_at": 1791650324.5205228,
+  "data": {
+    "type": 1,
+    "name": "Roof Tiles",
+    "categories": [
+      "roofing",
+      "man made"
+    ],
+    "authors": {
+      "Stephan Seeliger": "All"
+    },
+    "max_resolution": [
+      16384,
+      16384
+    ],
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "staging": null,
+    "donated": true,
+    "date_published": 1741996800,
+    "files_hash": "9be0342a471bf04a52dcf336b9b19876f214afcb",
+    "tags": [
+      "roofing material",
+      "roof tiles",
+      "durable roofing",
+      "ceramic tiles",
+      "tiled roofing",
+      "traditional roof tiles",
+      "clay roof tiles",
+      "roofing",
+      "tile roofing",
+      "terracotta",
+      "interlocking tiles",
+      "overlapping tiles",
+      "weather-beaten",
+      "housing material",
+      "outdoor roof material"
+    ],
+    "description": "Free 16K texture of weathered terracotta roof tiles: overlapping ceramic tiles with chipped edges, dirt streaks and subtle mossy patina, rough.",
+    "category_id": "6165a492-c53c-5b5f-96df-20c96a7763df",
+    "category": "Ceramic/Terracotta",
+    "attributes": {
+      "surface_use": "roof",
+      "condition": [
+        "weathered",
+        "mossy"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "2db1678b",
+    "download_count": 12439,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/roof_tiles.png?width=256&height=256&format=webp&v=2db1678b"
+  }
+}

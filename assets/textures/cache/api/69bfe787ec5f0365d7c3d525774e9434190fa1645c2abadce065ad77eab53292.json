@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=asphalt&t=textures&limit=8&future=false",
+  "fetched_at": 1791650301.7437305,
+  "data": {
+    "query": "asphalt",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 770,
+    "considered": 886,
+    "keywordMatches": 23,
+    "results": [
+      {
+        "slug": "asphalt_03",
+        "score": 0.7624
+      },
+      {
+        "slug": "asphalt_05",
+        "score": 0.7407
+      },
+      {
+        "slug": "asphalt_01",
+        "score": 0.7266
+      },
+      {
+        "slug": "asphalt_04",
+        "score": 0.7434
+      },
+      {
+        "slug": "asphalt_pit_lane",
+        "score": 0.6734
+      },
+      {
+        "slug": "clean_asphalt",
+        "score": 0.6878
+      },
+      {
+        "slug": "asphalt_02",
+        "score": 0.7383
+      },
+      {
+        "slug": "asphalt_07",
+        "score": 0.7262
+      }
+    ]
+  }
+}

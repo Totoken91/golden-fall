@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=painted+wood+planks&t=textures&limit=8&future=false",
+  "fetched_at": 1791650318.2478855,
+  "data": {
+    "query": "painted wood planks",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 655,
+    "considered": 886,
+    "keywordMatches": 191,
+    "results": [
+      {
+        "slug": "distressed_painted_planks",
+        "score": 0.7331
+      },
+      {
+        "slug": "black_painted_planks",
+        "score": 0.7391
+      },
+      {
+        "slug": "blue_painted_planks",
+        "score": 0.7542
+      },
+      {
+        "slug": "white_planks_clean",
+        "score": 0.7151
+      },
+      {
+        "slug": "wooden_floor_02",
+        "score": 0.6809
+      },
+      {
+        "slug": "oak_wood_planks",
+        "score": 0.6972
+      },
+      {
+        "slug": "weathered_brown_planks",
+        "score": 0.6772
+      },
+      {
+        "slug": "brown_planks_05",
+        "score": 0.7328
+      }
+    ]
+  }
+}

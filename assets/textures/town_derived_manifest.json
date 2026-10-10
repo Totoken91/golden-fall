@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "purpose": "Golden Fall town: hue-neutral siding so one real plank texture serves every house",
+ "derivations": {
+  "siding": {
+   "source_key": "polyhaven/blue_painted_planks/town_psx_128_6b50a0a6",
+   "source_page": "https://polyhaven.com/a/blue_painted_planks",
+   "tile_m": [
+    1.0,
+    1.0
+   ],
+   "albedo": "luminance only (blue hue removed), stretched to mean 0.72 so the per-house tint sets the paint colour; 64 px",
+   "maps": {
+    "albedo": {
+     "path": "game/assets/textures/town/siding/albedo.png",
+     "sha256": "412deda8e2a8fa5b43aa2016bdb7b9bda33874e686ff279542676dadf6fae791"
+    },
+    "normal": {
+     "path": "game/assets/textures/library/polyhaven/blue_painted_planks/town_psx_128_6b50a0a6/normal.png",
+     "sha256": "b405ebfe294604468ce942e1db1fd30b33007ce43a5279d3d476882a6fdcd317"
+    },
+    "roughness": {
+     "path": "game/assets/textures/library/polyhaven/blue_painted_planks/town_psx_128_6b50a0a6/roughness.png",
+     "sha256": "999f9b53e50072a084c5ebd5133f2cee7e1531b87876aeef710ee2aa7afdc3c4"
+    },
+    "ao": {
+     "path": "game/assets/textures/library/polyhaven/blue_painted_planks/town_psx_128_6b50a0a6/ao.png",
+     "sha256": "8822e29c7121d2b5777b169f7acdf188de4440e8a2853632341fd80fcc6cd7ab"
+    }
+   },
+   "material": "res://assets/textures/town/siding/material.tres"
+  }
+ }
+}

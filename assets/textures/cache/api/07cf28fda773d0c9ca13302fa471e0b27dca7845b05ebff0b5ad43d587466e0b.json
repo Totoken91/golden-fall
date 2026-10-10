@@ -1,0 +1,52 @@
+{
+  "url": "https://api.polyhaven.com/info/brick_wall_13",
+  "fetched_at": 1791650316.701143,
+  "data": {
+    "type": 1,
+    "name": "Brick Wall 13",
+    "categories": [
+      "wall",
+      "brick",
+      "indoor"
+    ],
+    "tags": [
+      "rough",
+      "old",
+      "discolored",
+      "brick",
+      "bricks",
+      "brick wall",
+      "walling",
+      "wall"
+    ],
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "staging": null,
+    "date_published": 1743206400,
+    "files_hash": "687aa4ce6260360b8ebceb1b000f58cfb5b28887",
+    "description": "Free 8K texture of an old, rough beige-brown brick wall with deep mortar joints, heavy surface relief, weathered edges and subtle discoloration.",
+    "category_id": "9ef0955b-87fa-5826-aa87-98b047ad9143",
+    "category": "Brick & Block/Clay Brick/Running-Bond",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "indoor"
+    },
+    "img_version": "f59cc701",
+    "download_count": 12846,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/brick_wall_13.png?width=256&height=256&format=webp&v=f59cc701"
+  }
+}

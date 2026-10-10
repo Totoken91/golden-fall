@@ -1,0 +1,56 @@
+{
+  "url": "https://api.polyhaven.com/info/forest_leaves_03",
+  "fetched_at": 1791650312.1842299,
+  "data": {
+    "type": 1,
+    "tags": [
+      "leaves",
+      "autumn",
+      "dry",
+      "nature",
+      "forest",
+      "ground",
+      "cover",
+      "dirt",
+      "debris",
+      "brown",
+      "yellow",
+      "green"
+    ],
+    "name": "Forest Leaves 03",
+    "categories": [
+      "outdoor",
+      "natural",
+      "terrain"
+    ],
+    "authors": {
+      "Rob Tuytel": "Processing",
+      "Dimitrios Savva": "Photography"
+    },
+    "date_published": 1636588800,
+    "staging": null,
+    "dimensions": [
+      2299.999952316284,
+      2300.0001907348633
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "253f3191fdc71b9bb20e4e4e1d96130ae95222f8",
+    "description": "Free 8K texture of dense dry forest leaf litter - brown, yellow and green curled leaves with dirt and debris, rough matte surface and pronounced depth.",
+    "category_id": "b9a51c27-1499-5f4d-b28f-0d96ef8e0319",
+    "category": "Ground & Terrain/Forest Floor/Leaf Litter",
+    "attributes": {
+      "surface_use": "ground",
+      "origin": "natural",
+      "setting": "outdoor",
+      "condition": [
+        "dirty"
+      ]
+    },
+    "img_version": "e50be952",
+    "download_count": 43879,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/forest_leaves_03.png?width=256&height=256&format=webp&v=e50be952"
+  }
+}

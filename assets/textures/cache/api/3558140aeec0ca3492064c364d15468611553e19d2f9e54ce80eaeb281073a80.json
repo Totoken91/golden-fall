@@ -1,0 +1,53 @@
+{
+  "url": "https://api.polyhaven.com/info/patterned_brick_wall_03",
+  "fetched_at": 1791650316.9630497,
+  "data": {
+    "name": "Patterned Brick Wall 03",
+    "categories": [
+      "wall",
+      "brick"
+    ],
+    "type": 1,
+    "tags": [
+      "rough",
+      "brick",
+      "bricks",
+      "patterned",
+      "interlocking bricks",
+      "building facade",
+      "urban",
+      "outdoor",
+      "pattern",
+      "brick design",
+      "decorative bricks"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1800.0000715255737,
+      1800.0000715255737
+    ],
+    "staging": null,
+    "date_published": 1723766400,
+    "files_hash": "a1debe956d50c1803499d3fbe456e9003f22dee4",
+    "description": "Free 8K texture of a rough patterned brick wall with dark square bricks and tan interlocking diamond motifs, high-detail surface with subtle mortar and wear.",
+    "category_id": "72bbe1d9-6f16-54bf-b6f9-e7a68eddf145",
+    "category": "Brick & Block/Clay Brick/Decorative Bond",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "8584a4e2",
+    "download_count": 15822,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/patterned_brick_wall_03.png?width=256&height=256&format=webp&v=8584a4e2"
+  }
+}

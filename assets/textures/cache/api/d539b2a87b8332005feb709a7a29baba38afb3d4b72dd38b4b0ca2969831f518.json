@@ -1,0 +1,54 @@
+{
+  "url": "https://api.polyhaven.com/info/white_planks_clean",
+  "fetched_at": 1791650318.53609,
+  "data": {
+    "type": 1,
+    "name": "White Planks Clean",
+    "tags": [
+      "painted",
+      "painted wood",
+      "wood",
+      "wood wall",
+      "wooden",
+      "wooden planks",
+      "white",
+      "paneling"
+    ],
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1800.0000715255737,
+      1800.0000715255737
+    ],
+    "staging": null,
+    "files_hash": "0deaf60759552def289291b0f87c7f4ec39da900",
+    "description": "Free 8K texture of clean white painted wooden planks with narrow grooves, subtle grain and light wear - ideal for interior walls, paneling, and props.",
+    "sponsors": [
+      "121968951"
+    ],
+    "category_id": "26eb2cbb-558a-5357-ae3f-9519f081f247",
+    "category": "Wood/Boards & Planks/Painted Planks",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "painted",
+        "worn"
+      ],
+      "origin": "man_made"
+    },
+    "date_published": 1786448942,
+    "categories": [
+      "wall",
+      "wood"
+    ],
+    "vault": "wood",
+    "img_version": "971885cd",
+    "download_count": 3367,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/white_planks_clean.png?width=256&height=256&format=webp&v=971885cd"
+  }
+}

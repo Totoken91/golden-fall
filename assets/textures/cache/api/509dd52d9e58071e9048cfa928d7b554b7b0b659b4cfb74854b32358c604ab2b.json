@@ -1,0 +1,53 @@
+{
+  "url": "https://api.polyhaven.com/info/asphalt_07",
+  "fetched_at": 1791650302.2858536,
+  "data": {
+    "type": 1,
+    "name": "Asphalt 07",
+    "categories": [
+      "floor",
+      "asphalt",
+      "man made",
+      "road"
+    ],
+    "tags": [
+      "rough",
+      "weathered",
+      "asphalt",
+      "chipped",
+      "granular",
+      "abrasive",
+      "road",
+      "paving"
+    ],
+    "description": "Free 8k texture of weathered asphalt with chipped, granular surface - rough, abrasive paving with subtle worn aggregate and low sheen.",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      16384,
+      16384
+    ],
+    "dimensions": [
+      2500,
+      2500
+    ],
+    "files_hash": "536cd04f7600bc912ccc4ed244fdff50bcd6fb2f",
+    "date_published": 1770681600,
+    "staging": null,
+    "category_id": "8871debe-40cf-5e4d-a5e5-1ddfe979f14f",
+    "category": "Asphalt & Bitumen/Asphalt/Worn Road Surface",
+    "attributes": {
+      "surface_use": "floor",
+      "condition": [
+        "weathered",
+        "damaged"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "b7534cd2",
+    "download_count": 3905,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/asphalt_07.png?width=256&height=256&format=webp&v=b7534cd2"
+  }
+}

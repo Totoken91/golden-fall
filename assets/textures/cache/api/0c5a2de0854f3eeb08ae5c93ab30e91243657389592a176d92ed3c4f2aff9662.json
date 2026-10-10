@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/concrete_slab_wall_02",
+  "fetched_at": 1791650330.5884392,
+  "data": {
+    "type": 1,
+    "name": "Concrete Slab Wall 02",
+    "categories": [
+      "outdoor",
+      "man made",
+      "plaster-concrete",
+      "concrete",
+      "wall"
+    ],
+    "tags": [
+      "rough",
+      "weathered",
+      "wall",
+      "concrete",
+      "precast",
+      "concrete panel",
+      "exterior",
+      "dirty",
+      "cement",
+      "timeworn",
+      "plaster",
+      "discolored",
+      "worn"
+    ],
+    "description": "Free 8k material: weathered precast concrete slab wall texture with rough, discolored surface, horizontal panel joints, dirt streaks and patched cement.",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2102.315902709961,
+      2102.315902709961
+    ],
+    "files_hash": "2e4642ccad275deb5eb649f13a91778cdcfbaf22",
+    "date_published": 1772668800,
+    "staging": null,
+    "category_id": "b4f089ac-1410-5388-bd51-34e956f0a0a5",
+    "category": "Concrete/Cast Walls & Floors/Board-Form & Panels",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "0ab5264d",
+    "download_count": 5789,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/concrete_slab_wall_02.png?width=256&height=256&format=webp&v=0ab5264d"
+  }
+}

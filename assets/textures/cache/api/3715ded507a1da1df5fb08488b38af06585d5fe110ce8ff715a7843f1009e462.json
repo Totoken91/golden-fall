@@ -1,0 +1,56 @@
+{
+  "url": "https://api.polyhaven.com/info/brick_wall_02",
+  "fetched_at": 1791650316.4662857,
+  "data": {
+    "type": 1,
+    "tags": [
+      "weathered",
+      "cracked",
+      "concrete",
+      "scratched",
+      "brick",
+      "bricks",
+      "wall",
+      "exterior",
+      "red brick"
+    ],
+    "date_published": 1686787200,
+    "name": "Brick Wall 02",
+    "staging": null,
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "info": null,
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "53adbda826ddf102330df522b3a646696d902059",
+    "description": "Free 8K texture of a weathered red brick wall with cracked, gritty mortar, scratched and soot-darkened bricks, rough uneven surface and concrete residue.",
+    "categories": [
+      "wall",
+      "brick",
+      "outdoor",
+      "man made"
+    ],
+    "category_id": "9ef0955b-87fa-5826-aa87-98b047ad9143",
+    "category": "Brick & Block/Clay Brick/Running-Bond",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "damaged",
+        "cracked"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "8eaefc7c",
+    "download_count": 51152,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/brick_wall_02.png?width=256&height=256&format=webp&v=8eaefc7c"
+  }
+}

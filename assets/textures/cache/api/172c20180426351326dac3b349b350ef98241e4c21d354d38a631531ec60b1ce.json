@@ -1,0 +1,58 @@
+{
+  "url": "https://api.polyhaven.com/info/gravel_concrete_04",
+  "fetched_at": 1791650303.7937655,
+  "data": {
+    "type": 1,
+    "name": "Gravel Concrete 04",
+    "tags": [
+      "rough",
+      "weathered",
+      "old",
+      "urban",
+      "sidewalk",
+      "gravel",
+      "concrete",
+      "coarse",
+      "rough  ",
+      "pavement",
+      "exterior",
+      "gritty",
+      "rough surface",
+      "granular"
+    ],
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "files_hash": "7207731b077be96e71b4bf548b0bc8b3bbafef15",
+    "date_published": 1756339200,
+    "staging": null,
+    "description": "Free 8K gravel concrete texture: coarse, weathered sidewalk concrete with gritty, granular surface - great for urban floors, pavements and exterior scenes.",
+    "categories": [
+      "floor",
+      "man made",
+      "concrete",
+      "plaster-concrete"
+    ],
+    "category_id": "70d3bf8f-46b0-5250-a419-61cbf068f448",
+    "category": "Concrete/Cast Walls & Floors/Exposed Aggregate",
+    "attributes": {
+      "surface_use": "paving",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "6004f558",
+    "download_count": 7316,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/gravel_concrete_04.png?width=256&height=256&format=webp&v=6004f558"
+  }
+}

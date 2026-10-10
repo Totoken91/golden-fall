@@ -1,0 +1,67 @@
+{
+  "url": "https://api.polyhaven.com/info/brick_wall_04",
+  "fetched_at": 1791650317.0776477,
+  "data": {
+    "name": "Brick Wall 04",
+    "categories": [
+      "outdoor",
+      "man made",
+      "wall",
+      "brick",
+      "plaster-concrete"
+    ],
+    "type": 1,
+    "authors": {
+      "Dario Barresi": "Baking ",
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Tiling "
+    },
+    "info": null,
+    "tags": [
+      "rough",
+      "uneven",
+      "wall",
+      "chipped",
+      "damaged",
+      "rock",
+      "rocks",
+      "concrete",
+      "plaster",
+      "brick",
+      "bricks",
+      "cement",
+      "weathered",
+      "stones",
+      "cracked",
+      "worn"
+    ],
+    "dimensions": [
+      1389.9999856948853,
+      1389.9999856948853
+    ],
+    "date_published": 1674691200,
+    "staging": null,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "235e0a507639bbca4ff4a63f316894ffd35d01cf",
+    "description": "Free 8K texture: rough brick wall with chipped stone faces, cracked cement mortar and worn plaster surfaces.",
+    "category_id": "9ef0955b-87fa-5826-aa87-98b047ad9143",
+    "category": "Brick & Block/Clay Brick/Running-Bond",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "damaged",
+        "cracked",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "dda2d553",
+    "download_count": 37299,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/brick_wall_04.png?width=256&height=256&format=webp&v=dda2d553"
+  }
+}

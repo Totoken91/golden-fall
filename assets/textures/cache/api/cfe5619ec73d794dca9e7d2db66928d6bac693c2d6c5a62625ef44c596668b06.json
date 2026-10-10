@@ -1,0 +1,58 @@
+{
+  "url": "https://api.polyhaven.com/info/roof_09",
+  "fetched_at": 1791650323.8109524,
+  "data": {
+    "type": 1,
+    "date_published": 1529359200,
+    "name": "Roof 09",
+    "old_id": 108,
+    "categories": [
+      "roofing",
+      "man made",
+      "outdoor",
+      "dirty"
+    ],
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions": [
+      4000,
+      4000
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "3266fb10021af18ef9b383b65c707237fda3073a",
+    "tags": [
+      "ceramic",
+      "old",
+      "worn",
+      "tiles",
+      "roofing material",
+      "roofing",
+      "roof",
+      "clay tiles",
+      "overlapping tiles",
+      "discolored",
+      "traditional roofing ",
+      "tile roofing",
+      "weather-beaten"
+    ],
+    "description": "Free 8K texture of old weather-beaten clay roof tiles: overlapping curved ceramic tiles with faded terracotta, gray staining, chipped edges and gritty dirt.",
+    "category_id": "6165a492-c53c-5b5f-96df-20c96a7763df",
+    "category": "Ceramic/Terracotta",
+    "attributes": {
+      "surface_use": "roof",
+      "condition": [
+        "weathered",
+        "damaged"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "847771cd",
+    "download_count": 91770,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/roof_09.png?width=256&height=256&format=webp&v=847771cd"
+  }
+}

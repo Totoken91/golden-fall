@@ -1,0 +1,57 @@
+{
+  "url": "https://api.polyhaven.com/info/gravel_concrete_03",
+  "fetched_at": 1791650303.8432686,
+  "data": {
+    "name": "Gravel Concrete 03",
+    "type": 1,
+    "tags": [
+      "rough",
+      "weathered",
+      "old",
+      "urban",
+      "sidewalk",
+      "gravel",
+      "concrete",
+      "coarse",
+      "rough  ",
+      "pavement",
+      "exterior",
+      "gritty"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "info": null,
+    "dimensions": [
+      2099.9999046325684,
+      2099.9999046325684
+    ],
+    "date_published": 1708560000,
+    "staging": null,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "19b25602548875bf68347636407538922bcebef7",
+    "description": "Free 8K weathered gravel concrete texture - coarse, gritty grey pavement with visible aggregate, worn pores and subtle stains.",
+    "categories": [
+      "floor",
+      "man made",
+      "concrete",
+      "plaster-concrete"
+    ],
+    "category_id": "70d3bf8f-46b0-5250-a419-61cbf068f448",
+    "category": "Concrete/Cast Walls & Floors/Exposed Aggregate",
+    "attributes": {
+      "surface_use": "paving",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "819523ce",
+    "download_count": 99135,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/gravel_concrete_03.png?width=256&height=256&format=webp&v=819523ce"
+  }
+}

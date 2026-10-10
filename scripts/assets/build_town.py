@@ -35,7 +35,7 @@ for name, c, e in [
 	('asphalt', (.075,.07,.065), 0), ('road_line', (.55,.45,.18), 0), ('sidewalk', (.36,.34,.30), 0), ('curb', (.42,.40,.36), 0),
 	('lawn', (.17,.14,.07), 0), ('dirt', (.16,.11,.07), 0), ('leaves_ground', (.36,.18,.06), 0),
 	('siding_cream', (.62,.57,.46), 0), ('siding_sage', (.33,.37,.29), 0), ('siding_rust', (.42,.20,.12), 0),
-	('roof', (.12,.10,.09), 0), ('trim', (.70,.66,.56), 0), ('door_wood', (.25,.14,.07), 0),
+	('roof', (.12,.10,.09), 0), ('trim', (.70,.66,.56), 0), ('trim_paint', (.62,.58,.49), 0), ('door_wood', (.25,.14,.07), 0),
 	('brick', (.36,.17,.11), 0), ('brick_dark', (.24,.12,.08), 0), ('cinder', (.40,.38,.34), 0),
 	('diner_enamel', (.62,.55,.40), 0), ('diner_red', (.48,.12,.08), 0), ('chrome', (.55,.53,.50), 0),
 	('window_dark', (.05,.06,.06), 0), ('glow_warm', (.95,.62,.30), 2.2), ('neon', (.95,.30,.12), 5.0),
@@ -48,8 +48,14 @@ for name, c, e in [
 	('service_light', (1.0,.80,.50), 2.5)]:
 	mat(name, c, e)
 
+# Materials that receive a real texture in Godot (game/data/town_materials.json): their UVs are
+# authored in metres so the binding can scale by the source tile size.
+TEXTURED = {'asphalt', 'sidewalk', 'curb', 'lawn', 'brick', 'brick_dark', 'cinder', 'roof',
+	'siding_cream', 'siding_sage', 'siding_rust', 'trim'}
+
 def finish(o, material, tile=1.0):
 	"""World-space planar UVs (metres / tile), like build_room.py."""
+	if material in TEXTURED: tile = 1.0
 	o.data.materials.append(mats[material])
 	uv = o.data.uv_layers.new(name='UVMap') if not o.data.uv_layers else o.data.uv_layers.active
 	mw = o.matrix_world
@@ -119,7 +125,7 @@ box('C_HomePorch', 6.5, 8.0, -2.4, 2.4, .05, .38, 'trim')
 box('C_HomeStep', 6.0, 6.5, -1.0, 1.0, .05, .26, 'trim')
 ramp('Ramp_Porch', 5.5, 6.5, -1.0, 1.0, .15, .38)
 box('HomePorchRoof', 6.4, 8.0, -2.6, 2.6, 2.75, 2.9, 'roof')
-for y in (-2.3, 2.3): cyl(f'C_HomePost_{y}', 6.6, y, .38, 2.75, .07, 'trim', 6)
+for y in (-2.3, 2.3): cyl(f'C_HomePost_{y}', 6.6, y, .38, 2.75, .07, 'trim_paint', 6)
 box('I_homedoor_Door', 7.94, 8.0, -.5, .5, .38, 2.45, 'door_wood')
 for y, z, lit in [(-4.2, 1.4, False), (4.2, 1.4, True), (-4.2, 4.0, True), (0, 4.0, False), (4.2, 4.0, False)]:
 	box(('Glow_' if lit else '')+f'HomeWin_{y}_{z}', 7.97, 8.0, y-.6, y+.6, z, z+1.25, 'glow_warm' if lit else 'window_dark')

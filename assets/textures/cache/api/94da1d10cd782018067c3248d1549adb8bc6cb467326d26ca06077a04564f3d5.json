@@ -1,0 +1,58 @@
+{
+  "url": "https://api.polyhaven.com/info/concrete_block_wall_03",
+  "fetched_at": 1791650330.0390725,
+  "data": {
+    "type": 1,
+    "name": "Concrete Block Wall 03",
+    "categories": [
+      "outdoor",
+      "man made",
+      "concrete",
+      "plaster-concrete"
+    ],
+    "tags": [
+      "rough",
+      "weathered",
+      "worn",
+      "uneven",
+      "wall",
+      "discolored",
+      "concrete",
+      "exterior",
+      "cement",
+      "beveled blocks",
+      "deep grooves",
+      "dirty"
+    ],
+    "description": "Free 16K concrete block wall texture featuring dark gray beveled blocks, sharp joints with grime buildup, tiny pores, chips, and a gritty matte finish.",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      16384,
+      16384
+    ],
+    "dimensions": [
+      1809.999942779541,
+      1809.999942779541
+    ],
+    "files_hash": "411075382f56e63133cd6af37c3bec78ec2f6503",
+    "staging": null,
+    "date_published": 1780444800,
+    "category_id": "fe4b5f94-cdb5-5a48-bacc-4ce2f962d3e3",
+    "category": "Brick & Block/Concrete Block & Paver/Concrete Block (CMU)",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "worn",
+        "damaged"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "6fc54953",
+    "download_count": 3238,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/concrete_block_wall_03.png?width=256&height=256&format=webp&v=6fc54953"
+  }
+}

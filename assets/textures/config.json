@@ -56,6 +56,17 @@
       "normal_scale": 0.12,
       "filter_enum": 2,
       "filter_name": "nearest with mipmaps; fine-grain wood albedo exposed to match original furniture brown, no baked lighting"
+    },
+    "town_psx": {
+      "saturation": 0.88,
+      "rgb_gain": [
+        1.02,
+        1.0,
+        0.94
+      ],
+      "normal_scale": 0.3,
+      "filter_enum": 2,
+      "filter_name": "nearest with mipmaps; Golden Fall outdoor surfaces, 128px, ~64-96 texels/m"
     }
   },
   "briefs": {
@@ -266,6 +277,196 @@
         "corrugated",
         "roof",
         "rusty"
+      ]
+    },
+    "street_asphalt": {
+      "query": "asphalt",
+      "ambientcg_query": "asphalt",
+      "usage": "Old two-lane small-town road, patched and cracked, dark grey, wet in game",
+      "require_any": [
+        "asphalt",
+        "road"
+      ],
+      "prefer": [
+        "old",
+        "worn",
+        "cracked",
+        "damaged",
+        "patched",
+        "dark"
+      ],
+      "avoid": [
+        "markings",
+        "lines",
+        "painted",
+        "new",
+        "gravel"
+      ]
+    },
+    "sidewalk_concrete": {
+      "query": "concrete pavement",
+      "ambientcg_query": "concrete",
+      "usage": "Weathered poured concrete sidewalk slabs with expansion joints",
+      "require_any": [
+        "concrete",
+        "pavement",
+        "sidewalk"
+      ],
+      "prefer": [
+        "slab",
+        "pavement",
+        "sidewalk",
+        "old",
+        "weathered",
+        "dirty",
+        "floor"
+      ],
+      "avoid": [
+        "wall",
+        "polished",
+        "tiles",
+        "cinder",
+        "brick"
+      ]
+    },
+    "curb_concrete": {
+      "query": "rough concrete",
+      "ambientcg_query": "concrete",
+      "usage": "Curb edge, stained rough concrete",
+      "require_any": [
+        "concrete"
+      ],
+      "prefer": [
+        "rough",
+        "dirty",
+        "stained",
+        "old"
+      ],
+      "avoid": [
+        "polished",
+        "tiles",
+        "brick",
+        "slab"
+      ]
+    },
+    "autumn_lawn": {
+      "query": "grass leaves",
+      "ambientcg_query": "grass",
+      "usage": "Patchy autumn lawn, dry and matted, some fallen leaves",
+      "require_any": [
+        "grass",
+        "lawn",
+        "leaves"
+      ],
+      "prefer": [
+        "dry",
+        "dead",
+        "autumn",
+        "leaves",
+        "patchy",
+        "forest"
+      ],
+      "avoid": [
+        "fresh",
+        "bright",
+        "artificial",
+        "turf"
+      ]
+    },
+    "old_brick": {
+      "query": "brick wall",
+      "ambientcg_query": "bricks",
+      "usage": "Early 20th century storefront brick, weathered red-brown, mortar visible",
+      "require_any": [
+        "brick",
+        "bricks"
+      ],
+      "prefer": [
+        "red",
+        "old",
+        "weathered",
+        "dirty",
+        "wall"
+      ],
+      "avoid": [
+        "white",
+        "painted",
+        "modern",
+        "pavement",
+        "floor"
+      ]
+    },
+    "painted_siding": {
+      "query": "painted wood planks",
+      "ambientcg_query": "planks",
+      "usage": "Horizontal painted clapboard siding on 1920s houses, worn paint; tinted per house",
+      "require_any": [
+        "wood",
+        "planks",
+        "plank",
+        "siding"
+      ],
+      "prefer": [
+        "painted",
+        "white",
+        "worn",
+        "old",
+        "siding",
+        "weathered"
+      ],
+      "avoid": [
+        "floor",
+        "parquet",
+        "raw",
+        "varnished"
+      ]
+    },
+    "roof_shingles": {
+      "query": "roof shingles",
+      "ambientcg_query": "roofing tiles",
+      "usage": "Dark asphalt shingle roof, mossy and weathered",
+      "require_any": [
+        "roof",
+        "shingles",
+        "roofing"
+      ],
+      "prefer": [
+        "asphalt",
+        "shingles",
+        "dark",
+        "old",
+        "weathered"
+      ],
+      "avoid": [
+        "terracotta",
+        "clay",
+        "red",
+        "slate",
+        "metal"
+      ]
+    },
+    "cinder_block": {
+      "query": "concrete block wall",
+      "ambientcg_query": "concrete",
+      "usage": "Painted cinder block wall of the hardware store and alley",
+      "require_any": [
+        "concrete",
+        "block",
+        "cinder",
+        "blocks"
+      ],
+      "prefer": [
+        "block",
+        "blocks",
+        "wall",
+        "painted",
+        "old"
+      ],
+      "avoid": [
+        "polished",
+        "floor",
+        "slab",
+        "pavement"
       ]
     }
   }

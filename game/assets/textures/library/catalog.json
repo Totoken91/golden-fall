@@ -138,5 +138,195 @@
     ],
     "material": "res://assets/textures/library/polyhaven/wood_table_001/furniture_psx_128_75f846ca/material.tres",
     "status": "visually_checked_in_engine"
+  },
+  "polyhaven/asphalt_04/town_psx_128_f59ff3e4": {
+    "provider": "polyhaven",
+    "id": "asphalt_04",
+    "tile_m": [
+      4.04,
+      4.04
+    ],
+    "material": "res://assets/textures/library/polyhaven/asphalt_04/town_psx_128_f59ff3e4/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/concrete_pavement_02/town_psx_128_b478f4b9": {
+    "provider": "polyhaven",
+    "id": "concrete_pavement_02",
+    "tile_m": [
+      1.8,
+      1.8
+    ],
+    "material": "res://assets/textures/library/polyhaven/concrete_pavement_02/town_psx_128_b478f4b9/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/concrete_floor/town_psx_128_7a0f98f3": {
+    "provider": "polyhaven",
+    "id": "concrete_floor",
+    "tile_m": [
+      2.08,
+      2.08
+    ],
+    "material": "res://assets/textures/library/polyhaven/concrete_floor/town_psx_128_7a0f98f3/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/forrest_ground_01/town_psx_128_58b98ccd": {
+    "provider": "polyhaven",
+    "id": "forrest_ground_01",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/forrest_ground_01/town_psx_128_58b98ccd/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/brick_wall_13/town_psx_128_3d5ff93d": {
+    "provider": "polyhaven",
+    "id": "brick_wall_13",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/brick_wall_13/town_psx_128_3d5ff93d/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/white_planks_clean/town_psx_128_a86b74ee": {
+    "provider": "polyhaven",
+    "id": "white_planks_clean",
+    "tile_m": [
+      1.8,
+      1.8
+    ],
+    "material": "res://assets/textures/library/polyhaven/white_planks_clean/town_psx_128_a86b74ee/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/roof_slates_02/town_psx_128_394248f4": {
+    "provider": "polyhaven",
+    "id": "roof_slates_02",
+    "tile_m": [
+      3.0,
+      3.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/roof_slates_02/town_psx_128_394248f4/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/concrete_block_wall/town_psx_128_ae8fa7d9": {
+    "provider": "polyhaven",
+    "id": "concrete_block_wall",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/concrete_block_wall/town_psx_128_ae8fa7d9/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/brick_wall_07/town_psx_128_e44bdc94": {
+    "provider": "polyhaven",
+    "id": "brick_wall_07",
+    "tile_m": [
+      1.7,
+      1.7
+    ],
+    "material": "res://assets/textures/library/polyhaven/brick_wall_07/town_psx_128_e44bdc94/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/brick_wall_10/town_psx_128_3340d924": {
+    "provider": "polyhaven",
+    "id": "brick_wall_10",
+    "tile_m": [
+      1.9,
+      1.9
+    ],
+    "material": "res://assets/textures/library/polyhaven/brick_wall_10/town_psx_128_3340d924/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/concrete_tiles_02/town_psx_128_4ed5a937": {
+    "provider": "polyhaven",
+    "id": "concrete_tiles_02",
+    "tile_m": [
+      1.825,
+      1.825
+    ],
+    "material": "res://assets/textures/library/polyhaven/concrete_tiles_02/town_psx_128_4ed5a937/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/concrete_pavement/town_psx_128_16c8809c": {
+    "provider": "polyhaven",
+    "id": "concrete_pavement",
+    "tile_m": [
+      1.8,
+      1.8
+    ],
+    "material": "res://assets/textures/library/polyhaven/concrete_pavement/town_psx_128_16c8809c/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/rough_concrete/town_psx_128_f91d557a": {
+    "provider": "polyhaven",
+    "id": "rough_concrete",
+    "tile_m": [
+      1.23,
+      1.23
+    ],
+    "material": "res://assets/textures/library/polyhaven/rough_concrete/town_psx_128_f91d557a/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/distressed_painted_planks/town_psx_128_b388b465": {
+    "provider": "polyhaven",
+    "id": "distressed_painted_planks",
+    "tile_m": [
+      1.6,
+      1.6
+    ],
+    "material": "res://assets/textures/library/polyhaven/distressed_painted_planks/town_psx_128_b388b465/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/blue_painted_planks/town_psx_128_6b50a0a6": {
+    "provider": "polyhaven",
+    "id": "blue_painted_planks",
+    "tile_m": [
+      1.0,
+      1.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/blue_painted_planks/town_psx_128_6b50a0a6/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "ambientcg/Bricks094/town_psx_128_6d0e0e96": {
+    "provider": "ambientcg",
+    "id": "Bricks094",
+    "tile_m": [
+      1.8,
+      0.9
+    ],
+    "material": "res://assets/textures/library/ambientcg/Bricks094/town_psx_128_6d0e0e96/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/asphalt_04/town_psx_256_235a1303": {
+    "provider": "polyhaven",
+    "id": "asphalt_04",
+    "tile_m": [
+      4.04,
+      4.04
+    ],
+    "material": "res://assets/textures/library/polyhaven/asphalt_04/town_psx_256_235a1303/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/asphalt_03/town_psx_128_a1e67a84": {
+    "provider": "polyhaven",
+    "id": "asphalt_03",
+    "tile_m": [
+      2.05,
+      2.05
+    ],
+    "material": "res://assets/textures/library/polyhaven/asphalt_03/town_psx_128_a1e67a84/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/asphalt_04/town_psx_128_4ea6ba35": {
+    "provider": "polyhaven",
+    "id": "asphalt_04",
+    "tile_m": [
+      2.5,
+      2.5
+    ],
+    "material": "res://assets/textures/library/polyhaven/asphalt_04/town_psx_128_4ea6ba35/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
   }
 }

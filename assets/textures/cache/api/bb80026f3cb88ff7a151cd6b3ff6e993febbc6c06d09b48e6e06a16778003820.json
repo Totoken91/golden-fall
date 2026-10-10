@@ -1,0 +1,53 @@
+{
+  "url": "https://api.polyhaven.com/info/dark_brick_wall",
+  "fetched_at": 1791650316.3751266,
+  "data": {
+    "name": "Dark Brick Wall",
+    "categories": [
+      "outdoor",
+      "man made",
+      "wall",
+      "brick"
+    ],
+    "type": 1,
+    "authors": {
+      "Dario Barresi": "Processing",
+      "Dimitrios Savva": "Photography"
+    },
+    "tags": [
+      "rough",
+      "uneven",
+      "wall",
+      "dry",
+      "bricks",
+      "brick",
+      "dark"
+    ],
+    "info": null,
+    "dimensions": [
+      1049.9998331069946,
+      1049.9999523162842
+    ],
+    "date_published": 1671667200,
+    "staging": null,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "8b2e75f6c32afda3774291ca8c1c96411220df9e",
+    "description": "Free 8K texture of a dark, dry brick wall with rough, uneven faces, deep mortar joints and a gritty, weathered surface.",
+    "category_id": "9ef0955b-87fa-5826-aa87-98b047ad9143",
+    "category": "Brick & Block/Clay Brick/Running-Bond",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "66ed9ca9",
+    "download_count": 42891,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/dark_brick_wall.png?width=256&height=256&format=webp&v=66ed9ca9"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://api.polyhaven.com/info/concrete_pavers_02",
+  "fetched_at": 1791650303.927222,
+  "data": {
+    "type": 1,
+    "name": "Concrete Pavers 02",
+    "categories": [
+      "concrete",
+      "outdoor",
+      "floor"
+    ],
+    "tags": [
+      "weathered",
+      "rough",
+      "old",
+      "concrete",
+      "exterior",
+      "cement",
+      "coarse",
+      "outdoor",
+      "outdoor flooring",
+      "weatherbeaten",
+      "paving",
+      "walkway",
+      "sidewalk",
+      "dirty",
+      "pavement patterned",
+      "outdoor walkway",
+      "parking",
+      "driveway texture"
+    ],
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "max_resolution": [
+      16384,
+      16384
+    ],
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "files_hash": "cc211bd1a155d1bbd1edaa8b8f611ee4d7b7aa81",
+    "date_published": 1754956800,
+    "staging": null,
+    "description": "Free 16K concrete pavers texture: weathered, coarse outdoor paving with worn joints and dirt - ideal for sidewalks, driveways, parking areas and exterior flooring.",
+    "category_id": "ce26ba57-ef4b-54d4-a954-9a85bb053b9e",
+    "category": "Brick & Block/Concrete Block & Paver/Interlocking Pavers",
+    "attributes": {
+      "surface_use": "paving",
+      "condition": [
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "7fabf64c",
+    "download_count": 7652,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/concrete_pavers_02.png?width=256&height=256&format=webp&v=7fabf64c"
+  }
+}

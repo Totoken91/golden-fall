@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=roof+shingles&t=textures&limit=8&future=false",
+  "fetched_at": 1791650322.9796493,
+  "data": {
+    "query": "roof shingles",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 782,
+    "considered": 886,
+    "keywordMatches": 33,
+    "results": [
+      {
+        "slug": "roof_07",
+        "score": 0.6422
+      },
+      {
+        "slug": "red_slate_roof_tiles_01",
+        "score": 0.6279
+      },
+      {
+        "slug": "roof_slates_02",
+        "score": 0.6032
+      },
+      {
+        "slug": "roof_09",
+        "score": 0.6029
+      },
+      {
+        "slug": "roof_3",
+        "score": 0.6613
+      },
+      {
+        "slug": "ceramic_roof_01",
+        "score": 0.613
+      },
+      {
+        "slug": "roof_tiles",
+        "score": 0.6103
+      },
+      {
+        "slug": "clay_roof_tiles_02",
+        "score": 0.5987
+      }
+    ]
+  }
+}

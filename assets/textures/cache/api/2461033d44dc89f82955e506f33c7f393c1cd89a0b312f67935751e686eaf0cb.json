@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/forest_leaves_04",
+  "fetched_at": 1791650312.4373486,
+  "data": {
+    "type": 1,
+    "name": "Forest Leaves 04",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "date_published": 1631750400,
+    "staging": null,
+    "dimensions": [
+      1500,
+      1500.0001192092896
+    ],
+    "tags": [
+      "leaves",
+      "nature",
+      "ground",
+      "dirt",
+      "debris",
+      "dry",
+      "autumn",
+      "sticks",
+      "twigs",
+      "brown"
+    ],
+    "categories": [
+      "outdoor",
+      "terrain",
+      "natural",
+      "collection: pine_forest",
+      "collection: verdant_trail"
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "0a489c440765f05a7630001e299873f20775ea35",
+    "description": "Free 8K texture of dry autumn forest floor: brown leaves, sticks and twigs over dirt with detailed surface relief, roughness and subtle mossy debris.",
+    "category_id": "b9a51c27-1499-5f4d-b28f-0d96ef8e0319",
+    "category": "Ground & Terrain/Forest Floor/Leaf Litter",
+    "collections": [
+      "pine_forest",
+      "verdant_trail"
+    ],
+    "attributes": {
+      "surface_use": "ground",
+      "origin": "natural",
+      "setting": "outdoor",
+      "condition": [
+        "dirty"
+      ]
+    },
+    "img_version": "462b57b0",
+    "download_count": 70054,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/forest_leaves_04.png?width=256&height=256&format=webp&v=462b57b0"
+  }
+}

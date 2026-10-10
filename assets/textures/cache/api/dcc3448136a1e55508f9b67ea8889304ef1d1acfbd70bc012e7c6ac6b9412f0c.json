@@ -1,0 +1,64 @@
+{
+  "url": "https://api.polyhaven.com/info/roof_07",
+  "fetched_at": 1791650323.1142135,
+  "data": {
+    "type": 1,
+    "date_published": 1529359200,
+    "name": "Roof 07",
+    "old_id": 107,
+    "categories": [
+      "roofing",
+      "man made",
+      "outdoor",
+      "dirty"
+    ],
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "sponsors": [
+      "77433244"
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "82a641040fa1751c01910adf60e6f3cf6728c4db",
+    "tags": [
+      "ceramic",
+      "tiles",
+      "old",
+      "worn",
+      "damaged",
+      "discolored",
+      "roofing material",
+      "roof",
+      "roofing",
+      "tile roofing",
+      "clay tiles",
+      "weathered",
+      "mossy",
+      "rustic",
+      "overlapping tiles"
+    ],
+    "description": "Free 8K texture of weathered clay roof tiles, overlapping and rustic with chipped, discolored ceramic surfaces, moss, dirt and damaged/peeling areas.",
+    "category_id": "6165a492-c53c-5b5f-96df-20c96a7763df",
+    "category": "Ceramic/Terracotta",
+    "attributes": {
+      "surface_use": "roof",
+      "condition": [
+        "weathered",
+        "mossy",
+        "damaged"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "767f9b61",
+    "download_count": 37192,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/roof_07.png?width=256&height=256&format=webp&v=767f9b61"
+  }
+}

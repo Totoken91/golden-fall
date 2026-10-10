@@ -1,0 +1,40 @@
+{
+  "url": "https://api.polyhaven.com/search?q=rough+concrete&t=textures&limit=6&future=false",
+  "fetched_at": 1791650390.1652808,
+  "data": {
+    "query": "rough concrete",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 845,
+    "considered": 886,
+    "keywordMatches": 465,
+    "results": [
+      {
+        "slug": "rough_concrete",
+        "score": 0.7418
+      },
+      {
+        "slug": "gravel_concrete_04",
+        "score": 0.6924
+      },
+      {
+        "slug": "concrete_floor_01",
+        "score": 0.6976
+      },
+      {
+        "slug": "anti_slip_concrete",
+        "score": 0.6804
+      },
+      {
+        "slug": "concrete_pavement_03",
+        "score": 0.6757
+      },
+      {
+        "slug": "gravel_concrete_03",
+        "score": 0.673
+      }
+    ]
+  }
+}

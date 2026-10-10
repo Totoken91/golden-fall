@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/t_concrete_wall_002",
+  "fetched_at": 1791650330.2782285,
+  "data": {
+    "date_published": 1614253783,
+    "name": "Concrete Wall 002",
+    "old_id": 306,
+    "scale": "1.5Mx1.5M",
+    "categories": [
+      "brick",
+      "wall",
+      "man made",
+      "outdoor"
+    ],
+    "type": 1,
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "dimensions": [
+      3000,
+      3000
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "cf3e3d923ed48a432078077759e3ffbdc7da013a",
+    "tags": [
+      "wall",
+      "concrete",
+      "rough",
+      "bricks",
+      "slits",
+      "grid",
+      "cement",
+      "weathered",
+      "rough  "
+    ],
+    "description": "Free 8K texture of a weathered concrete brick wall, featuring rough, grooved bricks in narrow vertical grid lines, gritty cement and light surface staining.",
+    "category_id": "92b71894-91d3-5943-a35a-29645474eb3b",
+    "category": "Brick & Block/Concrete Block & Paver/Concrete Brick",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "b0fa2300",
+    "download_count": 26436,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/t_concrete_wall_002.png?width=256&height=256&format=webp&v=b0fa2300"
+  }
+}

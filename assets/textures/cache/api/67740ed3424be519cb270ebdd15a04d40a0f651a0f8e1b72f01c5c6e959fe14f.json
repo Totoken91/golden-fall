@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/brushed_concrete_04",
+  "fetched_at": 1791650306.267776,
+  "data": {
+    "type": 1,
+    "name": "Brushed Concrete 04",
+    "categories": [
+      "outdoor",
+      "man made",
+      "plaster-concrete",
+      "concrete"
+    ],
+    "tags": [
+      "rough",
+      "weathered",
+      "concrete",
+      "plaster",
+      "brushed",
+      "linear grooves",
+      "scratched",
+      "grooved",
+      "concrete blocks",
+      "chipped",
+      "cement",
+      "worn",
+      "exterior"
+    ],
+    "description": "Free 8K brushed concrete texture with tight horizontal brush marks, panel joints, tiny chips, and a rough, matte brown-gray tone.",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2000.9167194366455,
+      2000.917911529541
+    ],
+    "files_hash": "c38a11c7f36bac3678d8b0e0bbd41395e8521841",
+    "staging": null,
+    "date_published": 1784678400,
+    "category_id": "8e19ddef-056e-5554-834d-2fd52f1c17f7",
+    "category": "Concrete/Cast Walls & Floors/Trowel & Brushed Finish",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "damaged",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "4ca95bfc",
+    "download_count": 5867,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/brushed_concrete_04.png?width=256&height=256&format=webp&v=4ca95bfc"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/black_painted_planks",
+  "fetched_at": 1791650318.3708966,
+  "data": {
+    "type": 1,
+    "name": "Black Painted Planks",
+    "categories": [
+      "wood"
+    ],
+    "tags": [
+      "painted",
+      "painted wood",
+      "wood",
+      "wooden planks",
+      "weathered",
+      "scratched",
+      "worn",
+      "grain",
+      "wood grain",
+      "distressed wood",
+      "timber",
+      "plank"
+    ],
+    "description": "Free 4k texture. Black painted wooden planks - weathered and worn, with scratches, chipped paint, visible grain, narrow seams and a subtle satin sheen.",
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1599.9999046325684,
+      1599.9999046325684
+    ],
+    "files_hash": "1347c9d6d6753c345540677e14a92818129c703f",
+    "date_published": 1760572800,
+    "staging": null,
+    "category_id": "26eb2cbb-558a-5357-ae3f-9519f081f247",
+    "category": "Wood/Boards & Planks/Painted Planks",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "painted",
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "76186f54",
+    "download_count": 16793,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/black_painted_planks.png?width=256&height=256&format=webp&v=76186f54"
+  }
+}

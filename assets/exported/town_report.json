@@ -1,7 +1,7 @@
 {
-  "objects": 72,
+  "objects": 73,
   "triangles": 11562,
-  "collisions": 26,
+  "collisions": 27,
   "interactive": [
     "dinerdoor",
     "homedoor",

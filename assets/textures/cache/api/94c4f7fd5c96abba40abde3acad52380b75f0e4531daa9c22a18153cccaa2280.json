@@ -1,0 +1,54 @@
+{
+  "url": "https://api.polyhaven.com/info/concrete_block_wall_02",
+  "fetched_at": 1791650329.1973352,
+  "data": {
+    "type": 1,
+    "name": "Concrete Block Wall 02",
+    "tags": [
+      "masonry",
+      "concrete",
+      "rough",
+      "coarse",
+      "exterior",
+      "blocks",
+      "outdoor",
+      "stonework",
+      "ancient walls"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2005.000114440918,
+      2005.000114440918
+    ],
+    "date_published": 1752105600,
+    "staging": null,
+    "files_hash": "3b0b4119072147f488130d38a362de8c492dc072",
+    "description": "Free 8K concrete block wall texture with rough, coarse, weathered surface and deep block joints - authentic exterior masonry for ancient stonework.",
+    "categories": [
+      "wall",
+      "man made",
+      "concrete",
+      "plaster-concrete",
+      "dirty"
+    ],
+    "category_id": "fe4b5f94-cdb5-5a48-bacc-4ce2f962d3e3",
+    "category": "Brick & Block/Concrete Block & Paver/Concrete Block (CMU)",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "8c2fec2a",
+    "download_count": 2775,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/concrete_block_wall_02.png?width=256&height=256&format=webp&v=8c2fec2a"
+  }
+}

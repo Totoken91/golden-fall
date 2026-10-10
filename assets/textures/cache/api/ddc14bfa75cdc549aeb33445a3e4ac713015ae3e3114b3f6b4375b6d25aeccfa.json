@@ -1,0 +1,40 @@
+{
+  "url": "https://api.polyhaven.com/search?q=concrete+pavement&t=textures&limit=6&future=false",
+  "fetched_at": 1791650383.6869557,
+  "data": {
+    "query": "concrete pavement",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 799,
+    "considered": 886,
+    "keywordMatches": 238,
+    "results": [
+      {
+        "slug": "concrete_pavement",
+        "score": 0.7064
+      },
+      {
+        "slug": "concrete_pavement_03",
+        "score": 0.7504
+      },
+      {
+        "slug": "concrete_tiles_02",
+        "score": 0.6868
+      },
+      {
+        "slug": "gravel_concrete_04",
+        "score": 0.692
+      },
+      {
+        "slug": "gravel_concrete_03",
+        "score": 0.6897
+      },
+      {
+        "slug": "concrete_pavers_02",
+        "score": 0.6791
+      }
+    ]
+  }
+}

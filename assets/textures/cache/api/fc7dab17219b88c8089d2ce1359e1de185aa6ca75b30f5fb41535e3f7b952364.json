@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/concrete_tiles_02",
+  "fetched_at": 1791650303.7107472,
+  "data": {
+    "type": 1,
+    "name": "Concrete Tiles 02",
+    "tags": [
+      "concrete",
+      "rough concrete",
+      "outdoor",
+      "pavement",
+      "walkway",
+      "sidewalk texture",
+      "sidewalk",
+      "urban",
+      "outdoor flooring",
+      "pavers",
+      "outdoor walkway"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1825.0000476837158,
+      1825.0000476837158
+    ],
+    "date_published": 1745280000,
+    "staging": null,
+    "files_hash": "757bb94eddbc082d1b92cd46dfed1428d51871a0",
+    "description": "Free 8K texture: rough rectangular concrete tiles with narrow dark joints, subtle pitting and a matte, slightly weathered urban sidewalk finish.",
+    "categories": [
+      "floor",
+      "tiles",
+      "concrete",
+      "plaster-concrete"
+    ],
+    "category_id": "3d66fbeb-75a0-5a98-97b4-d2630544da3f",
+    "category": "Brick & Block/Concrete Block & Paver",
+    "attributes": {
+      "surface_use": "paving",
+      "condition": [
+        "weathered"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "05a8f96c",
+    "download_count": 20385,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/concrete_tiles_02.png?width=256&height=256&format=webp&v=05a8f96c"
+  }
+}

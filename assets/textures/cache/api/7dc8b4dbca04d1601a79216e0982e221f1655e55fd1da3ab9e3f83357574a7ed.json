@@ -1,0 +1,57 @@
+{
+  "url": "https://api.polyhaven.com/info/brick_wall_07",
+  "fetched_at": 1791650316.584896,
+  "data": {
+    "name": "Brick Wall 07",
+    "categories": [
+      "wall",
+      "brick",
+      "man made"
+    ],
+    "type": 1,
+    "tags": [
+      "rough",
+      "old",
+      "brick",
+      "bricks",
+      "walling",
+      "coarse",
+      "outdoors",
+      "outdoor",
+      "wall",
+      "exterior",
+      "gritty",
+      "rough  "
+    ],
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "info": null,
+    "dimensions": [
+      1700.0000476837158,
+      1700.0000476837158
+    ],
+    "date_published": 1706745600,
+    "staging": null,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "85f400618390151073ceb6951060afa8857b22c7",
+    "description": "Free 8K texture of an old, coarse exterior brick wall with gritty, weathered orange-brown bricks, chipped edges, pitted surfaces and worn mortar.",
+    "category_id": "9ef0955b-87fa-5826-aa87-98b047ad9143",
+    "category": "Brick & Block/Clay Brick/Running-Bond",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "fec04fa1",
+    "download_count": 16969,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/brick_wall_07.png?width=256&height=256&format=webp&v=fec04fa1"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/anti_slip_concrete",
+  "fetched_at": 1791650306.009437,
+  "data": {
+    "name": "Anti Slip Concrete",
+    "type": 1,
+    "tags": [
+      "rough",
+      "concrete",
+      "antislip",
+      "outdoor",
+      "weathered",
+      "exterior",
+      "scuffed",
+      "chipped",
+      "scratched",
+      "nonslip",
+      "pavement",
+      "rough  ",
+      "coarse"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2500,
+      2500
+    ],
+    "date_published": 1731542400,
+    "staging": null,
+    "files_hash": "6cb6548b7d539a2af92acae83c8943a7140ed444",
+    "description": "Free 8K texture: weathered anti-slip concrete with raised tactile dots, coarse gritty surface, scuffed, chipped and scratched exterior pavement material.",
+    "categories": [
+      "floor",
+      "man made",
+      "concrete",
+      "plaster-concrete"
+    ],
+    "category_id": "8e19ddef-056e-5554-834d-2fd52f1c17f7",
+    "category": "Concrete/Cast Walls & Floors/Trowel & Brushed Finish",
+    "attributes": {
+      "surface_use": "floor",
+      "condition": [
+        "weathered",
+        "damaged",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "231e4142",
+    "download_count": 4541,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/anti_slip_concrete.png?width=256&height=256&format=webp&v=231e4142"
+  }
+}

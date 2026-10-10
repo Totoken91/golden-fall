@@ -1,0 +1,188 @@
+{
+ "uv_period_m": [
+  1,
+  1
+ ],
+ "bindings": {
+  "asphalt": {
+   "material": "res://assets/textures/library/polyhaven/asphalt_04/town_psx_128_4ea6ba35/material.tres",
+   "source_key": "polyhaven/asphalt_04/town_psx_128_4ea6ba35",
+   "tile_m": [
+    2.5,
+    2.5
+   ],
+   "tint": [
+    0.42,
+    0.4,
+    0.37
+   ],
+   "wet": true,
+   "texels_per_m": 51.2
+  },
+  "sidewalk": {
+   "material": "res://assets/textures/library/polyhaven/concrete_tiles_02/town_psx_128_4ed5a937/material.tres",
+   "source_key": "polyhaven/concrete_tiles_02/town_psx_128_4ed5a937",
+   "tile_m": [
+    1.825,
+    1.825
+   ],
+   "tint": [
+    0.92,
+    0.88,
+    0.8
+   ],
+   "wet": false,
+   "texels_per_m": 70.1
+  },
+  "curb": {
+   "material": "res://assets/textures/library/polyhaven/rough_concrete/town_psx_128_f91d557a/material.tres",
+   "source_key": "polyhaven/rough_concrete/town_psx_128_f91d557a",
+   "tile_m": [
+    1.23,
+    1.23
+   ],
+   "tint": [
+    0.62,
+    0.6,
+    0.55
+   ],
+   "wet": false,
+   "texels_per_m": 104.1
+  },
+  "lawn": {
+   "material": "res://assets/textures/library/polyhaven/forrest_ground_01/town_psx_128_58b98ccd/material.tres",
+   "source_key": "polyhaven/forrest_ground_01/town_psx_128_58b98ccd",
+   "tile_m": [
+    2.0,
+    2.0
+   ],
+   "tint": [
+    0.78,
+    0.66,
+    0.46
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  },
+  "brick": {
+   "material": "res://assets/textures/library/ambientcg/Bricks094/town_psx_128_6d0e0e96/material.tres",
+   "source_key": "ambientcg/Bricks094/town_psx_128_6d0e0e96",
+   "tile_m": [
+    1.8,
+    0.9
+   ],
+   "tint": [
+    0.82,
+    0.72,
+    0.64
+   ],
+   "wet": false,
+   "texels_per_m": 71.1
+  },
+  "brick_dark": {
+   "material": "res://assets/textures/library/polyhaven/brick_wall_10/town_psx_128_3340d924/material.tres",
+   "source_key": "polyhaven/brick_wall_10/town_psx_128_3340d924",
+   "tile_m": [
+    1.9,
+    1.9
+   ],
+   "tint": [
+    0.95,
+    0.85,
+    0.78
+   ],
+   "wet": false,
+   "texels_per_m": 67.4
+  },
+  "cinder": {
+   "material": "res://assets/textures/library/polyhaven/concrete_block_wall/town_psx_128_ae8fa7d9/material.tres",
+   "source_key": "polyhaven/concrete_block_wall/town_psx_128_ae8fa7d9",
+   "tile_m": [
+    2.0,
+    2.0
+   ],
+   "tint": [
+    1.0,
+    0.96,
+    0.88
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  },
+  "roof": {
+   "material": "res://assets/textures/library/polyhaven/roof_slates_02/town_psx_128_394248f4/material.tres",
+   "source_key": "polyhaven/roof_slates_02/town_psx_128_394248f4",
+   "tile_m": [
+    3.0,
+    3.0
+   ],
+   "tint": [
+    0.34,
+    0.31,
+    0.29
+   ],
+   "wet": false,
+   "texels_per_m": 42.7
+  },
+  "siding_cream": {
+   "material": "res://assets/textures/town/siding/material.tres",
+   "source_key": "polyhaven/blue_painted_planks/town_psx_128_6b50a0a6",
+   "tile_m": [
+    1.0,
+    1.0
+   ],
+   "tint": [
+    0.86,
+    0.79,
+    0.62
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  },
+  "siding_sage": {
+   "material": "res://assets/textures/town/siding/material.tres",
+   "source_key": "polyhaven/blue_painted_planks/town_psx_128_6b50a0a6",
+   "tile_m": [
+    1.0,
+    1.0
+   ],
+   "tint": [
+    0.47,
+    0.52,
+    0.4
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  },
+  "siding_rust": {
+   "material": "res://assets/textures/town/siding/material.tres",
+   "source_key": "polyhaven/blue_painted_planks/town_psx_128_6b50a0a6",
+   "tile_m": [
+    1.0,
+    1.0
+   ],
+   "tint": [
+    0.6,
+    0.3,
+    0.19
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  },
+  "trim": {
+   "material": "res://assets/textures/town/siding/material.tres",
+   "source_key": "polyhaven/blue_painted_planks/town_psx_128_6b50a0a6",
+   "tile_m": [
+    1.0,
+    1.0
+   ],
+   "tint": [
+    0.8,
+    0.76,
+    0.66
+   ],
+   "wet": false,
+   "texels_per_m": 64.0
+  }
+ }
+}
