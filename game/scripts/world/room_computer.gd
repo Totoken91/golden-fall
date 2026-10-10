@@ -168,7 +168,7 @@ func _input(event: InputEvent) -> void:
 func forward_event(event: InputEvent) -> void:
 	var local := event.duplicate() as InputEvent
 	if local is InputEventMouseMotion:
-		cursor = (cursor+local.relative).clamp(Vector2(0,0),Vector2(639,479))
+		cursor = (cursor+RoomScene.mouse_delta(local)).clamp(Vector2(0,0),Vector2(639,479))
 		local.position = cursor
 		local.global_position = cursor
 	elif local is InputEventMouseButton:

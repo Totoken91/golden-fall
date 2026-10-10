@@ -230,11 +230,19 @@ static func recapture_on_click(event: InputEvent) -> void:
 	if OS.has_feature("web") and event is InputEventMouseButton and event.pressed and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
+# Chrome's pointer lock on Windows occasionally reports a single huge movement (hundreds of
+# pixels) that makes the camera jump. Real flicks stay well below this per event.
+const WEB_MOUSE_SPIKE := 300.0
+
+static func mouse_delta(event: InputEventMouseMotion) -> Vector2:
+	if OS.has_feature("web") and event.relative.length() > WEB_MOUSE_SPIKE: return Vector2.ZERO
+	return event.relative
+
 func _input(event: InputEvent) -> void:
 	if not is_modal and not qa_mode: recapture_on_click(event)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion and not is_modal and (qa_mode or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED): walker.look(event.relative)
+	if event is InputEventMouseMotion and not is_modal and (qa_mode or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED): walker.look(mouse_delta(event))
 	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode == KEY_E:
 		if not is_modal: interact(walker.target())
 
