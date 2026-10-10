@@ -11,8 +11,10 @@ Name contracts used by game/scripts/world/town_zone.gd:
   Spawn_* empties: player spawn points
 """
 from pathlib import Path
-import bpy, math, random, json
+import bpy, math, random, json, sys
 from mathutils import Vector
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from town_kit import *
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT/'game/assets/town'
@@ -20,88 +22,6 @@ SOURCE = ROOT/'assets/blender'
 OUT.mkdir(parents=True, exist_ok=True)
 SOURCE.mkdir(parents=True, exist_ok=True)
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
-rng = random.Random(151003)
-
-# ---------- materials: blockout palette, golden autumn, no blue cast ----------
-mats = {}
-def mat(name, color, emission=0.0, rough=.92):
-	m = bpy.data.materials.new(name); m.use_nodes = True
-	bs = m.node_tree.nodes['Principled BSDF']
-	bs.inputs['Base Color'].default_value = (*color, 1); bs.inputs['Roughness'].default_value = rough
-	if emission:
-		bs.inputs['Emission Color'].default_value = (*color, 1); bs.inputs['Emission Strength'].default_value = emission
-	m.diffuse_color = (*color, 1); mats[name] = m
-for name, c, e in [
-	('asphalt', (.075,.07,.065), 0), ('road_line', (.55,.45,.18), 0), ('sidewalk', (.36,.34,.30), 0), ('curb', (.42,.40,.36), 0),
-	('lawn', (.17,.14,.07), 0), ('dirt', (.16,.11,.07), 0), ('leaves_ground', (.36,.18,.06), 0),
-	('siding_cream', (.62,.57,.46), 0), ('siding_sage', (.33,.37,.29), 0), ('siding_rust', (.42,.20,.12), 0),
-	('roof', (.12,.10,.09), 0), ('trim', (.70,.66,.56), 0), ('trim_paint', (.62,.58,.49), 0), ('door_wood', (.25,.14,.07), 0),
-	('brick', (.36,.17,.11), 0), ('brick_dark', (.24,.12,.08), 0), ('cinder', (.40,.38,.34), 0),
-	('diner_enamel', (.62,.55,.40), 0), ('diner_red', (.48,.12,.08), 0), ('chrome', (.55,.53,.50), 0),
-	('window_dark', (.05,.06,.06), 0), ('glow_warm', (.95,.62,.30), 2.2), ('neon', (.95,.30,.12), 5.0),
-	('diner_floor', (.55,.50,.42), 0), ('counter_top', (.66,.62,.55), 0), ('booth_red', (.42,.10,.07), 0),
-	('wood_table', (.38,.24,.13), 0), ('metal_dark', (.17,.17,.16), 0), ('dumpster', (.16,.22,.15), 0),
-	('fence_wood', (.27,.18,.11), 0), ('pole_wood', (.20,.14,.09), 0), ('wire', (.04,.04,.04), 0),
-	('lamp_head', (1.0,.62,.25), 3.0), ('car_rust', (.38,.16,.10), 0), ('car_cream', (.60,.55,.45), 0), ('car_green', (.18,.26,.20), 0),
-	('tyre', (.05,.05,.05), 0), ('trunk', (.16,.11,.07), 0), ('leaf_orange', (.62,.26,.06), 0), ('leaf_amber', (.70,.40,.09), 0),
-	('leaf_copper', (.45,.17,.07), 0), ('spruce', (.07,.11,.08), 0), ('guardrail', (.45,.43,.40), 0), ('sign_board', (.20,.15,.10), 0),
-	('service_light', (1.0,.80,.50), 2.5)]:
-	mat(name, c, e)
-
-# Materials that receive a real texture in Godot (game/data/town_materials.json): their UVs are
-# authored in metres so the binding can scale by the source tile size.
-TEXTURED = {'asphalt', 'sidewalk', 'curb', 'lawn', 'brick', 'brick_dark', 'cinder', 'roof',
-	'siding_cream', 'siding_sage', 'siding_rust', 'trim'}
-
-def finish(o, material, tile=1.0):
-	"""World-space planar UVs (metres / tile), like build_room.py."""
-	if material in TEXTURED: tile = 1.0
-	o.data.materials.append(mats[material])
-	uv = o.data.uv_layers.new(name='UVMap') if not o.data.uv_layers else o.data.uv_layers.active
-	mw = o.matrix_world
-	for poly in o.data.polygons:
-		n = poly.normal; axis = max(range(3), key=lambda i: abs(n[i])); axes = [i for i in range(3) if i != axis]
-		for li in poly.loop_indices:
-			v = mw @ o.data.vertices[o.data.loops[li].vertex_index].co
-			uv.data[li].uv = (v[axes[0]]/tile, v[axes[1]]/tile)
-	return o
-
-def box(name, x0, x1, y0, y1, z0, z1, material, tile=1.0):
-	bpy.ops.mesh.primitive_cube_add(size=1, location=((x0+x1)/2, (y0+y1)/2, (z0+z1)/2))
-	o = bpy.context.object; o.name = name; o.dimensions = (abs(x1-x0), abs(y1-y0), abs(z1-z0))
-	bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
-	return finish(o, material, tile)
-
-def cyl(name, x, y, z0, z1, r, material, verts=8, r2=None):
-	bpy.ops.mesh.primitive_cone_add(vertices=verts, radius1=r, radius2=r if r2 is None else r2, depth=z1-z0, location=(x, y, (z0+z1)/2))
-	o = bpy.context.object; o.name = name
-	bpy.ops.object.transform_apply(location=False, rotation=True, scale=True)
-	return finish(o, material)
-
-def gable(name, x0, x1, y0, y1, z0, ridge, material, along='y'):
-	"""Pitched roof as a single prism; ridge runs along Y (or X)."""
-	xm, ym = (x0+x1)/2, (y0+y1)/2
-	if along == 'y':
-		v = [(x0,y0,z0),(x1,y0,z0),(xm,y0,ridge),(x0,y1,z0),(x1,y1,z0),(xm,y1,ridge)]
-	else:
-		v = [(x0,y0,z0),(x0,y1,z0),(x0,ym,ridge),(x1,y0,z0),(x1,y1,z0),(x1,ym,ridge)]
-	f = [(0,1,2),(3,5,4),(0,3,4,1),(1,4,5,2),(2,5,3,0)]
-	me = bpy.data.meshes.new(name); me.from_pydata(v, [], f); me.update()
-	o = bpy.data.objects.new(name, me); bpy.context.collection.objects.link(o)
-	return finish(o, material, 2.0)
-
-def ramp(name, x0, x1, y0, y1, z0, z1):
-	"""Invisible walkable wedge rising from z0 at x0 to z1 at x1 (collision only, never rendered).
-	A 15 cm curb is a wall for a capsule; a 20-degree ramp over it is not."""
-	v = [(x0,y0,z0),(x1,y0,z1),(x1,y0,z0),(x0,y1,z0),(x1,y1,z1),(x1,y1,z0)]
-	f = [(0,2,1),(3,4,5),(0,1,4,3),(1,2,5,4),(0,3,5,2)]
-	me = bpy.data.meshes.new(name); me.from_pydata(v, [], f); me.update()
-	o = bpy.data.objects.new(name, me); bpy.context.collection.objects.link(o)
-	return finish(o, 'asphalt')
-
-def empty(name, loc, yaw_deg):
-	o = bpy.data.objects.new(name, None); o.location = loc; o.rotation_euler = (0, 0, math.radians(yaw_deg))
-	bpy.context.collection.objects.link(o); return o
 
 # ---------- ground ----------
 box('C_Road', -4, 4, -22, 98, -.2, 0, 'asphalt', 4)
@@ -118,37 +38,25 @@ for i in range(40):
 	y = rng.uniform(-18, 94); s = rng.uniform(.6, 1.8)
 	box(f'Leaves_{i}', x-s/2, x+s/2, y-s, y+s, .0, .02 if i < 24 else .07, 'leaves_ground')
 
-# ---------- player's house (east, porch faces the street) ----------
-box('C_HomeBody', 8, 17, -7, 7, .05, 6.0, 'siding_cream', 2)
-gable('Roof_Home', 7.6, 17.4, -7.4, 7.4, 6.0, 8.6, 'roof')
-box('C_HomePorch', 6.5, 8.0, -2.4, 2.4, .05, .38, 'trim')
-box('C_HomeStep', 6.0, 6.5, -1.0, 1.0, .05, .26, 'trim')
+# ---------- player's house (east, porch faces the street): two-storey side-gable with a gabled porch ----------
+house('Home', 8, -7, 7, 9, 6.0, 'siding_cream', roof='side', ridge=8.6, door_u=0, door_id=True,
+	windows=[(-4.2, 1.15, 1.1, 1.45, False), (4.2, 1.15, 1.1, 1.45, True), (-4.2, 3.95, 1.0, 1.3, True), (4.2, 3.95, 1.0, 1.3, False)],
+	porch=(-2.4, 2.4, 1.5, .38), chimney=(7, 9.7))
 ramp('Ramp_Porch', 5.5, 6.5, -1.0, 1.0, .15, .38)
-box('HomePorchRoof', 6.4, 8.0, -2.6, 2.6, 2.75, 2.9, 'roof')
-for y in (-2.3, 2.3): cyl(f'C_HomePost_{y}', 6.6, y, .38, 2.75, .07, 'trim_paint', 6)
-box('I_homedoor_Door', 7.94, 8.0, -.5, .5, .38, 2.45, 'door_wood')
-for y, z, lit in [(-4.2, 1.4, False), (4.2, 1.4, True), (-4.2, 4.0, True), (0, 4.0, False), (4.2, 4.0, False)]:
-	box(('Glow_' if lit else '')+f'HomeWin_{y}_{z}', 7.97, 8.0, y-.6, y+.6, z, z+1.25, 'glow_warm' if lit else 'window_dark')
-	box(f'HomeTrim_{y}_{z}', 7.95, 7.99, y-.7, y+.7, z-.1, z+1.35, 'trim')
+box('I_homedoor_Door', 7.94, 8.0, -.5, .5, .38, 2.43, 'door_wood')
 empty('Spawn_porch', (6.9, 0, .38), 90)          # looking west at the street
 empty('Spawn_bedroom_door', (0, 0, 0), 0)          # marker only; bedroom spawn lives in Godot
 
-# ---------- neighbours (east) ----------
-for i, (y0, y1, siding) in enumerate([(15, 27, 'siding_sage'), (34, 46, 'siding_rust'), (72, 84, 'siding_cream')]):
-	box(f'C_House_{i}', 10, 18, y0, y1, .05, 5.4, siding, 2)
-	gable(f'Roof_House_{i}', 9.6, 18.4, y0-.4, y1+.4, 5.4, 7.6, 'roof')
-	box(f'C_HousePorch_{i}', 8.6, 10, (y0+y1)/2-2, (y0+y1)/2+2, .05, .35, 'trim')
-	box(f'HouseDoor_{i}', 9.95, 10.0, (y0+y1)/2-.5, (y0+y1)/2+.5, .35, 2.4, 'door_wood')
-	for dy in (-3.5, 3.5):
-		lit = rng.random() < .5
-		box(('Glow_' if lit else '')+f'HouseWin_{i}_{dy}', 9.97, 10.0, (y0+y1)/2+dy-.6, (y0+y1)/2+dy+.6, 1.3, 2.5, 'glow_warm' if lit else 'window_dark')
+# ---------- neighbours (east): front-gable, side-gable, front-gable ----------
+for i, (y0, y1, siding, roof, ridge) in enumerate([(15, 27, 'siding_sage', 'front', 8.5), (34, 46, 'siding_rust', 'side', 7.6), (72, 84, 'siding_cream', 'front', 8.3)]):
+	ym = (y0+y1)/2
+	lit = [rng.random() < .5 for _ in range(4)]
+	house(f'House{i}', 10, y0, y1, 8, 5.4, siding, roof=roof, ridge=ridge, door_u=ym,
+		windows=[(ym-3.5, 1.2, 1.1, 1.4, lit[0]), (ym+3.5, 1.2, 1.1, 1.4, lit[1]), (ym-3.3, 3.55, 1.0, 1.25, lit[2]), (ym+3.3, 3.55, 1.0, 1.25, lit[3])],
+		porch=(ym-2, ym+2, 1.4, .35), chimney=((y1 if i != 1 else y0), ridge+.8))
 
-# ---------- Morrow Records (west) ----------
-box('C_Records', -16, -6.5, 22, 34, .05, 4.6, 'brick', 1.2)
-box('RecordsParapet', -16.1, -6.4, 21.9, 34.1, 4.6, 5.0, 'brick_dark')
-box('Glow_RecordsWindow', -6.53, -6.48, 23.5, 30.5, .8, 2.7, 'glow_warm')
-box('RecordsDoor', -6.53, -6.47, 31.2, 32.4, .15, 2.3, 'door_wood')
-box('RecordsSign', -6.45, -6.3, 23, 33, 3.2, 4.1, 'sign_board')
+# ---------- Morrow Records (west): brick storefront, lit display, recessed sign band ----------
+storefront('Records', -6.5, -16, 22, 34, 4.6, 'brick', display=[(22.6, 30.7, True)], door_y=31.8)
 
 # ---------- Morrow Diner (west): 8 x 12 m, entrance on the street side ----------
 DX0, DX1, DY0, DY1, DH, T = -14.5, -6.5, 50, 62, 3.4, .25
@@ -201,10 +109,7 @@ empty('Spot_june', (-12.8, 54.5, .15), -90)        # June behind the counter (st
 # ---------- service alley: north of the diner, 15.5 m to a fence ----------
 AY0, AY1 = DY1, 65.5
 box('C_AlleyGround', -22.5, -6.5, AY0, AY1, -.2, .14, 'asphalt', 3)
-box('C_Hardware', -16, -6.5, AY1, 80, .05, 4.2, 'cinder', 1.5)
-box('HardwareParapet', -16.1, -6.4, AY1-.1, 80.1, 4.2, 4.6, 'cinder')
-box('HardwareWindow', -6.53, -6.48, 68, 77, .8, 2.6, 'window_dark')
-box('HardwareSign', -6.45, -6.3, 68.5, 76.5, 3.0, 3.8, 'sign_board')
+storefront('Hardware', -6.5, -16, AY1, 80, 4.2, 'cinder', display=[(67.4, 72.6, False), (74.6, 78.6, False)], door_y=73.6, parapet=.4)
 box('C_AlleyFence', -22.6, -22.4, AY0-1.5, AY1+1.5, .03, 2.2, 'fence_wood', .5)
 for y in (AY0-1.2, AY0+1.0, AY0+3.0, AY1+1.2): cyl(f'FencePost_{y}', -22.5, y, .03, 2.3, .07, 'pole_wood', 6)
 box('C_AlleyBackWall', -22.4, -16, AY0-6, AY0-5.8, .03, 2.0, 'fence_wood', .5)  # closes behind the diner
@@ -287,18 +192,18 @@ bpy.ops.wm.save_as_mainfile(filepath=str(SOURCE/'town_blockout.blend'))
 groups = {}
 for o in [o for o in bpy.data.objects if o.type == 'MESH']:
 	if o.name.startswith(('I_', 'Lamp_', 'Ramp_')): continue
-	kind = 'C' if o.name.startswith('C_') else 'Vis'
+	kind = 'Col' if o.name.startswith('Col_') else 'C' if o.name.startswith('C_') else 'Vis'
 	groups.setdefault((kind, o.data.materials[0].name), []).append(o)
 for (kind, material), objs in groups.items():
-	bpy.ops.object.select_all(action='DESELECT')
-	for o in objs: o.select_set(True)
-	bpy.context.view_layer.objects.active = objs[0]
-	if len(objs) > 1: bpy.ops.object.join()
+	# Context override instead of select_all: joining ~2,000 kit pieces stays fast.
+	if len(objs) > 1:
+		with bpy.context.temp_override(active_object=objs[0], selected_editable_objects=objs):
+			bpy.ops.object.join()
 	objs[0].name = f'{kind}_{material}'
 bpy.ops.export_scene.gltf(filepath=str(OUT/'town.glb'), export_format='GLB', export_apply=True, export_yup=True)
-tris = sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in bpy.data.objects if o.type == 'MESH')
+tris = sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in bpy.data.objects if o.type == 'MESH' and not o.name.startswith(('Col_', 'Ramp_')))
 report = {'objects': len([o for o in bpy.data.objects if o.type == 'MESH']), 'triangles': tris,
-	'collisions': len([o for o in bpy.data.objects if o.name.startswith('C_')]),
+	'collisions': len([o for o in bpy.data.objects if o.name.startswith(('C_', 'Col_'))]),
 	'interactive': sorted({o.name.split('_')[1] for o in bpy.data.objects if o.name.startswith('I_')}),
 	'lamps': len([o for o in bpy.data.objects if o.name.startswith('Lamp_')])}
 (ROOT/'assets/exported').mkdir(parents=True, exist_ok=True)
