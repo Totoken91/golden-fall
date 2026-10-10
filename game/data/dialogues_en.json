@@ -1,0 +1,344 @@
+{
+  "schema_version": "0.9.0",
+  "locale": "en-US",
+  "nodes": [
+    {
+      "id": "june_first",
+      "day": 0,
+      "speaker": "JUNE",
+      "line_id": "line_june_first",
+      "text": "Coffee's fresh. Pie's been here since noon.",
+      "choices": [
+        {
+          "id": "june_coffee",
+          "text": "Just coffee, thanks.",
+          "reply_id": "june_first_june_coffee_reply",
+          "reply_text": "Coming up.",
+          "remember_flags": [
+            "met_june",
+            "ordered_coffee"
+          ]
+        },
+        {
+          "id": "june_pie",
+          "text": "Is the pie that bad?",
+          "reply_id": "june_first_june_pie_reply",
+          "reply_text": "It's fine. Just don't ask what time we made it.",
+          "remember_flags": [
+            "met_june",
+            "asked_about_pie"
+          ]
+        },
+        {
+          "id": "june_look",
+          "text": "I'll look around first.",
+          "reply_id": "june_first_june_look_reply",
+          "reply_text": "Sure. Just keep the door shut. It's cold out.",
+          "remember_flags": [
+            "met_june"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hannah_first",
+      "day": 0,
+      "speaker": "HANNAH",
+      "line_id": "line_hannah_first",
+      "text": "You can sit there. Just don't put your elbow on the prints.",
+      "choices": [
+        {
+          "id": "hannah_prints",
+          "text": "Those yours?",
+          "reply_id": "hannah_first_hannah_prints_reply",
+          "reply_text": "Yeah. Most of them look like the inside of a toaster.",
+          "remember_flags": [
+            "met_hannah",
+            "asked_about_film"
+          ]
+        },
+        {
+          "id": "hannah_sorry",
+          "text": "Sorry.",
+          "reply_id": "hannah_first_hannah_sorry_reply",
+          "reply_text": "You're fine. I keep spreading them everywhere.",
+          "remember_flags": [
+            "met_hannah"
+          ]
+        },
+        {
+          "id": "hannah_quality",
+          "text": "Any good ones?",
+          "reply_id": "hannah_first_hannah_quality_reply",
+          "reply_text": "Maybe two. I'm keeping the bad ones anyway.",
+          "remember_flags": [
+            "met_hannah",
+            "asked_about_film"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "june_day2",
+      "day": 1,
+      "speaker": "JUNE",
+      "line_id": "line_june_day2",
+      "text": "Didn't expect to see you twice in one week.",
+      "choices": [
+        {
+          "id": "june_day2_friendly",
+          "text": "That makes two of us.",
+          "reply_id": "june_day2_june_day2_friendly_reply",
+          "reply_text": "That's usually how it goes.",
+          "remember_flags": [
+            "returned_to_diner"
+          ]
+        },
+        {
+          "id": "june_day2_dry",
+          "text": "You don't want me here?",
+          "reply_id": "june_day2_june_day2_dry_reply",
+          "reply_text": "I didn't say that.",
+          "remember_flags": [
+            "returned_to_diner"
+          ]
+        }
+      ],
+      "alternate_intro_if": "not met_june",
+      "alternate_intro_text": "You need a table? Sit where you like.",
+      "callback_if_flags": [
+        {
+          "if": "asked_about_pie",
+          "replace_opening": "You survived the pie. I'll put that on the sign outside."
+        },
+        {
+          "if": "met_june",
+          "else_text": "Didn't expect to see you twice in one week."
+        }
+      ]
+    },
+    {
+      "id": "hannah_day2",
+      "day": 1,
+      "speaker": "HANNAH",
+      "line_id": "line_hannah_day2",
+      "text": "I washed a whole roll of film in my coat pocket.",
+      "choices": [
+        {
+          "id": "day2_film_ask",
+          "text": "Can you still develop it?",
+          "reply_id": "hannah_day2_day2_film_ask_reply",
+          "reply_text": "Probably. I'd rather not find out.",
+          "remember_flags": [
+            "talked_hannah_day2"
+          ]
+        },
+        {
+          "id": "day2_film_sympathy",
+          "text": "That's rough.",
+          "reply_id": "hannah_day2_day2_film_sympathy_reply",
+          "reply_text": "Yeah. At least I remembered my keys.",
+          "remember_flags": [
+            "talked_hannah_day2"
+          ]
+        },
+        {
+          "id": "day2_film_joke",
+          "text": "Maybe it looks better now.",
+          "reply_id": "hannah_day2_day2_film_joke_reply",
+          "reply_text": "If it does, I'm charging more for prints.",
+          "remember_flags": [
+            "talked_hannah_day2"
+          ]
+        }
+      ],
+      "alternate_intro_if": "not met_hannah",
+      "alternate_intro_text": "You're new here, right? I'm Hannah.",
+      "callback_if_flags": [
+        {
+          "if": "asked_about_film",
+          "replace_opening": "You asked about my photos yesterday. I washed a whole roll of film in my coat pocket."
+        }
+      ]
+    },
+    {
+      "id": "fri_opening",
+      "day": 2,
+      "speaker": "HANNAH",
+      "line_id": "line_fri_opening",
+      "text": "I almost didn't come tonight.",
+      "choices": [
+        {
+          "id": "open_bad_day",
+          "text": "Bad day?",
+          "reply_id": "fri_opening_open_bad_day_reply",
+          "reply_text": "Nothing dramatic. I just kept putting my shoes on and taking them off.",
+          "remember_flags": [
+            "fri_opening_completed"
+          ]
+        },
+        {
+          "id": "open_stay_home",
+          "text": "You could've stayed home.",
+          "reply_id": "fri_opening_open_stay_home_reply",
+          "reply_text": "I know. That's why I came.",
+          "remember_flags": [
+            "fri_opening_completed"
+          ]
+        },
+        {
+          "id": "open_glad",
+          "text": "I'm glad you did.",
+          "reply_id": "fri_opening_open_glad_reply",
+          "reply_text": "...Yeah. Me too.",
+          "remember_flags": [
+            "fri_opening_completed"
+          ]
+        }
+      ],
+      "required_for_rehearsal": true
+    },
+    {
+      "id": "fri_radio",
+      "day": 2,
+      "speaker": "HANNAH",
+      "line_id": "line_fri_radio",
+      "text": "June turns the radio down when it rains.",
+      "choices": [
+        {
+          "id": "radio_sound",
+          "text": "Maybe she likes the sound.",
+          "reply_id": "fri_radio_radio_sound_reply",
+          "reply_text": "Could be. This roof makes enough noise for both of us.",
+          "remember_flags": [
+            "fri_radio_completed"
+          ]
+        },
+        {
+          "id": "radio_notice",
+          "text": "I hadn't noticed.",
+          "reply_id": "fri_radio_radio_notice_reply",
+          "reply_text": "You will now.",
+          "remember_flags": [
+            "fri_radio_completed"
+          ]
+        },
+        {
+          "id": "radio_backwards",
+          "text": "Isn't that backwards?",
+          "reply_id": "fri_radio_radio_backwards_reply",
+          "reply_text": "Probably. Ask her. She never gives me the same answer.",
+          "remember_flags": [
+            "fri_radio_completed"
+          ]
+        }
+      ],
+      "required_for_rehearsal": true
+    },
+    {
+      "id": "june_after",
+      "day": 2,
+      "speaker": "JUNE",
+      "line_id": "line_june_after",
+      "text": "I didn't see her out back. I was in the kitchen.",
+      "condition": "player_asks_about_ally_after_anomaly"
+    }
+  ],
+  "ordinary_offscreen": [
+    {
+      "speaker": "JUNE",
+      "text": "Could you grab the door for me? My hands are full.",
+      "day": 0
+    },
+    {
+      "speaker": "CUSTOMER",
+      "text": "Got it.",
+      "day": 0
+    },
+    {
+      "speaker": "JUNE",
+      "text": "You want the check now, or in a minute?",
+      "day": 1
+    }
+  ],
+  "rehearsal": {
+    "internal_title": "THE REHEARSAL (never shown to player)",
+    "requires": [
+      "fri_opening_completed",
+      "fri_radio_completed",
+      "hannah_exited",
+      "day_2"
+    ],
+    "sequence": [
+      {
+        "kind": "stored_prompt",
+        "node_id": "fri_opening",
+        "display_speaker": "HANNAH",
+        "hold_s": 2.1
+      },
+      {
+        "kind": "stored_selected_choice",
+        "node_id": "fri_opening",
+        "display_speaker": "???",
+        "hold_s": 2.4
+      },
+      {
+        "kind": "stored_reply",
+        "node_id": "fri_opening",
+        "display_speaker": "HANNAH",
+        "hold_s": 2.0
+      },
+      {
+        "kind": "authored_fragment",
+        "fragment_id": "fracture_01",
+        "hold_s": 2.0
+      },
+      {
+        "kind": "stored_prompt",
+        "node_id": "fri_radio",
+        "display_speaker": "HANNAH",
+        "hold_s": 2.1
+      },
+      {
+        "kind": "stored_selected_choice",
+        "node_id": "fri_radio",
+        "display_speaker": "???",
+        "hold_s": 2.4
+      },
+      {
+        "kind": "stored_reply",
+        "node_id": "fri_radio",
+        "display_speaker": "HANNAH",
+        "hold_s": 1.8
+      },
+      {
+        "kind": "authored_fragment",
+        "fragment_id": "fracture_02",
+        "hold_s": 3.0
+      },
+      {
+        "kind": "silence",
+        "hold_s": 8.0
+      }
+    ],
+    "fragments": [
+      {
+        "id": "fracture_01",
+        "display_speaker": "HANNAH",
+        "text": "I almost... I al— I almost didn't..."
+      },
+      {
+        "id": "fracture_02",
+        "display_speaker": "???",
+        "text": "...turns the radio down when it rains."
+      }
+    ],
+    "rules": [
+      "selected choices MUST come from saved earlier choices verbatim",
+      "no player-facing YOU",
+      "no voice recordings or TTS",
+      "do not signal the event is a rehearsal",
+      "never replay consumed event after reload"
+    ]
+  }
+}

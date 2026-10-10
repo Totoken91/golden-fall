@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "purpose": "Wood cohesion pass, original official sources cached, 0 network requests",
+  "settings": {
+    "wood_target_texels_per_m": 224.0,
+    "albedo_contrast": 0.72,
+    "albedo_exposure": 1.06,
+    "dark_wood_tint": [
+      0.42,
+      0.42,
+      0.4
+    ]
+  },
+  "materials": {
+    "polyhaven/wood_table_worn/psx_faceted_128_32cd7c1e": {
+      "source_key": "polyhaven/wood_table_worn/psx_faceted_128_32cd7c1e",
+      "source_page": "https://polyhaven.com/a/wood_table_worn",
+      "license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "source_tile_m": [
+        0.55,
+        0.55
+      ],
+      "source_albedo_sha256": "a3cde6b8d19ca6919c15a5f5c6cd32d7bb855e410711c9beebe751da25f3a5cf",
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "contrast_around_each_channel_mean": 0.72,
+        "exposure": 1.06,
+        "target_texels_per_m": 224.0,
+        "rendered_tile_m": 0.5714285714285714,
+        "notes": "All four maps share the same UV scale. No new source, resolution, geometry or baked lighting."
+      },
+      "godot": {
+        "material": "game/assets/textures/library/room_cohesion/wood_table_worn/76610d12/material.tres",
+        "sha256": "9680c5df74e319e710bfab193736896602c670b81bba24c30dc76d37956f3895",
+        "maps": {
+          "albedo": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_worn/76610d12/albedo.png",
+            "sha256": "6056250f2b83abf08c62eebb25461cff3c4a173da78bf0e12dc8abf41678a764"
+          },
+          "normal": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_worn/76610d12/normal.png",
+            "sha256": "c6c9f51965565d7a9570f8568c0efafe8f56255eb56cbcb49d7958db83cc3d5f"
+          },
+          "roughness": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_worn/76610d12/roughness.png",
+            "sha256": "e718b65ce28289f02a8592cf16d51661344644de35a25d7554e9af2b0d03acdb"
+          },
+          "ao": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_worn/76610d12/ao.png",
+            "sha256": "156999f7dbc4a796b25d4aa04b798b0c9037b5546efdf07a8d2773e25db33b7a"
+          }
+        },
+        "tile_m": [
+          0.55,
+          0.55
+        ],
+        "surface_m": [
+          0.55,
+          0.55
+        ],
+        "uv_scale": [
+          1.0,
+          1.0
+        ],
+        "uv_contract": "UV 0..1 spans surface_m; change scale per target surface",
+        "applied_to_game_scene": true,
+        "runtime_uv_scale_override": [
+          1.75,
+          1.75,
+          1
+        ]
+      },
+      "status": "visually_checked_in_engine",
+      "visual_review": {
+        "capture": "captures/cohesion_v017/apres_bureau.png",
+        "sha256": "1f2daa8ca44ebad65f4efb3d2e63eb7a3fb1cc6a576f6b21a1f700f5711e5818",
+        "notes": "Inspected PCK captures: finer bedside grain and softer wood contrast. Engine review, not user approval."
+      }
+    },
+    "polyhaven/wood_table_001/furniture_psx_128_75f846ca": {
+      "source_key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "source_page": "https://polyhaven.com/a/wood_table_001",
+      "license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "source_tile_m": [
+        1.5,
+        1.5
+      ],
+      "source_albedo_sha256": "4d53d5cd5d80a7512ffa09fcfe5cbf117c741f6e81b35091738a84e43a6c8fea",
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "contrast_around_each_channel_mean": 0.72,
+        "exposure": 1.06,
+        "target_texels_per_m": 224.0,
+        "rendered_tile_m": 0.5714285714285714,
+        "notes": "All four maps share the same UV scale. No new source, resolution, geometry or baked lighting."
+      },
+      "godot": {
+        "material": "game/assets/textures/library/room_cohesion/wood_table_001/2da9cea3/material.tres",
+        "sha256": "fc9088f30d8132f424e07dfe907c6c7db1f3dbee5116c9e52def9c7d717f527e",
+        "maps": {
+          "albedo": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_001/2da9cea3/albedo.png",
+            "sha256": "abefaca8cc4ee62ce6ef7724c202463d1c2f52448d1c32a15390d92af3412550"
+          },
+          "normal": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_001/2da9cea3/normal.png",
+            "sha256": "14f531a23a2311539fd7df8c2c22f274da41889a14563130eeb942e8eda66f10"
+          },
+          "roughness": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_001/2da9cea3/roughness.png",
+            "sha256": "70834288be896ca30f18987d6662345aa454a3823cf1e925ed20116bbb22e986"
+          },
+          "ao": {
+            "path": "game/assets/textures/library/room_cohesion/wood_table_001/2da9cea3/ao.png",
+            "sha256": "9c9569f1fb85262472203eaf110f4ad6b508f83ebe1c893c9156b004f758e852"
+          }
+        },
+        "tile_m": [
+          1.5,
+          1.5
+        ],
+        "surface_m": [
+          1.5,
+          1.5
+        ],
+        "uv_scale": [
+          1.0,
+          1.0
+        ],
+        "uv_contract": "UV 0..1 spans surface_m; change scale per target surface",
+        "applied_to_game_scene": true,
+        "runtime_uv_scale_override": [
+          1.75,
+          1.75,
+          1
+        ]
+      },
+      "status": "visually_checked_in_engine",
+      "visual_review": {
+        "capture": "captures/cohesion_v017/apres_chevet.png",
+        "sha256": "76992788a82c8c372c39c6c579c2c5e952842edda912371912109e31fb413d53",
+        "notes": "Inspected PCK captures: finer bedside grain and softer wood contrast. Engine review, not user approval."
+      }
+    }
+  }
+}

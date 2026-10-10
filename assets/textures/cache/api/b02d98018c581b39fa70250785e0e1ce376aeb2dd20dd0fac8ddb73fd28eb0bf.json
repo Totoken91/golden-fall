@@ -1,0 +1,51 @@
+{
+  "url": "https://api.polyhaven.com/info/wooden_panels",
+  "fetched_at": 1791570507.1244226,
+  "data": {
+    "type": 1,
+    "name": "Wooden Panels",
+    "categories": [
+      "wood",
+      "man made"
+    ],
+    "tags": [
+      "rough",
+      "wood",
+      "paneling",
+      "lacquered",
+      "wood panel ",
+      "wood grain",
+      "recessed panels",
+      "varnished",
+      "framed panels",
+      "garage door"
+    ],
+    "description": "Free 8K texture of dark varnished wooden panels with framed recessed boards, rich grain, subtle lacquer sheen, gentle wear and rougher edges.",
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2099.9999046325684,
+      2099.9999046325684
+    ],
+    "files_hash": "9598a21ac90fbb2ecb01e6df10e6da2a4ff8d6e8",
+    "date_published": 1779148800,
+    "staging": null,
+    "category_id": "a7bb33c4-8575-586e-a502-7094517b10c5",
+    "category": "Wood/Boards & Planks/Finished & Varnished",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "worn"
+      ],
+      "origin": "man_made"
+    },
+    "img_version": "372582e1",
+    "download_count": 7084,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/wooden_panels.png?width=256&height=256&format=webp&v=372582e1"
+  }
+}

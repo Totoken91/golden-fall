@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=cotton+fabric&t=textures&limit=8&future=false",
+  "fetched_at": 1791570512.6066473,
+  "data": {
+    "query": "cotton fabric",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 328,
+    "considered": 886,
+    "keywordMatches": 43,
+    "results": [
+      {
+        "slug": "cotton_jersey",
+        "score": 0.6148
+      },
+      {
+        "slug": "fabric_pattern_05",
+        "score": 0.624
+      },
+      {
+        "slug": "stretch_poplin",
+        "score": 0.6058
+      },
+      {
+        "slug": "fabric_pattern_07",
+        "score": 0.5943
+      },
+      {
+        "slug": "denim_fabric_05",
+        "score": 0.6096
+      },
+      {
+        "slug": "rough_linen",
+        "score": 0.5823
+      },
+      {
+        "slug": "waffle_pique_cotton",
+        "score": 0.5712
+      },
+      {
+        "slug": "denim_fabric_04",
+        "score": 0.6058
+      }
+    ]
+  }
+}

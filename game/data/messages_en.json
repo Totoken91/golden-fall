@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.9.0",
+  "locale": "en-US",
+  "messages": [
+    {
+      "id": "im_day1",
+      "day": 0,
+      "from": "mossline",
+      "text": "June's got the late shift. Diner's open if you need somewhere dry.",
+      "required": false
+    },
+    {
+      "id": "im_day2",
+      "day": 1,
+      "from": "mossline",
+      "text": "Someone left a stack of local-show flyers in the library. Same bands as always.",
+      "required": false
+    },
+    {
+      "id": "im_day3",
+      "day": 2,
+      "from": "mossline",
+      "text": "It hasn't stopped raining. At least the diner stays warm.",
+      "required": false
+    }
+  ]
+}

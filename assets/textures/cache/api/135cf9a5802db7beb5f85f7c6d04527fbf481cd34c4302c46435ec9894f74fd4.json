@@ -1,0 +1,51 @@
+{
+  "url": "https://api.polyhaven.com/info/oak_wood_planks",
+  "fetched_at": 1791570506.917131,
+  "data": {
+    "type": 1,
+    "name": "Oak Wood Planks",
+    "tags": [
+      "wood",
+      "planks",
+      "oak",
+      "wooden floor",
+      "wooden flooring ",
+      "wooden planks",
+      "varnished",
+      "timber",
+      "plank",
+      "coated"
+    ],
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1200.0000476837158,
+      1200.0000476837158
+    ],
+    "staging": null,
+    "files_hash": "3d6efc312fcf1704fba7b78c1aa0ffb7159ada22",
+    "description": "Free 8K texture of varnished oak wood planks with warm grain, subtle gloss and seamless joins - ideal for realistic wooden flooring, furniture, and interior scenes.",
+    "category_id": "a7bb33c4-8575-586e-a502-7094517b10c5",
+    "category": "Wood/Boards & Planks/Finished & Varnished",
+    "attributes": {
+      "surface_use": "floor",
+      "origin": "man_made",
+      "condition": [
+        "clean"
+      ]
+    },
+    "date_published": 1786448942,
+    "categories": [
+      "wood"
+    ],
+    "vault": "wood",
+    "img_version": "79953a74",
+    "download_count": 13012,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/oak_wood_planks.png?width=256&height=256&format=webp&v=79953a74"
+  }
+}

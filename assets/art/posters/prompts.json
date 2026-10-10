@@ -1,0 +1,15 @@
+{
+  "tool": "builtin image_gen",
+  "date": "2026-10-09",
+  "user_authorization": "les posters sont un peu nuls tu peux les imagen ?",
+  "images": [
+    {
+      "file": "morrow_creek.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original flat poster artwork to be used as a tiny wall texture in a PSX-style bedroom game set around 2003.\nCreate a beautiful, distinctive autumn travel screenprint titled MORROW CREEK. Portrait 3:4 composition, artwork fills the complete rectangular image, perfectly front-facing with no perspective or surrounding scene. Large elegant cream condensed serif title at the top, very readable. A sweeping copper-orange maple canopy frames a still dark olive lake; a small pale winding creek creates a strong graceful S shape toward distant layered misty evergreen hills. Rich silhouettes and large thoughtful negative spaces, sophisticated hand-cut woodblock shapes rather than generic triangle trees. Restrained 5-ink print in tobacco brown, golden ochre, burnt copper, charcoal olive and warm ivory. Slight paper grain and imperfect ink registration, not excessive damage. Quiet nostalgic October, a print a teenager might pin up in 2003. Design must remain recognizable when reduced to 192x256 pixels.\nText verbatim, exactly two blocks: \"MORROW CREEK\" across the top and \"OCTOBER / 2003\" small but readable at the bottom. No other words.\nNo frame, no tape, no wall, no mockup, no photographs, no logos, no watermark. Original composition. Opaque paper background."
+    },
+    {
+      "file": "the_long_way_home.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original flat indie graphic poster artwork for a PSX-style bedroom game set around 2003.\nCreate a striking portrait 3:4 independent zine screenprint titled THE LONG WAY HOME. Entire image is the front-facing rectangular printed design, no surrounding environment. Distinct editorial graphic design: oversized imperfect condensed block typography, a pale serpentine empty country road cutting through dark silhouettes of telephone poles and autumn woods, one tiny distant warm light, expansive textured dusk sky. Asymmetrical collage of cut-paper shapes and ink, melancholy but comforting, analog DIY design from 2003, aesthetically sophisticated, not a generic travel poster. Golden brown and ochre paper, deep umber, faded burgundy, muted olive and warm ivory; no saturated cyan or neon. Broad graphic masses that remain readable at 192x256 pixels. Subtle photocopier ink and paper texture, crisp strong shapes, no micro-detail noise.\nText verbatim, exactly \"THE LONG WAY\" in the upper part and \"HOME\" very large at the bottom. No other text, no invented band or event.\nNo frame, tape, wall, room, mockup, logos or watermark. Entire art fills the canvas. Opaque background."
+    }
+  ]
+}

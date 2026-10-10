@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.9.0",
+  "locale": "en-US",
+  "site_name": "Morrow Search",
+  "pages": [
+    {
+      "id": "morrow_main",
+      "url": "http://www.morrowcreek.net/",
+      "title": "Morrow Creek — Visitor Information",
+      "published": "2003-09-26",
+      "keywords": [
+        "morrow creek",
+        "town",
+        "oregon",
+        "visitor"
+      ],
+      "body": "Morrow Creek welcomes you. The falls lookout trail remains closed for maintenance. Fall Market is October 25. Please call the town office for hours."
+    },
+    {
+      "id": "diner_review",
+      "url": "http://www.pineboard.net/~dinerlist/morrow.html",
+      "title": "Late Eats — Morrow Creek Diner",
+      "published": "2003-07-03",
+      "keywords": [
+        "diner",
+        "coffee",
+        "pie",
+        "morrow creek"
+      ],
+      "body": "The coffee is decent. Sit by the window when it rains. If June is working, ask what happened to the old jukebox."
+    },
+    {
+      "id": "lowfi_gig",
+      "url": "http://www.localshows.net/morrow/fall03.htm",
+      "title": "Local Shows: October 2003",
+      "published": "2003-10-02",
+      "keywords": [
+        "music",
+        "folk",
+        "show",
+        "guitar",
+        "october"
+      ],
+      "body": "Friday acoustic night is postponed. Bring your own chords next time. Please stop leaving flyers on the telephone pole by the diner."
+    }
+  ]
+}

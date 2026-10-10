@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.9.0",
+  "purpose": "gentle nonverbal UI ticks, NOT voices, TTS or phoneme synthesis",
+  "defaults": {
+    "enabled": true,
+    "max_notes_per_second": 7,
+    "skip_spaces": true,
+    "skip_punctuation_only": true,
+    "characters_per_note": 2,
+    "master_gain_db": -21,
+    "user_adjustable": true
+  },
+  "speakers": {
+    "HANNAH": {
+      "shape": "sine_soft",
+      "base_hz": 250,
+      "random_semitones": 1.2,
+      "attack_ms": 3,
+      "decay_ms": 28,
+      "gain_db": -23
+    },
+    "JUNE": {
+      "shape": "triangle_soft",
+      "base_hz": 360,
+      "random_semitones": 0.8,
+      "attack_ms": 2,
+      "decay_ms": 24,
+      "gain_db": -25
+    },
+    "CUSTOMER": {
+      "shape": "sine_soft",
+      "base_hz": 290,
+      "random_semitones": 0.5,
+      "attack_ms": 3,
+      "decay_ms": 24,
+      "gain_db": -27
+    },
+    "???": {
+      "shape": "sine_soft",
+      "base_hz": 282,
+      "random_semitones": 0.4,
+      "attack_ms": 3,
+      "decay_ms": 25,
+      "gain_db": -25
+    }
+  },
+  "constraints": [
+    "not copyrighted Animal Crossing sounds",
+    "no goofy chirping",
+    "no dramatic horror glitch pitch modulation",
+    "do not treat note frequencies as human voices"
+  ]
+}

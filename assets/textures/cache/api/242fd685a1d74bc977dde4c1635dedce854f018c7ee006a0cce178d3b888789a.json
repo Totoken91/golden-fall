@@ -1,0 +1,57 @@
+{
+  "url": "https://api.polyhaven.com/info/painted_rusty_metal_gate",
+  "fetched_at": 1791570515.6054072,
+  "data": {
+    "type": 1,
+    "name": "Painted Rusty Metal Gate",
+    "categories": [
+      "metal",
+      "dirty",
+      "industrial",
+      "man made",
+      "outdoor",
+      "wall"
+    ],
+    "category": "Metal/Cladding & Shutters/Shutters & Doors",
+    "attributes": {
+      "surface_use": "object",
+      "origin": "man_made",
+      "setting": "outdoor",
+      "condition": [
+        "weathered",
+        "painted",
+        "rusted"
+      ]
+    },
+    "vault": "upcoming",
+    "tags": [
+      "weathered",
+      "painted",
+      "rusty",
+      "corroded",
+      "steel",
+      "ribbed",
+      "corrugated"
+    ],
+    "description": "Free 8K texture of a blue-gray painted metal gate with vertical seams, scattered rust spots, worn edges, and subtle weathering.",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "social_post_pending": true,
+    "category_id": "da0d83ea-5e82-5d71-a933-ae328356e9d8",
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1697.952151298523,
+      1697.9529857635498
+    ],
+    "img_version": "a233e9b9",
+    "files_hash": "22d5843548a92118e58ad7fe1fa9a84e9549731c",
+    "date_published": 32503680000,
+    "staging": null,
+    "download_count": 1,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/painted_rusty_metal_gate.png?width=256&height=256&format=webp&v=a233e9b9"
+  }
+}

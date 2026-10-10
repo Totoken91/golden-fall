@@ -1,0 +1,52 @@
+{
+  "url": "https://api.polyhaven.com/info/denim_fabric_06",
+  "fetched_at": 1791570514.2270727,
+  "data": {
+    "type": 1,
+    "name": "Denim Fabric 06",
+    "authors": {
+      "Greg Zaal": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      254.15802731412134,
+      254.0000081062317
+    ],
+    "staging": null,
+    "files_hash": "391cf3b8d04fbcd5f2e111885c3c333d03ce982b",
+    "tags": [
+      "dark",
+      "worn",
+      "jeans",
+      "denim",
+      "twill",
+      "matte",
+      "durable",
+      "textile ",
+      "weave"
+    ],
+    "description": "Free PBR denim texture: dark, worn twill with a matte, durable weave - realistic jeans surface ideal for clothing, upholstery, and rugged textile props.",
+    "date_published": 1757078158,
+    "categories": [
+      "fabric",
+      "denim"
+    ],
+    "category_id": "14f36823-af15-5f03-824e-e31a2eadaedc",
+    "category": "Textiles & Leather/Denim",
+    "attributes": {
+      "surface_use": "object",
+      "condition": [
+        "worn"
+      ],
+      "origin": "man_made"
+    },
+    "vault": "fabric",
+    "img_version": "d2c7af73",
+    "download_count": 24739,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/denim_fabric_06.png?width=256&height=256&format=webp&v=d2c7af73"
+  }
+}

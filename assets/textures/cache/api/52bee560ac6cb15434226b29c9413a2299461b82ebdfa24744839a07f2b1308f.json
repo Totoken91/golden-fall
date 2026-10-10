@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/worn_planks",
+  "fetched_at": 1791570505.0166767,
+  "data": {
+    "name": "Worn Planks",
+    "categories": [
+      "wood"
+    ],
+    "type": 1,
+    "tags": [
+      "aged wood",
+      "distressed",
+      "wood",
+      "wooden planks",
+      "wooden",
+      "wooden flooring ",
+      "wooden floor",
+      "peeling",
+      "rustic",
+      "weathered",
+      "distressed wood",
+      "worn"
+    ],
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1400.0000953674316,
+      1400.0000953674316
+    ],
+    "date_published": 1713830400,
+    "staging": null,
+    "files_hash": "c5ee2eb042a95637eeaa001d0ba93e81290ed52a",
+    "description": "Free 8K texture of worn wooden planks with peeling paint, deep cracks, rough grain and varied faded tones with rustic weathering.",
+    "category_id": "30ac2613-5076-5364-b4da-130117ad592d",
+    "category": "Wood/Boards & Planks/Weathered Planks",
+    "attributes": {
+      "surface_use": "floor",
+      "condition": [
+        "weathered",
+        "cracked",
+        "worn",
+        "painted"
+      ],
+      "origin": "man_made"
+    },
+    "img_version": "7baf2be7",
+    "download_count": 85236,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/worn_planks.png?width=256&height=256&format=webp&v=7baf2be7"
+  }
+}

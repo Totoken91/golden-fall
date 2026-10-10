@@ -1,0 +1,272 @@
+{
+  "max_file_mb": 48,
+  "max_acquisition_mb": 32,
+  "profiles": {
+    "retro_realistic": {
+      "saturation": 0.88,
+      "rgb_gain": [
+        1.02,
+        1.0,
+        0.94
+      ],
+      "normal_scale": 0.35,
+      "filter_enum": 3,
+      "filter_name": "linear with mipmaps; world pixel pass preserved"
+    },
+    "psx_faceted": {
+      "saturation": 0.85,
+      "rgb_gain": [
+        1.02,
+        1.0,
+        0.94
+      ],
+      "normal_scale": 0.18,
+      "filter_enum": 2,
+      "filter_name": "nearest with mipmaps, opt-in per material"
+    },
+    "neutral": {
+      "saturation": 1.0,
+      "rgb_gain": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "normal_scale": 0.35,
+      "filter_enum": 3,
+      "filter_name": "linear with mipmaps"
+    },
+    "parquet_psx": {
+      "saturation": 0.88,
+      "rgb_gain": [
+        1.02,
+        1.0,
+        0.94
+      ],
+      "normal_scale": 0.35,
+      "filter_enum": 2,
+      "filter_name": "nearest with mipmaps; same color and normal strength as approved 256px sample"
+    },
+    "furniture_psx": {
+      "saturation": 0.6,
+      "rgb_gain": [
+        1.9,
+        2.2,
+        1.9
+      ],
+      "normal_scale": 0.12,
+      "filter_enum": 2,
+      "filter_name": "nearest with mipmaps; fine-grain wood albedo exposed to match original furniture brown, no baked lighting"
+    }
+  },
+  "briefs": {
+    "wood_floor": {
+      "query": "old wooden floor",
+      "ambientcg_query": "wood floor",
+      "usage": "Parquet intérieur usé, grain à taille humaine, bois tabac/brun ; pas de bois fraîchement verni partout",
+      "require_any": [
+        "wood",
+        "wooden",
+        "hardwood",
+        "planks"
+      ],
+      "prefer": [
+        "old",
+        "aged",
+        "worn",
+        "scratches",
+        "brown",
+        "floor",
+        "interior"
+      ],
+      "avoid": [
+        "modern",
+        "clean",
+        "pristine",
+        "bamboo",
+        "snow",
+        "stylized"
+      ]
+    },
+    "aged_plaster": {
+      "query": "old plaster wall",
+      "ambientcg_query": "plaster",
+      "usage": "Enduit ancien sur une surface secondaire, texture réaliste mate ; conserver les murs personnels et le papier peint de la chambre",
+      "require_any": [
+        "plaster",
+        "stucco",
+        "concrete"
+      ],
+      "prefer": [
+        "old",
+        "worn",
+        "broken",
+        "rough",
+        "wall",
+        "paint"
+      ],
+      "avoid": [
+        "modern",
+        "clean",
+        "polished",
+        "tiles",
+        "brick"
+      ]
+    },
+    "weathered_metal": {
+      "query": "rusty painted metal",
+      "ambientcg_query": "rust metal",
+      "usage": "Métal peint usé pour petit équipement extérieur, rouille localisée ; ne pas appliquer aux bois ou aux textiles",
+      "require_any": [
+        "metal",
+        "steel",
+        "iron"
+      ],
+      "prefer": [
+        "rust",
+        "rusty",
+        "worn",
+        "paint",
+        "old"
+      ],
+      "avoid": [
+        "chrome",
+        "polished",
+        "clean",
+        "modern"
+      ]
+    },
+    "furniture_wood": {
+      "query": "worn wooden furniture",
+      "ambientcg_query": "wood",
+      "usage": "Bois ancien de meubles intérieurs, grain brun fin, sans joints de parquet",
+      "require_any": [
+        "wood",
+        "wooden"
+      ],
+      "prefer": [
+        "furniture",
+        "table",
+        "grain",
+        "brown",
+        "worn"
+      ],
+      "avoid": [
+        "floor",
+        "planks",
+        "bark",
+        "painted",
+        "rotten"
+      ]
+    },
+    "dark_furniture": {
+      "query": "dark varnished wood",
+      "ambientcg_query": "wood",
+      "usage": "Bois sombre verni des cadres et montants, distinct du parquet",
+      "require_any": [
+        "wood",
+        "wooden"
+      ],
+      "prefer": [
+        "dark",
+        "table",
+        "grain",
+        "brown",
+        "furniture"
+      ],
+      "avoid": [
+        "floor",
+        "planks",
+        "bark",
+        "painted"
+      ]
+    },
+    "curtain_linen": {
+      "query": "linen fabric",
+      "ambientcg_query": "fabric",
+      "usage": "Lin mat pour rideaux anciens beige olive, sans motifs modernes",
+      "require_any": [
+        "fabric",
+        "linen",
+        "cloth"
+      ],
+      "prefer": [
+        "linen",
+        "woven",
+        "beige",
+        "cotton"
+      ],
+      "avoid": [
+        "carpet",
+        "leather",
+        "denim",
+        "knitted",
+        "pattern"
+      ]
+    },
+    "pillow_cotton": {
+      "query": "cotton fabric",
+      "ambientcg_query": "fabric",
+      "usage": "Coton écru fin pour oreillers et matelas, préserver les coutures",
+      "require_any": [
+        "fabric",
+        "cotton",
+        "cloth"
+      ],
+      "prefer": [
+        "cotton",
+        "white",
+        "plain",
+        "woven"
+      ],
+      "avoid": [
+        "carpet",
+        "leather",
+        "denim",
+        "knitted"
+      ]
+    },
+    "bag_canvas": {
+      "query": "canvas fabric",
+      "ambientcg_query": "fabric",
+      "usage": "Toile du sac scolaire usé, vert olive sombre, préserver sangles et coutures",
+      "require_any": [
+        "fabric",
+        "canvas",
+        "cloth"
+      ],
+      "prefer": [
+        "canvas",
+        "woven",
+        "rough",
+        "green"
+      ],
+      "avoid": [
+        "carpet",
+        "leather",
+        "knitted",
+        "pattern"
+      ]
+    },
+    "painted_metal": {
+      "query": "painted metal",
+      "ambientcg_query": "metal",
+      "usage": "Métal peint sombre de la corbeille, usure discrète ; pas chrome ni rouille de ruine",
+      "require_any": [
+        "metal",
+        "steel"
+      ],
+      "prefer": [
+        "painted",
+        "worn",
+        "dark"
+      ],
+      "avoid": [
+        "polished",
+        "chrome",
+        "corrugated",
+        "roof",
+        "rusty"
+      ]
+    }
+  }
+}

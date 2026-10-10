@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.9.0",
+  "manual_checks": [
+    {
+      "id": "P01",
+      "name": "Existing home preserved",
+      "pass_when": "Bedroom, PC, browser, journal, save, bed are usable after integration"
+    },
+    {
+      "id": "P02",
+      "name": "Traversal",
+      "pass_when": "Room street diner alley room all traversable without voids or collision traps"
+    },
+    {
+      "id": "P03",
+      "name": "English",
+      "pass_when": "Every player-visible string is American English"
+    },
+    {
+      "id": "P04",
+      "name": "No VO",
+      "pass_when": "No spoken audio, TTS or portrait dialogue overlay"
+    },
+    {
+      "id": "P05",
+      "name": "Blip accessibility",
+      "pass_when": "Speaker distinction subtle, speed/off/volume options work"
+    },
+    {
+      "id": "P06",
+      "name": "Sleep",
+      "pass_when": "Moves one day, no skips on reload"
+    },
+    {
+      "id": "P07",
+      "name": "Remembered choice",
+      "pass_when": "At least two conditional next-day dialogue callbacks"
+    },
+    {
+      "id": "P08",
+      "name": "Offscreen grammar",
+      "pass_when": "Normal offscreen subtitle shown before the horror scene"
+    },
+    {
+      "id": "P09",
+      "name": "Exact replay",
+      "pass_when": "Chosen text is displayed exactly under ???"
+    },
+    {
+      "id": "P10",
+      "name": "Branch permutations",
+      "pass_when": "All nine Friday option pairings produce correct replay"
+    },
+    {
+      "id": "P11",
+      "name": "No spoilers",
+      "pass_when": "No monster/practice/copycat diagnosis shown"
+    },
+    {
+      "id": "P12",
+      "name": "Freedom",
+      "pass_when": "Can leave, ignore event, and go home"
+    },
+    {
+      "id": "P13",
+      "name": "Persist stage",
+      "pass_when": "Reload does not restart consumed event"
+    },
+    {
+      "id": "P14",
+      "name": "No photo finale",
+      "pass_when": "Evan/1998 photo twist absent from active micro-MVP"
+    },
+    {
+      "id": "P15",
+      "name": "Normal ending",
+      "pass_when": "Player ends on own terms after return"
+    },
+    {
+      "id": "P16",
+      "name": "Readability",
+      "pass_when": "Captions readable even if blips disabled"
+    },
+    {
+      "id": "P17",
+      "name": "No grind",
+      "pass_when": "PC is not study-button game loop"
+    },
+    {
+      "id": "P18",
+      "name": "Human fright test",
+      "pass_when": "Blind testers recognize impossibility and not just a bug"
+    }
+  ]
+}

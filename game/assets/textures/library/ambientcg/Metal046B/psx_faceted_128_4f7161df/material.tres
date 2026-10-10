@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/library/ambientcg/Metal046B/psx_faceted_128_4f7161df/albedo.png" id="albedo"]
+[ext_resource type="Texture2D" path="res://assets/textures/library/ambientcg/Metal046B/psx_faceted_128_4f7161df/normal.png" id="normal"]
+[ext_resource type="Texture2D" path="res://assets/textures/library/ambientcg/Metal046B/psx_faceted_128_4f7161df/roughness.png" id="roughness"]
+
+[resource]
+resource_name = "ambientcg/Metal046B/psx_faceted_128_4f7161df"
+texture_filter = 2
+texture_repeat = true
+uv1_scale = Vector3(1.000000000, 1.000000000, 1)
+albedo_texture = ExtResource("albedo")
+metallic = 0.0
+metallic_specular = 0.25
+roughness = 1.0
+roughness_texture = ExtResource("roughness")
+roughness_texture_channel = 0
+normal_enabled = true
+normal_scale = 0.18
+normal_texture = ExtResource("normal")

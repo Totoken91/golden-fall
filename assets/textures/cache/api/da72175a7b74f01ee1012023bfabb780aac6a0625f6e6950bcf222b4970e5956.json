@@ -1,0 +1,54 @@
+{
+  "url": "https://api.polyhaven.com/info/plastered_wall_03",
+  "fetched_at": 1791568515.9467263,
+  "data": {
+    "name": "Plastered Wall 03",
+    "categories": [
+      "wall",
+      "plaster-concrete"
+    ],
+    "type": 1,
+    "tags": [
+      "plaster",
+      "plastered",
+      "chipped",
+      "concrete",
+      "scuffed",
+      "discolored",
+      "scratched",
+      "plasterconcrete",
+      "rough",
+      "cement",
+      "timeworn",
+      "wall"
+    ],
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      4000,
+      4000
+    ],
+    "date_published": 1730160000,
+    "staging": null,
+    "files_hash": "cba0b6944694212a7e25801e7a9d8513894a2822",
+    "description": "Free 8K texture of timeworn plaster: rough, scuffed brown-beige surface with subtle chips, scratches and concrete-like discoloration.",
+    "category_id": "ebaa964c-b45c-52e2-bd50-892d64616d87",
+    "category": "Concrete/Plaster & Stucco/Bare Plaster",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made"
+    },
+    "img_version": "147d9c3a",
+    "download_count": 65406,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/plastered_wall_03.png?width=256&height=256&format=webp&v=147d9c3a"
+  }
+}

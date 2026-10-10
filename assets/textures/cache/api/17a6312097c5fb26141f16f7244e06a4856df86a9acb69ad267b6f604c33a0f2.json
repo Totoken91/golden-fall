@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=old+plaster+wall&t=textures&limit=8&future=false",
+  "fetched_at": 1791568515.344874,
+  "data": {
+    "query": "old plaster wall",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 700,
+    "considered": 886,
+    "keywordMatches": 399,
+    "results": [
+      {
+        "slug": "plaster_stone_wall_01",
+        "score": 0.7325
+      },
+      {
+        "slug": "plastered_wall_05",
+        "score": 0.7537
+      },
+      {
+        "slug": "plastered_wall_02",
+        "score": 0.7392
+      },
+      {
+        "slug": "plastered_wall_04",
+        "score": 0.7453
+      },
+      {
+        "slug": "painted_plaster_wall",
+        "score": 0.7253
+      },
+      {
+        "slug": "plastered_wall_03",
+        "score": 0.7243
+      },
+      {
+        "slug": "plastered_wall",
+        "score": 0.7325
+      },
+      {
+        "slug": "yellow_plaster_02",
+        "score": 0.701
+      }
+    ]
+  }
+}

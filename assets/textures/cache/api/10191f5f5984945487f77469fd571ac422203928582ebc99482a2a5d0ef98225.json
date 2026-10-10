@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=canvas+fabric&t=textures&limit=8&future=false",
+  "fetched_at": 1791570514.0213685,
+  "data": {
+    "query": "canvas fabric",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 279,
+    "considered": 886,
+    "keywordMatches": 44,
+    "results": [
+      {
+        "slug": "fabric_pattern_05",
+        "score": 0.5778
+      },
+      {
+        "slug": "denim_fabric_05",
+        "score": 0.5679
+      },
+      {
+        "slug": "denim_fabric_04",
+        "score": 0.5599
+      },
+      {
+        "slug": "floral_jacquard",
+        "score": 0.5389
+      },
+      {
+        "slug": "denim_fabric_03",
+        "score": 0.5481
+      },
+      {
+        "slug": "denim_fabric",
+        "score": 0.5421
+      },
+      {
+        "slug": "denim_fabric_06",
+        "score": 0.5415
+      },
+      {
+        "slug": "fabric_leather_02",
+        "score": 0.5374
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+# Instructions for Codex — Golden Fall V0.9
+
+1. **Audit the existing Godot repository FIRST.** Locate existing FPS controller, room scene, desktop/Internet/journal/calendar/save, bed/day advancement, data models and any partially built street/diner. Report path mapping, gaps and conflicts. Commit/checkpoint changes; do not overwrite, delete or rewrite working implementations wholesale. Integrate this package, not the other way around.
+2. `docs/00_CANON.md` supersedes EVERY earlier pack (V0.4 through V0.8). Do not treat any `reference/` file, archived documents or prior prompt as current production instruction.
+3. **Only build the three-day micro-MVP.** Scope = existing bedroom, street, diner, narrow rear/service alley, June and Hannah, one social loop, text dialogue and The Rehearsal. Avoid forest scenes, Evan photograph finale, Second Closing, The Conversation We Never Had, Someone Came Home, dialogue recordings, procedural full-town systems, romance gauges, combat/crafting.
+4. Everything visible to the player must be **natural American English**. Developer specifications here are in English; character writing must not read like horror exposition or AI filler. No patronizing tutorial text or checklists floating on the HUD.
+5. **No spoken audio**. No VO files, TTS, imitation of human speech, phonetic speech synthesis. Dialogue is written text, with optional discrete unobtrusive per-character typewriter bleeps and atmospheric non-vocal audio.
+6. **NO 2D portrait overlay** during FPS dialogue. Use very low-poly characters, minimal animations, camera composition, pauses, text pacing and restrained blips. 2D media may exist diegetically on PC, photos, magazines, notebooks.
+7. For The Rehearsal, exact re-use of actual prior dialogue/player-selected choice IDs is non-negotiable. Selected protagonist lines return as source **`???`**, never `YOU`, never a revealed identity. No diagnosis or explicit "the entity is practicing" narration. Avoid staged glitch effects, animation loops and jumpscares.
+8. Single shared event/dialogue framework; deterministic branch state and persistent save data; account for skip/reload/leave/return. Avoid trapping the player in a scripted cutscene or blocking sleep by missing optional conversations.
+9. Keep the Golden Autumn Gothic mood: warm copper/amber/orange-brown light, wet tarmac, orange foliage, dark trees, fall rain, slightly grimy 2003 America. Characters and props should be **genuinely low-poly**; do NOT recreate high-fidelity AI concept images or demand complex facial rigs.
+10. Work in **reviewable phases**, with a playable build and tests after each phase. Pause and ask creator for approval on substantial art/story changes. In `DEVLOG.md` log actual changes, tests run, omissions and known limitations; do not claim subjective fear effect without playtesting.
+11. Treat JSON files as schemas and narrative examples, not a command to reorganize the current project or recreate systems. Adapt paths and names deliberately, preserving old saves when reasonable; version any required migrations.
+12. Story ambiguity is deliberate. No forced lore explanation, no missing-brother reveal in this micro-MVP, no ending that clarifies the presence's nature. The player should be terrified by an impossibility, not impressed by a monster mechanic.
+
+## Project-specific notes (this repository)
+
+- Authoritative spec: `docs/golden_fall/`. The French docs in `docs/legacy_heures_creuses/` are history; their **method** still applies (doc 22: zone-building guide — reference camera first, silhouette before subdivisions, contact checks, triangle budget per zone, real engine captures, before/after galleries).
+- Engine: Godot 4.6 GL Compatibility. World rendered at 640x360 with a 4x4 Bayer dither; native UI on top. The PC zoom shows the desktop at native resolution over the CRT.
+- Code map: `game/scripts/room_scene.gd` (shared bedroom), `campaign.gd` (the game), `room_review.gd` (bedroom regression harness, not the game), `core/` (GoldenState, SaveManager, WebArchive, ContentDB, Calendar), `ui/cedar_*.gd` (the Cedar 03 desktop), `world/` (player, PC, weather, materials).
+- QA: `scripts/qa/golden_check.gd` stages day1/day2/day3 in three processes, plus `--room-check`. Never use the player's save slot in tests (`LHC_CAMPAIGN_SAVE`).
+- Web: preset "Web" (no threads) exports to `web/`, served by Vercel per `vercel.json`. System fonts are not available in browsers; Godot's fallback font is used there.
+- Creator preferences: show visual passes as before/after slider galleries with identical camera, light and frozen weather; very sensitive to clipping and misplaced props; keep polygon counts low.

@@ -1,0 +1,142 @@
+{
+  "polyhaven/wood_planks/retro_realistic_256_65dacce0": {
+    "provider": "polyhaven",
+    "id": "wood_planks",
+    "tile_m": [
+      1.5,
+      1.5
+    ],
+    "material": "res://assets/textures/library/polyhaven/wood_planks/retro_realistic_256_65dacce0/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "ambientcg/Plaster007/retro_realistic_256_56fed285": {
+    "provider": "ambientcg",
+    "id": "Plaster007",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/ambientcg/Plaster007/retro_realistic_256_56fed285/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "polyhaven/wood_planks/parquet_psx_128_411b6ec8": {
+    "provider": "polyhaven",
+    "id": "wood_planks",
+    "tile_m": [
+      1.5,
+      1.5
+    ],
+    "material": "res://assets/textures/library/polyhaven/wood_planks/parquet_psx_128_411b6ec8/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "polyhaven/wood_planks/parquet_psx_64_61a96a0f": {
+    "provider": "polyhaven",
+    "id": "wood_planks",
+    "tile_m": [
+      1.5,
+      1.5
+    ],
+    "material": "res://assets/textures/library/polyhaven/wood_planks/parquet_psx_64_61a96a0f/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/wood_table_worn/psx_faceted_128_32cd7c1e": {
+    "provider": "polyhaven",
+    "id": "wood_table_worn",
+    "tile_m": [
+      0.55,
+      0.55
+    ],
+    "material": "res://assets/textures/library/polyhaven/wood_table_worn/psx_faceted_128_32cd7c1e/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "polyhaven/dark_wood/psx_faceted_128_fbf3c8a9": {
+    "provider": "polyhaven",
+    "id": "dark_wood",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/dark_wood/psx_faceted_128_fbf3c8a9/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/cotton_jersey/psx_faceted_128_8d935442": {
+    "provider": "polyhaven",
+    "id": "cotton_jersey",
+    "tile_m": [
+      0.263603,
+      0.2638
+    ],
+    "material": "res://assets/textures/library/polyhaven/cotton_jersey/psx_faceted_128_8d935442/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "polyhaven/rough_linen/psx_faceted_128_02db74e7": {
+    "provider": "polyhaven",
+    "id": "rough_linen",
+    "tile_m": [
+      0.270708,
+      0.2713
+    ],
+    "material": "res://assets/textures/library/polyhaven/rough_linen/psx_faceted_128_02db74e7/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "ambientcg/Fabric061/psx_faceted_128_6828f142": {
+    "provider": "ambientcg",
+    "id": "Fabric061",
+    "tile_m": [
+      0.4,
+      0.4
+    ],
+    "material": "res://assets/textures/library/ambientcg/Fabric061/psx_faceted_128_6828f142/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "ambientcg/Metal046B/psx_faceted_128_4f7161df": {
+    "provider": "ambientcg",
+    "id": "Metal046B",
+    "tile_m": [
+      0.5,
+      0.5
+    ],
+    "material": "res://assets/textures/library/ambientcg/Metal046B/psx_faceted_128_4f7161df/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "ambientcg/Plaster007/psx_faceted_128_62e05444": {
+    "provider": "ambientcg",
+    "id": "Plaster007",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/ambientcg/Plaster007/psx_faceted_128_62e05444/material.tres",
+    "status": "visually_checked_in_engine"
+  },
+  "polyhaven/dark_wood/furniture_psx_128_7afc60ac": {
+    "provider": "polyhaven",
+    "id": "dark_wood",
+    "tile_m": [
+      2.0,
+      2.0
+    ],
+    "material": "res://assets/textures/library/polyhaven/dark_wood/furniture_psx_128_7afc60ac/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/wood_table_001/furniture_psx_128_858f9a85": {
+    "provider": "polyhaven",
+    "id": "wood_table_001",
+    "tile_m": [
+      1.5,
+      1.5
+    ],
+    "material": "res://assets/textures/library/polyhaven/wood_table_001/furniture_psx_128_858f9a85/material.tres",
+    "status": "downloaded_optimized_pending_visual_review"
+  },
+  "polyhaven/wood_table_001/furniture_psx_128_75f846ca": {
+    "provider": "polyhaven",
+    "id": "wood_table_001",
+    "tile_m": [
+      1.5,
+      1.5
+    ],
+    "material": "res://assets/textures/library/polyhaven/wood_table_001/furniture_psx_128_75f846ca/material.tres",
+    "status": "visually_checked_in_engine"
+  }
+}

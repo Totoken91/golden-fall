@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=linen+fabric&t=textures&limit=8&future=false",
+  "fetched_at": 1791570510.6031618,
+  "data": {
+    "query": "linen fabric",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 376,
+    "considered": 886,
+    "keywordMatches": 47,
+    "results": [
+      {
+        "slug": "rough_linen",
+        "score": 0.7211
+      },
+      {
+        "slug": "denim_fabric_04",
+        "score": 0.5985
+      },
+      {
+        "slug": "denim_fabric_05",
+        "score": 0.5955
+      },
+      {
+        "slug": "denim_fabric_03",
+        "score": 0.5918
+      },
+      {
+        "slug": "denim_fabric",
+        "score": 0.588
+      },
+      {
+        "slug": "fabric_pattern_05",
+        "score": 0.5847
+      },
+      {
+        "slug": "poly_wool_herringbone",
+        "score": 0.5533
+      },
+      {
+        "slug": "stretch_poplin",
+        "score": 0.5991
+      }
+    ]
+  }
+}

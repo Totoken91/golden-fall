@@ -1,0 +1,51 @@
+{
+  "url": "https://api.polyhaven.com/info/plank_flooring_04",
+  "fetched_at": 1791570507.363656,
+  "data": {
+    "type": 1,
+    "name": "Plank Flooring 04",
+    "categories": [
+      "floor",
+      "wood"
+    ],
+    "tags": [
+      "wooden planks",
+      "plank flooring ",
+      "wooden flooring ",
+      "plank",
+      "timber",
+      "coated",
+      "varnished",
+      "wooden floor",
+      "wood",
+      "grain"
+    ],
+    "description": "Free 8k texture of varnished dark timber planks with subtle grain, narrow seams and a soft satin sheen.",
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "files_hash": "aa4021474e24d977ddfaa6565a0bd29943138820",
+    "staging": null,
+    "date_published": 1762473600,
+    "category_id": "a7bb33c4-8575-586e-a502-7094517b10c5",
+    "category": "Wood/Boards & Planks/Finished & Varnished",
+    "attributes": {
+      "surface_use": "floor",
+      "origin": "man_made",
+      "condition": [
+        "clean"
+      ]
+    },
+    "img_version": "33894c37",
+    "download_count": 71732,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/plank_flooring_04.png?width=256&height=256&format=webp&v=33894c37"
+  }
+}

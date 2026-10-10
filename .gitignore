@@ -1,0 +1,34 @@
+# Godot generated/editor caches
+.godot/
+.import/
+*.tmp
+# runtime exports, local save
+build/
+export/
+saves/
+# Python
+__pycache__/
+*.py[cod]
+# OS
+.DS_Store
+Thumbs.db
+
+# Blender safety/backups, not source files themselves
+*.blend1
+*.blend2
+*.blend@
+# Generated preview cache only (approved previews may be committed)
+assets/previews/_tmp/
+
+# Portable distribution is delivered separately from source history
+play/*.exe
+play/*.pck
+
+# Golden Fall repository (V0.22+): heavy or regenerable material stays out of git
+play/
+captures/
+verification/
+reference/
+work/
+assets/textures/sources/
+SHA256SUMS.txt

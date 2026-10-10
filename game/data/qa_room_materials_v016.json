@@ -1,0 +1,255 @@
+{
+  "floor": {
+    "key": "polyhaven/wood_planks/parquet_psx_128_411b6ec8",
+    "uv_period_m": [
+      1.8,
+      1.8
+    ],
+    "note": "128px maps, nearest with mipmaps; source tile remains 1.5m. Existing room UVs and geometry preserved."
+  },
+  "surfaces": [
+    {
+      "node": "Detail_wood",
+      "material_name": "wood",
+      "key": "polyhaven/wood_table_worn/psx_faceted_128_32cd7c1e",
+      "metric_wood_uv": true,
+      "tint": [
+        0.95,
+        0.92,
+        0.85
+      ],
+      "normal_scale": 0.12
+    },
+    {
+      "node": "I_desk_wood",
+      "material_name": "wood",
+      "key": "polyhaven/wood_table_worn/psx_faceted_128_32cd7c1e",
+      "metric_wood_uv": true,
+      "tint": [
+        0.95,
+        0.92,
+        0.85
+      ],
+      "normal_scale": 0.12
+    },
+    {
+      "node": "C_static_wood",
+      "material_name": "wood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.95,
+        0.95,
+        0.92
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "I_bed_wood",
+      "material_name": "wood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.95,
+        0.95,
+        0.92
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "Detail_darkwood",
+      "material_name": "darkwood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.32,
+        0.32,
+        0.3
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "I_door_darkwood",
+      "material_name": "darkwood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.32,
+        0.32,
+        0.3
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "I_desk_darkwood",
+      "material_name": "darkwood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.32,
+        0.32,
+        0.3
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "C_static_darkwood",
+      "material_name": "darkwood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.32,
+        0.32,
+        0.3
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "I_bed_darkwood",
+      "material_name": "darkwood",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.32,
+        0.32,
+        0.3
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "I_door_door",
+      "material_name": "door",
+      "key": "polyhaven/wood_table_001/furniture_psx_128_75f846ca",
+      "metric_wood_uv": true,
+      "grain_axis": "v",
+      "tint": [
+        0.95,
+        0.95,
+        0.92
+      ],
+      "normal_scale": 0.1
+    },
+    {
+      "node": "Detail_curtain",
+      "material_name": "curtain",
+      "material": "res://assets/textures/room/curtain/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": true
+    },
+    {
+      "node": "I_bed_linen",
+      "material_name": "linen",
+      "material": "res://assets/textures/room/linen/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "I_bed_pillow_linen",
+      "material_name": "pillow_linen",
+      "material": "res://assets/textures/room/pillow_linen/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "I_bed_quilt",
+      "material_name": "quilt",
+      "material": "res://assets/textures/room/quilt/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "C_static_canvas",
+      "material_name": "canvas",
+      "material": "res://assets/textures/room/canvas/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "Detail_bag_flap",
+      "material_name": "bag_flap",
+      "material": "res://assets/textures/room/bag_flap/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "Shade_shade",
+      "material_name": "shade",
+      "material": "res://assets/textures/room/shade/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": true,
+      "double_sided": true
+    },
+    {
+      "node": "Detail_fabric.001",
+      "material_name": "fabric",
+      "material": "res://assets/textures/room/fabric/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "C_static_ceiling",
+      "material_name": "ceiling",
+      "material": "res://assets/textures/room/ceiling/material.tres",
+      "uv_period_m": [
+        1,
+        1
+      ],
+      "keep_emission": false,
+      "double_sided": false
+    },
+    {
+      "node": "C_static_metal",
+      "material_name": "metal",
+      "key": "ambientcg/Metal046B/psx_faceted_128_4f7161df",
+      "uv_period_m": [
+        1,
+        0.34
+      ],
+      "metallic": 0.18,
+      "normal_scale": 0.12,
+      "tint": [
+        0.68,
+        0.73,
+        0.67
+      ]
+    }
+  ]
+}

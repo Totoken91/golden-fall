@@ -1,0 +1,61 @@
+{
+  "url": "https://api.polyhaven.com/info/wooden_floor_02",
+  "fetched_at": 1791570505.1201613,
+  "data": {
+    "type": 1,
+    "name": "Wooden Floor 02",
+    "tags": [
+      "wood planks",
+      "hardwood",
+      "wooden",
+      "wood",
+      "wooden flooring ",
+      "wooden plank",
+      "wooden floor",
+      "wooden knots",
+      "grain",
+      "wood grain",
+      "planks",
+      "interior flooring",
+      "hardwood flooring",
+      "timber"
+    ],
+    "authors": {
+      "Charlotte Baglioni": "Scanning",
+      "Rico Cilliers": "Processing"
+    },
+    "max_resolution": [
+      16384,
+      16384
+    ],
+    "dimensions": [
+      1942.000150680542,
+      1942.000150680542
+    ],
+    "staging": null,
+    "files_hash": "781102842eb33013e7fd7511c66fb243cd1a3fa1",
+    "description": "Free 16K texture of warm hardwood planks with visible grain, knots and soft satin sheen - ideal for interior flooring, timber scenes and realistic renders.",
+    "sponsors": [
+      "121968951"
+    ],
+    "category_id": "a7bb33c4-8575-586e-a502-7094517b10c5",
+    "category": "Wood/Boards & Planks/Finished & Varnished",
+    "attributes": {
+      "surface_use": "floor",
+      "origin": "man_made",
+      "condition": [
+        "clean"
+      ]
+    },
+    "date_published": 1786448942,
+    "categories": [
+      "floor",
+      "wood",
+      "raw wood"
+    ],
+    "vault": "wood",
+    "img_version": "fd40223d",
+    "download_count": 2883,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/wooden_floor_02.png?width=256&height=256&format=webp&v=fd40223d"
+  }
+}

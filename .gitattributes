@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.wasm binary
+*.pck binary
+*.blend binary
+*.glb binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.wav binary
+*.mp3 binary
+*.tpz binary

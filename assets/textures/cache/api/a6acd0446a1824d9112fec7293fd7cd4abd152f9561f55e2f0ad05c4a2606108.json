@@ -1,0 +1,54 @@
+{
+  "url": "https://api.polyhaven.com/info/floral_jacquard",
+  "fetched_at": 1791570514.1148772,
+  "data": {
+    "type": 1,
+    "name": "Floral Jacquard",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "max_resolution": [
+      7694,
+      11668
+    ],
+    "dimensions": [
+      252.9498182468769,
+      383.59999656677246
+    ],
+    "staging": null,
+    "files_hash": "85ce792736452bdf8f584d4dbc2dc559b3160018",
+    "tags": [
+      "decorative",
+      "dark",
+      "pattern",
+      "fabric",
+      "textile ",
+      "cloth",
+      "floral",
+      "embossed",
+      "black",
+      "woven",
+      "rich"
+    ],
+    "description": "Free rich black jacquard fabric with embossed floral weave - tactile PBR-ready surface, subtle sheen and pronounced normals, ideal for upholstery, drapery, and garments.",
+    "date_published": 1757078158,
+    "categories": [
+      "fabric",
+      "jacquard"
+    ],
+    "category_id": "fa75cb2c-b488-5fcc-ac0c-312e9e93f192",
+    "category": "Textiles & Leather/Patterned & Jacquard/Floral Weave",
+    "attributes": {
+      "surface_use": "object",
+      "origin": "man_made",
+      "condition": [
+        "clean"
+      ]
+    },
+    "vault": "fabric",
+    "img_version": "0f84d4db",
+    "download_count": 13741,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/floral_jacquard.png?width=256&height=256&format=webp&v=0f84d4db"
+  }
+}

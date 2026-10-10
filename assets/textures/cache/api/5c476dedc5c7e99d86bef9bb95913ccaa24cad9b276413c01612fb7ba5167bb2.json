@@ -1,0 +1,57 @@
+{
+  "url": "https://api.polyhaven.com/info/wood_floor_deck",
+  "fetched_at": 1791570505.1823747,
+  "data": {
+    "date_published": 1680134400,
+    "name": "Wood Floor Deck",
+    "categories": [
+      "man made",
+      "wood",
+      "floor",
+      "outdoor"
+    ],
+    "type": 1,
+    "staging": null,
+    "dimensions": [
+      1799.9999523162842,
+      1799.9999523162842
+    ],
+    "tags": [
+      "brown",
+      "worn",
+      "chipped",
+      "stained",
+      "wood",
+      "scratched",
+      "planks",
+      "floor",
+      "deck",
+      "varnished",
+      "wooden"
+    ],
+    "info": null,
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "3e27c4f1228d6f2c6ee3b27cbd2a9fc7f0d7117f",
+    "description": "Free 8K texture of varnished brown wooden deck planks, showing worn, scratched, chipped and stained surfaces with visible grain and seams.",
+    "category_id": "a7bb33c4-8575-586e-a502-7094517b10c5",
+    "category": "Wood/Boards & Planks/Finished & Varnished",
+    "attributes": {
+      "surface_use": "floor",
+      "condition": [
+        "weathered",
+        "worn"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "b9d44e92",
+    "download_count": 148219,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/wood_floor_deck.png?width=256&height=256&format=webp&v=b9d44e92"
+  }
+}

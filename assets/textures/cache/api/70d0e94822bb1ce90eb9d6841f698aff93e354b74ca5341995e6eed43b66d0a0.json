@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/denim_fabric_05",
+  "fetched_at": 1791570510.920812,
+  "data": {
+    "type": 1,
+    "name": "Denim Fabric 05",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "max_resolution": [
+      8217,
+      8258
+    ],
+    "dimensions": [
+      270.1520343364256,
+      271.49999141693115
+    ],
+    "staging": null,
+    "sponsors": [
+      "11109006"
+    ],
+    "files_hash": "8a70b647ed4bdda38dd93d4d68e225418bc21f21",
+    "tags": [
+      "jeans",
+      "dark",
+      "grey",
+      "denim",
+      "twill",
+      "matte",
+      "durable",
+      "textile ",
+      "weave"
+    ],
+    "description": "Free PBR denim fabric - dark grey twill with a matte, durable textile surface; realistic weave detail for jeans, apparel, props and industrial fabric assets.",
+    "date_published": 1757078158,
+    "categories": [
+      "fabric",
+      "denim"
+    ],
+    "category_id": "14f36823-af15-5f03-824e-e31a2eadaedc",
+    "category": "Textiles & Leather/Denim",
+    "attributes": {
+      "surface_use": "object",
+      "origin": "man_made",
+      "condition": [
+        "clean"
+      ]
+    },
+    "vault": "fabric",
+    "img_version": "636b632e",
+    "download_count": 8826,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/denim_fabric_05.png?width=256&height=256&format=webp&v=636b632e"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://api.polyhaven.com/info/rusty_metal_07",
+  "fetched_at": 1791570515.4231062,
+  "data": {
+    "type": 1,
+    "name": "Rusty Metal 07",
+    "categories": [
+      "metal",
+      "man made",
+      "industrial",
+      "dirty",
+      "wall",
+      "outdoor"
+    ],
+    "category": "Metal/Sheet & Corrugated/Flat Sheet",
+    "attributes": {
+      "surface_use": "wall",
+      "origin": "man_made",
+      "setting": "outdoor",
+      "condition": [
+        "weathered",
+        "painted",
+        "rusted"
+      ]
+    },
+    "vault": "upcoming",
+    "tags": [
+      "rusty",
+      "weathered",
+      "corroded",
+      "steel sheeting",
+      "painted",
+      "oxidized",
+      "patina",
+      "drip marks",
+      "water damage"
+    ],
+    "description": "Free 8K rusty metal texture with peeling blue paint, dark brown corrosion, vertical streaks, and a heavily weathered surface.",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "social_post_pending": true,
+    "category_id": "733fc0a1-302e-50f0-bd83-79d7fd8f3f1e",
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "img_version": "63245bfd",
+    "dimensions": [
+      1229.4129133224487,
+      1229.4135093688965
+    ],
+    "files_hash": "49625d1be2d4249392592f6810f987501f721b46",
+    "date_published": 32503680000,
+    "staging": null,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/rusty_metal_07.png?width=256&height=256&format=webp&v=63245bfd"
+  }
+}

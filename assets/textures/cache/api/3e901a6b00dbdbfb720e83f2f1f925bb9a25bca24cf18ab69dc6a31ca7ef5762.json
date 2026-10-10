@@ -1,0 +1,56 @@
+{
+  "url": "https://api.polyhaven.com/info/fabric_leather_02",
+  "fetched_at": 1791570514.3539495,
+  "data": {
+    "scale": "50cm X 50cm",
+    "type": 1,
+    "date_published": 1588892467,
+    "name": "Fabric Leather 02",
+    "old_id": 257,
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions": [
+      500,
+      499.9999403953552
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "categories": [
+      "fabric",
+      "leather"
+    ],
+    "files_hash": "bf7a36ee9fa03ad746b3646b5e6306489a7d11d1",
+    "tags": [
+      "leather",
+      "couch",
+      "seat",
+      "upholstery",
+      "stitched",
+      "vintage",
+      "wrinkled",
+      "aged",
+      "creased",
+      "chair"
+    ],
+    "description": "Free 8K leather texture displaying warm brown upholstery with stitched seams, worn creases, wrinkled aged surface and a soft, natural specular sheen.",
+    "sponsors": [
+      "84390067"
+    ],
+    "category_id": "36329517-0f82-5b1e-bf68-aca8b4d1db92",
+    "category": "Textiles & Leather/Leather/Upholstery Leather",
+    "attributes": {
+      "surface_use": "object",
+      "condition": [
+        "worn",
+        "weathered"
+      ],
+      "origin": "man_made"
+    },
+    "img_version": "ccd3841e",
+    "download_count": 118856,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/fabric_leather_02.png?width=256&height=256&format=webp&v=ccd3841e"
+  }
+}

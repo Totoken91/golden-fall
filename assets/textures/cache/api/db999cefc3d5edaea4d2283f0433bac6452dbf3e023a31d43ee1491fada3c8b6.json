@@ -1,0 +1,32 @@
+{
+  "url": "https://api.polyhaven.com/search?q=old+wooden+floor&t=textures&limit=4&future=false",
+  "fetched_at": 1791568486.635197,
+  "data": {
+    "query": "old wooden floor",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 816,
+    "considered": 886,
+    "keywordMatches": 436,
+    "results": [
+      {
+        "slug": "old_wood_floor",
+        "score": 0.708
+      },
+      {
+        "slug": "wood_floor",
+        "score": 0.6449
+      },
+      {
+        "slug": "dark_wooden_planks",
+        "score": 0.6204
+      },
+      {
+        "slug": "wood_planks",
+        "score": 0.6049
+      }
+    ]
+  }
+}

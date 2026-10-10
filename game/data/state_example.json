@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.9.0",
+  "new_game": {
+    "day_index": 0,
+    "time_slot": "afternoon",
+    "location": "bedroom",
+    "dialogue_choices": {},
+    "dialogue_exchanges": [],
+    "npc_memories": {
+      "JUNE": [],
+      "HANNAH": []
+    },
+    "flags": {
+      "met_june": false,
+      "met_hannah": false,
+      "fri_opening_completed": false,
+      "fri_radio_completed": false,
+      "hannah_exited": false,
+      "rehearsal_eligible": false,
+      "heard_rehearsal": false
+    },
+    "visited_sites": [],
+    "observations": [],
+    "rehearsal_state": {
+      "stage": "dormant",
+      "seen_steps": []
+    },
+    "finished_micro_mvp": false
+  },
+  "friday_example": {
+    "day_index": 2,
+    "time_slot": "evening",
+    "location": "service_alley",
+    "dialogue_choices": {
+      "fri_opening": {
+        "id": "open_bad_day",
+        "selected_text": "Bad day?",
+        "reply_text": "Nothing dramatic. I just kept putting my shoes on and taking them off."
+      },
+      "fri_radio": {
+        "id": "radio_notice",
+        "selected_text": "I hadn't noticed.",
+        "reply_text": "You will now."
+      }
+    },
+    "flags": {
+      "fri_opening_completed": true,
+      "fri_radio_completed": true,
+      "hannah_exited": true,
+      "rehearsal_eligible": true,
+      "heard_rehearsal": true
+    },
+    "rehearsal_state": {
+      "stage": "seen_reply",
+      "seen_steps": [
+        0,
+        1
+      ]
+    },
+    "finished_micro_mvp": false
+  }
+}

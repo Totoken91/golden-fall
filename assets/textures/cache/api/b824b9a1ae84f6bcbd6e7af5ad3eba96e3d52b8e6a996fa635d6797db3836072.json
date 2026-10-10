@@ -1,0 +1,55 @@
+{
+  "url": "https://api.polyhaven.com/info/wood_table_large",
+  "fetched_at": 1791570505.3355834,
+  "data": {
+    "type": 1,
+    "name": "Wood Table Large",
+    "tags": [
+      "wood",
+      "damaged",
+      "weathered",
+      "wooden",
+      "wooden planks",
+      "furniture",
+      "table",
+      "rustic",
+      "varnished",
+      "coated",
+      "antique",
+      "rough hewn"
+    ],
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "dimensions": [
+      1550.0000715255737,
+      1550.0000715255737
+    ],
+    "staging": null,
+    "files_hash": "f5332e5e0fc48e1861abf19f01c46599874e2c37",
+    "description": "Free 8K texture of weathered varnished table planks, rough‑hewn and damaged - rustic surface ideal for antique furniture, floors and interior scenes.",
+    "category_id": "a7bb33c4-8575-586e-a502-7094517b10c5",
+    "category": "Wood/Boards & Planks/Finished & Varnished",
+    "attributes": {
+      "surface_use": "object",
+      "condition": [
+        "weathered",
+        "damaged",
+        "worn"
+      ],
+      "origin": "man_made"
+    },
+    "date_published": 1786448942,
+    "categories": [
+      "wood"
+    ],
+    "vault": "wood",
+    "img_version": "5c5f002c",
+    "download_count": 2095,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/wood_table_large.png?width=256&height=256&format=webp&v=5c5f002c"
+  }
+}

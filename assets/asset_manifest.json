@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "notes": "V0.14: support/contact corrections and independent 3D rain. 7250 model + 720 rain = 7970 triangles. 142 supports, 13 disjoint pairs checked. Artistic approval not presumed.",
+  "assets": [
+    {
+      "id": "prop_streetlamp_sodium",
+      "category": "prop",
+      "status": "planned",
+      "source": "source_blender/prop_streetlamp_sodium.blend",
+      "export": "exported/prop_streetlamp_sodium.glb",
+      "license": "original-project",
+      "generation_method": "blender-python",
+      "generator": "../scripts/assets/generate_streetlamp.py",
+      "phase": "P0",
+      "qa": {
+        "technical": false,
+        "visual_in_godot": false
+      },
+      "notes": "Pipeline smoke test; not an approved final asset."
+    },
+    {
+      "id": "environment_bedroom_psx_v014",
+      "category": "environment",
+      "status": "generated",
+      "source": "blender/bedroom_psx.blend",
+      "export": "exported/bedroom_psx.glb",
+      "license": "original-project",
+      "generation_method": "blender-python-with-builtin-imagegen-posters",
+      "generator": "../scripts/assets/build_room.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "7250 room/exterior triangles, plus 720 for 360 independent rain drops. 7970 total, cap 8000. Support and clearance report: verification/contact_checks.json."
+    },
+    {
+      "id": "hero_keyboard_v014",
+      "category": "prop",
+      "status": "generated",
+      "source": "blender/hero_props.blend",
+      "export": "exported/keyboard.glb",
+      "license": "original-project",
+      "generation_method": "blender-python-authored-surfaces",
+      "generator": "../scripts/assets/build_room.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "V0.12 silhouette retained; world placement corrected onto its support in V0.14. Current source and engine captures supplied."
+    },
+    {
+      "id": "hero_mug_v014",
+      "category": "prop",
+      "status": "generated",
+      "source": "blender/hero_props.blend",
+      "export": "exported/mug.glb",
+      "license": "original-project",
+      "generation_method": "blender-python-authored-surfaces",
+      "generator": "../scripts/assets/build_room.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "V0.12 silhouette retained; world placement corrected onto its support in V0.14. Current source and engine captures supplied."
+    },
+    {
+      "id": "hero_bag_v014",
+      "category": "prop",
+      "status": "generated",
+      "source": "blender/hero_props.blend",
+      "export": "exported/bag.glb",
+      "license": "original-project",
+      "generation_method": "blender-python-authored-surfaces",
+      "generator": "../scripts/assets/build_room.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "V0.12 silhouette retained; world placement corrected onto its support in V0.14. Current source and engine captures supplied."
+    },
+    {
+      "id": "hero_chair_v014",
+      "category": "prop",
+      "status": "generated",
+      "source": "blender/hero_props.blend",
+      "export": "exported/chair.glb",
+      "license": "original-project",
+      "generation_method": "blender-python-authored-surfaces",
+      "generator": "../scripts/assets/build_room.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "V0.12 silhouette retained; world placement corrected onto its support in V0.14. Current source and engine captures supplied."
+    },
+    {
+      "id": "poster_morrow_creek_v011",
+      "category": "prop",
+      "status": "generated",
+      "source": "art/posters/morrow_creek.png",
+      "export": "art/posters/morrow_creek_psx.png",
+      "license": "original-project-generated",
+      "generation_method": "builtin-image_gen-technical-downsample",
+      "generator": "../scripts/assets/prepare_poster_textures.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "Exact prompt in art/posters/prompts.json. Texture loaded by the existing poster material; no extra geometry."
+    },
+    {
+      "id": "poster_the_long_way_home_v011",
+      "category": "prop",
+      "status": "generated",
+      "source": "art/posters/the_long_way_home.png",
+      "export": "art/posters/the_long_way_home_psx.png",
+      "license": "original-project-generated",
+      "generation_method": "builtin-image_gen-technical-downsample",
+      "generator": "../scripts/assets/prepare_poster_textures.py",
+      "phase": "visual-review-bedroom",
+      "qa": {
+        "technical": true,
+        "visual_in_godot": true,
+        "human_approved": false
+      },
+      "notes": "Exact prompt in art/posters/prompts.json. Texture loaded by the existing poster material; no extra geometry."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://api.polyhaven.com/search?q=dark+varnished+wood&t=textures&limit=8&future=false",
+  "fetched_at": 1791570506.6728237,
+  "data": {
+    "query": "dark varnished wood",
+    "type": "textures",
+    "model": "qwen3-0.6b/v1",
+    "minScore": 0.35,
+    "hybrid": true,
+    "total": 771,
+    "considered": 886,
+    "keywordMatches": 158,
+    "results": [
+      {
+        "slug": "wooden_floor_01",
+        "score": 0.6106
+      },
+      {
+        "slug": "oak_wood_planks",
+        "score": 0.6019
+      },
+      {
+        "slug": "dark_wood",
+        "score": 0.6783
+      },
+      {
+        "slug": "wooden_panels",
+        "score": 0.5881
+      },
+      {
+        "slug": "old_wooden_floor_02",
+        "score": 0.5939
+      },
+      {
+        "slug": "wood_table_large",
+        "score": 0.5718
+      },
+      {
+        "slug": "plank_flooring_04",
+        "score": 0.5732
+      },
+      {
+        "slug": "wood_plank_wall",
+        "score": 0.5802
+      }
+    ]
+  }
+}

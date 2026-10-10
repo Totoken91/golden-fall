@@ -1,0 +1,519 @@
+{
+  "schema_version": 1,
+  "purpose": "128px downloaded material grain, preserving authored identity layers",
+  "derivations": {
+    "curtain": {
+      "source_key": "polyhaven/rough_linen/psx_faceted_128_02db74e7",
+      "source_page": "https://polyhaven.com/a/rough_linen",
+      "identity_texture": {
+        "path": "game/assets/room/textures/curtain.png",
+        "sha256": "2f4d3689d054299eb4e503b9e0a82616e8b9e9005df39611116211d781ba5af2"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          0.42,
+          0.75
+        ],
+        "source_tile_m": [
+          0.270708,
+          0.2713
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.7,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/curtain/albedo.png",
+          "sha256": "a897e3d0f810aa64a999d1c1c9a199689382c1124377edb35d08aa38b7d435c6"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/curtain/normal.png",
+          "sha256": "062d26177233b7b0ef4a820be647b1cc4f097e0362113eaaf3accde24e82ae58"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/curtain/roughness.png",
+          "sha256": "0cf3cc4b2f67d96cf787b3075d35dc8e6f08c37075a92d91d68db7b448f47121"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/curtain/ao.png",
+          "sha256": "d1801ac065daeb40027778ed2c69706c020ec08b37b4172430b1881aa101a4e5"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/curtain/material.tres",
+        "sha256": "64998e2e7af45ac179f7750c96a418e3f32688573a081df77dd147e1f5946faa"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_fenetre.png"
+    },
+    "linen": {
+      "source_key": "polyhaven/cotton_jersey/psx_faceted_128_8d935442",
+      "source_page": "https://polyhaven.com/a/cotton_jersey",
+      "identity_texture": {
+        "path": "game/assets/room/textures/linen.png",
+        "sha256": "7a77e0736decea98013eee285fab6b1787f7800758b5f9e91a38e76b6ba50f01"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          0.7,
+          0.7
+        ],
+        "source_tile_m": [
+          0.263603,
+          0.2638
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.65,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/linen/albedo.png",
+          "sha256": "92abc2c45d6191089b35bd7254cf5d0bdf29e83bcdca79e4f99b233ce32e4c2c"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/linen/normal.png",
+          "sha256": "6790db4c4bd528f73bff3103a96a90c022b0d3cc33addf6b4c053f3469f3fbf0"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/linen/roughness.png",
+          "sha256": "cfd7f8f19eca061ec08c6715a2460d6344d4f72458c5ea78de169590ab76aa90"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/linen/ao.png",
+          "sha256": "94a04655cea087d53b509e346601bbb84ae63178fa5152a850a58f17334812d8"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/linen/material.tres",
+        "sha256": "d74acd225b45a5ec885a49896b8f9c752da6646ed9fa1e0a74417ac7796e30da"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_literie.png"
+    },
+    "pillow_linen": {
+      "source_key": "polyhaven/cotton_jersey/psx_faceted_128_8d935442",
+      "source_page": "https://polyhaven.com/a/cotton_jersey",
+      "identity_texture": {
+        "path": "game/assets/room/textures/pillow_linen.png",
+        "sha256": "826589c4d21000f832db976c546fc7ccb98fb60466aaf71a7950a6c5f458ecad"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          0.57,
+          0.44
+        ],
+        "source_tile_m": [
+          0.263603,
+          0.2638
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.65,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/pillow_linen/albedo.png",
+          "sha256": "d28a3be40b74c992cb124d4565a8f7e5b4c99dd98693e9d38c7342784589d3fc"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/pillow_linen/normal.png",
+          "sha256": "20eee37d0160a82326740af0359bf7781e442eaf9fa197652cfbeed618288b06"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/pillow_linen/roughness.png",
+          "sha256": "c4a12ca8be17763aa5acb3e59996cf20cee80a495ecf48d78f9940bd6c5d4602"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/pillow_linen/ao.png",
+          "sha256": "c4c1f5bf0a495ae9da51f3070a7e2f19bb8065dcba4cfb066008774deac37ccd"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/pillow_linen/material.tres",
+        "sha256": "9db48756f466200bbb13bd94f4c941cd9dda4bc637983a93720aa461b8a9945a"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_literie.png"
+    },
+    "quilt": {
+      "source_key": "polyhaven/cotton_jersey/psx_faceted_128_8d935442",
+      "source_page": "https://polyhaven.com/a/cotton_jersey",
+      "identity_texture": {
+        "path": "game/assets/room/textures/quilt.png",
+        "sha256": "30cd13d0720682512969e6434a4165610727c996afbe38d0de042a9329a49819"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          1.48,
+          2.32
+        ],
+        "source_tile_m": [
+          0.263603,
+          0.2638
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.48,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/quilt/albedo.png",
+          "sha256": "c28dde8f20bc38c76296b7d445fd7c0a43e255ac021add5ef50d8c9ac5e69420"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/quilt/normal.png",
+          "sha256": "38703974a4867ab7c726d0229b72df620e82de2ca89e9fca31076203679d93b5"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/quilt/roughness.png",
+          "sha256": "32f18ab4e71832f2c2fe69c06744d93769ed68b422f2d55b737d1cd50a257886"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/quilt/ao.png",
+          "sha256": "b3ff88a4743ab0e167898d2a63285c77a818f0cdb79264417a7838874f8e6c78"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/quilt/material.tres",
+        "sha256": "0c8028429f46fe34c93c4779d2fc139728f7cf06b9207e7540d2b09d9c608f7b"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_literie.png"
+    },
+    "canvas": {
+      "source_key": "ambientcg/Fabric061/psx_faceted_128_6828f142",
+      "source_page": "https://ambientcg.com/a/Fabric061",
+      "identity_texture": {
+        "path": "game/assets/room/textures/canvas.png",
+        "sha256": "ab8896f28eadc0b6ed7f48f2db0e2392abf69e24fcbfad9dfe01b7903db942e4"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          1.05,
+          0.46
+        ],
+        "source_tile_m": [
+          0.4,
+          0.4
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.7,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/canvas/albedo.png",
+          "sha256": "e522c912d515e0b2b79dde01794570cc367d56c48c51f365efc62192a8570efe"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/canvas/normal.png",
+          "sha256": "feb9708ba6efbb0873ff55fea1e0fe6817af81ce253b3fee7a0bd041a1e52859"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/canvas/roughness.png",
+          "sha256": "91666262932c8e94d3e2f0c7663056c6d5a6f1971dd9f35527459601d50a971f"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/canvas/ao.png",
+          "sha256": "150003849375fb4bee19403e24bca9fc98013b67ec7ab2a8599b3190b9abca90"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/canvas/material.tres",
+        "sha256": "60af885cd67bbb047f32aa9593e6573725e21edf0002e0395e357be0b5b6539e"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://docs.ambientcg.com/license/"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_sac.png"
+    },
+    "bag_flap": {
+      "source_key": "ambientcg/Fabric061/psx_faceted_128_6828f142",
+      "source_page": "https://ambientcg.com/a/Fabric061",
+      "identity_texture": {
+        "path": "game/assets/room/textures/bag_flap.png",
+        "sha256": "d302ca2e56afefec3c7c5eaf437ba41577b11ac236f7122bde533e6124bef2bf"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          0.34,
+          0.18
+        ],
+        "source_tile_m": [
+          0.4,
+          0.4
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.55,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/bag_flap/albedo.png",
+          "sha256": "76212163fb0bcef65155e1f3ce02e8052be792aad56c027ccda38ed1e468caea"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/bag_flap/normal.png",
+          "sha256": "8eca95c0d485728acccccdaee89743fe75a54f48b70761ccb292d98af6e3eb75"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/bag_flap/roughness.png",
+          "sha256": "d54c0b5629ff32def44e1b86cf79ed6f84e7ae168bcaae346b027729b22030c9"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/bag_flap/ao.png",
+          "sha256": "e7609d23a267c2e8d1912a078147d6c4abde80810436e079e32750b51468963f"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/bag_flap/material.tres",
+        "sha256": "6f38ae0aebbebde989d4b801b19dc83cce8fec881aad2f7bfd06ac0d2e026ceb"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://docs.ambientcg.com/license/"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_sac.png"
+    },
+    "shade": {
+      "source_key": "polyhaven/rough_linen/psx_faceted_128_02db74e7",
+      "source_page": "https://polyhaven.com/a/rough_linen",
+      "identity_texture": {
+        "path": "game/assets/room/textures/shade.png",
+        "sha256": "f19b04b31a85b2c62151fcc4284133eb392787b6786e9777ed1c1c9225b3b0f7"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          0.95,
+          0.5
+        ],
+        "source_tile_m": [
+          0.270708,
+          0.2713
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.55,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/shade/albedo.png",
+          "sha256": "6abb8a7fdec7f9c46ef46d01744fc4838c34f6ebd9eb97757724b1dbf9221d51"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/shade/normal.png",
+          "sha256": "a5b77c0f5a20ac8538a7283a674db5996f52382e94d21ef710d345cbe1f6e324"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/shade/roughness.png",
+          "sha256": "0cf3cc4b2f67d96cf787b3075d35dc8e6f08c37075a92d91d68db7b448f47121"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/shade/ao.png",
+          "sha256": "c23b5ba2f0c10366c94aa08fa570d1c783107a1d832c16265e5572dce866f00f"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/shade/material.tres",
+        "sha256": "921c567cc7dbc1534f51d3cba0c17b0bd80e57f5995461e159d81b3ffbcff51c"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://polyhaven.com/license"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_chevet.png"
+    },
+    "fabric": {
+      "source_key": "ambientcg/Fabric061/psx_faceted_128_6828f142",
+      "source_page": "https://ambientcg.com/a/Fabric061",
+      "identity_texture": {
+        "path": "game/assets/room/textures/fabric.png",
+        "sha256": "d58f9b94dfe7806b2fa9887c723675ef523714137bf8ac3c93f5c5d99b752ae9"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          0.2,
+          0.2
+        ],
+        "source_tile_m": [
+          0.4,
+          0.4
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.55,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/fabric/albedo.png",
+          "sha256": "5beaeb360eadfced739b0dc2e9d1757eaf24bcadbf0b5524e2d7aea37f52a651"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/fabric/normal.png",
+          "sha256": "616d167b97a9196777d9b5d0cec9e3da76e2e5c598aeb4732ad8d8247cf5ae74"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/fabric/roughness.png",
+          "sha256": "74b4f13d3d01680da922271c1efaf3d94b2551c088648aa7f9d6019edc628ae4"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/fabric/ao.png",
+          "sha256": "121f3784f52489cf5be56590406991761e028d7f4eef1321e683ce5954dbfbe2"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/fabric/material.tres",
+        "sha256": "86de32ad7f0e7c6bb259f212db6c35fe623e5c3dba3ebdf3f2e04885eaa7761d"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://docs.ambientcg.com/license/"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_commode.png"
+    },
+    "ceiling": {
+      "source_key": "ambientcg/Plaster007/psx_faceted_128_62e05444",
+      "source_page": "https://ambientcg.com/a/Plaster007",
+      "identity_texture": {
+        "path": "game/assets/room/textures/ceiling.png",
+        "sha256": "7acb7b868d88f59644baf44a4a0a40f3ee375e89106183e982d9f14dd474118b"
+      },
+      "transformations": {
+        "size": [
+          128,
+          128
+        ],
+        "uv_span_estimate_m": [
+          1.5,
+          1.5
+        ],
+        "source_tile_m": [
+          2.0,
+          2.0
+        ],
+        "albedo": "source luminance modulates existing palette and identity; source hue neutralized",
+        "grain_strength": 0.22,
+        "normal": "resampled, renormalized",
+        "roughness": "clamped to at least 190/255",
+        "filter": "nearest with real mipmaps"
+      },
+      "maps": {
+        "albedo": {
+          "path": "game/assets/textures/room/ceiling/albedo.png",
+          "sha256": "2c4937b94b19a1159f3d02d9d9d1fc955d8283f2e3c49647d007c17b83c84a26"
+        },
+        "normal": {
+          "path": "game/assets/textures/room/ceiling/normal.png",
+          "sha256": "e7f7ee87986010122b43fb63af57ab6e3e77e1eaef17968546f14ce5593c98ed"
+        },
+        "roughness": {
+          "path": "game/assets/textures/room/ceiling/roughness.png",
+          "sha256": "0cf3cc4b2f67d96cf787b3075d35dc8e6f08c37075a92d91d68db7b448f47121"
+        },
+        "ao": {
+          "path": "game/assets/textures/room/ceiling/ao.png",
+          "sha256": "f7659035fad8b4c366260e41e50bd77a15c1c106471bd5325cc7a0f764146f87"
+        }
+      },
+      "material": {
+        "path": "game/assets/textures/room/ceiling/material.tres",
+        "sha256": "006c0b936baa2406202d18cafce0c1f113d9887fe33cf8d33774b6d7a80dc454"
+      },
+      "status": "visually_checked_in_engine",
+      "downloaded_component_license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_policy_url": "https://docs.ambientcg.com/license/"
+      },
+      "identity_component_license": "Project-authored identity; no new redistribution license asserted",
+      "review_capture": "captures/matieres_v016/apres_plafond.png"
+    }
+  }
+}

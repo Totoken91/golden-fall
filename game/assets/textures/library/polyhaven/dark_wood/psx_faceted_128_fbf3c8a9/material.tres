@@ -1,0 +1,25 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/library/polyhaven/dark_wood/psx_faceted_128_fbf3c8a9/albedo.png" id="albedo"]
+[ext_resource type="Texture2D" path="res://assets/textures/library/polyhaven/dark_wood/psx_faceted_128_fbf3c8a9/normal.png" id="normal"]
+[ext_resource type="Texture2D" path="res://assets/textures/library/polyhaven/dark_wood/psx_faceted_128_fbf3c8a9/roughness.png" id="roughness"]
+[ext_resource type="Texture2D" path="res://assets/textures/library/polyhaven/dark_wood/psx_faceted_128_fbf3c8a9/ao.png" id="ao"]
+
+[resource]
+resource_name = "polyhaven/dark_wood/psx_faceted_128_fbf3c8a9"
+texture_filter = 2
+texture_repeat = true
+uv1_scale = Vector3(1.000000000, 1.000000000, 1)
+albedo_texture = ExtResource("albedo")
+metallic = 0.0
+metallic_specular = 0.25
+roughness = 1.0
+roughness_texture = ExtResource("roughness")
+roughness_texture_channel = 0
+normal_enabled = true
+normal_scale = 0.18
+normal_texture = ExtResource("normal")
+ao_enabled = true
+ao_texture = ExtResource("ao")
+ao_texture_channel = 0
+ao_light_affect = 0.15

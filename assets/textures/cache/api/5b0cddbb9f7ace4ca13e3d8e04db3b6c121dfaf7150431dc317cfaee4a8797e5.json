@@ -1,0 +1,52 @@
+{
+  "url": "https://api.polyhaven.com/info/waffle_pique_cotton",
+  "fetched_at": 1791570512.8950784,
+  "data": {
+    "type": 1,
+    "name": "Waffle Pique Cotton",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "max_resolution": [
+      8419,
+      8300
+    ],
+    "dimensions": [
+      280.787176718274,
+      276.8000066280365
+    ],
+    "staging": null,
+    "files_hash": "cc5c1125053d2003090f5e2932ef719bfb33c73a",
+    "tags": [
+      "yellow",
+      "squares",
+      "cotton",
+      "woven",
+      "waffle weave",
+      "waffle pique",
+      "grid pattern",
+      "grid",
+      "textile "
+    ],
+    "description": "Free 8K texture of yellow waffle-pique cotton with pronounced grid, soft matte surface and recessed squares - great for textiles, linens, apparel and props.",
+    "date_published": 1757078158,
+    "categories": [
+      "fabric",
+      "cotton"
+    ],
+    "category_id": "43499ad7-c79c-5dd0-86a7-6567e0462a47",
+    "category": "Textiles & Leather/Woven/Plain Weave Cotton",
+    "attributes": {
+      "surface_use": "object",
+      "origin": "man_made",
+      "condition": [
+        "clean"
+      ]
+    },
+    "vault": "fabric",
+    "img_version": "d7d906de",
+    "download_count": 12932,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/waffle_pique_cotton.png?width=256&height=256&format=webp&v=d7d906de"
+  }
+}

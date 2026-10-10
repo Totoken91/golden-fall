@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/old_wood_floor",
+  "fetched_at": 1791568486.7461863,
+  "data": {
+    "date_published": 1673308800,
+    "name": "Old Wood Floor",
+    "categories": [
+      "outdoor",
+      "man made",
+      "floor",
+      "wood",
+      "dirty"
+    ],
+    "type": 1,
+    "staging": null,
+    "dimensions": [
+      3000,
+      3000
+    ],
+    "tags": [
+      "wood",
+      "wooden",
+      "deck",
+      "planks",
+      "old",
+      "uneven",
+      "weathered",
+      "worn",
+      "brown",
+      "floor"
+    ],
+    "authors": {
+      "Guillaume Monsergent": "All"
+    },
+    "info": null,
+    "prepaid": true,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "fd59ad577af8185aa6702142c57265b3bfff8aa4",
+    "description": "Free 8K texture of old, weathered brown wooden floor planks with uneven, worn boards, deep grain, cracks and dirt-filled gaps.",
+    "category_id": "30ac2613-5076-5364-b4da-130117ad592d",
+    "category": "Wood/Boards & Planks/Weathered Planks",
+    "attributes": {
+      "surface_use": "floor",
+      "condition": [
+        "weathered",
+        "worn",
+        "cracked"
+      ],
+      "origin": "man_made",
+      "setting": "outdoor"
+    },
+    "img_version": "630dd57b",
+    "download_count": 37186,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/old_wood_floor.png?width=256&height=256&format=webp&v=630dd57b"
+  }
+}

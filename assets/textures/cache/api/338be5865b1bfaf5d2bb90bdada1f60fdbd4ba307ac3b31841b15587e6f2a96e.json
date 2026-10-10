@@ -1,0 +1,57 @@
+{
+  "url": "https://api.polyhaven.com/info/rusty_metal_grid",
+  "fetched_at": 1791570515.9810913,
+  "data": {
+    "name": "Rusty Metal Grid",
+    "categories": [
+      "wall",
+      "metal"
+    ],
+    "type": 1,
+    "tags": [
+      "rusted",
+      "metal sheet",
+      "metal",
+      "painted",
+      "rusty",
+      "rust",
+      "corroded metal sheet",
+      "rusty metal",
+      "grunge",
+      "corrosion",
+      "scratched",
+      "steel sheeting",
+      "metal sheet ",
+      "corroded surface"
+    ],
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "max_resolution": [
+      16384,
+      16384
+    ],
+    "dimensions": [
+      1800.0000715255737,
+      1800.0000715255737
+    ],
+    "date_published": 1728518400,
+    "staging": null,
+    "files_hash": "d7c289b9061f727eb95f55f8195b671c96e19498",
+    "description": "Free 16K rusty metal grid texture: painted steel panels with faded turquoise paint, heavy rust streaks, scratches, pitting and corroded ribs.",
+    "category_id": "3a26a15b-9c46-5bea-b5c2-f0eb08bc335b",
+    "category": "Metal/Plate & Grating/Grating & Mesh",
+    "attributes": {
+      "surface_use": "wall",
+      "condition": [
+        "rusted",
+        "painted",
+        "damaged"
+      ],
+      "origin": "man_made"
+    },
+    "img_version": "c67d2a79",
+    "download_count": 41948,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/rusty_metal_grid.png?width=256&height=256&format=webp&v=c67d2a79"
+  }
+}

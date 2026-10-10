@@ -1,0 +1,59 @@
+{
+  "url": "https://api.polyhaven.com/info/dark_wood",
+  "fetched_at": 1791570507.0178163,
+  "data": {
+    "name": "Dark Wood",
+    "categories": [
+      "wood",
+      "indoor"
+    ],
+    "type": 1,
+    "info": null,
+    "dimensions": [
+      2000,
+      2000
+    ],
+    "date_published": 1671062400,
+    "staging": null,
+    "sponsors": [
+      "82322099"
+    ],
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "files_hash": "889d13adefdcdcdd144068d2c22998ae47e7c777",
+    "authors": {
+      "Dario Barresi": "Baking",
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Tiling"
+    },
+    "tags": [
+      "brown",
+      "wood",
+      "wooden",
+      "cabinet",
+      "mahogany",
+      "dark cherry",
+      "cherry wood",
+      "grain",
+      "hardwood",
+      "satin finish",
+      "smooth"
+    ],
+    "description": "Free 8K texture: dark cherry/mahogany hardwood with warm red tones, fine grain and a smooth satin finish.",
+    "category_id": "3a571502-24b8-50a1-88b0-436a835089a4",
+    "category": "Wood/Veneer/Dark & Exotic Veneer",
+    "attributes": {
+      "surface_use": "object",
+      "origin": "man_made",
+      "setting": "indoor",
+      "condition": [
+        "clean"
+      ]
+    },
+    "img_version": "0881d887",
+    "download_count": 219503,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/dark_wood.png?width=256&height=256&format=webp&v=0881d887"
+  }
+}

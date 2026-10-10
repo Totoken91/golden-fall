@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.9.0",
+  "days": [
+    {
+      "day_index": 0,
+      "date": "2003-10-15",
+      "start_location": "bedroom",
+      "suggested_time": "16:10",
+      "events": [
+        {
+          "id": "arrival",
+          "conditions": [
+            "day_0"
+          ],
+          "effect": "enable_room_to_street"
+        },
+        {
+          "id": "first_diner",
+          "conditions": [
+            "entered_diner"
+          ],
+          "effect": "enable_june_first_hannah_first"
+        },
+        {
+          "id": "ambient_intro",
+          "conditions": [
+            "in_diner",
+            "ambient_line_not_seen"
+          ],
+          "effect": "show_offscreen_june_customer_subtitles"
+        }
+      ]
+    },
+    {
+      "day_index": 1,
+      "date": "2003-10-16",
+      "start_location": "bedroom",
+      "suggested_time": "16:10",
+      "events": [
+        {
+          "id": "return_variations",
+          "conditions": [
+            "entered_diner"
+          ],
+          "effect": "enable_conditional_day2_conversations"
+        },
+        {
+          "id": "ambient_repeat",
+          "conditions": [
+            "in_diner",
+            "day_1"
+          ],
+          "effect": "show_normal_offscreen_line"
+        }
+      ]
+    },
+    {
+      "day_index": 2,
+      "date": "2003-10-17",
+      "start_location": "bedroom",
+      "suggested_time": "16:10",
+      "events": [
+        {
+          "id": "friday_chat",
+          "conditions": [
+            "interact_hannah_friday"
+          ],
+          "effect": "play_fri_opening_then_fri_radio"
+        },
+        {
+          "id": "hannah_departs",
+          "conditions": [
+            "fri_opening_completed",
+            "fri_radio_completed"
+          ],
+          "effect": "hannah_exit_animation_once"
+        },
+        {
+          "id": "rehearsal_eligible",
+          "conditions": [
+            "hannah_exited",
+            "entered_service_alley"
+          ],
+          "effect": "enter_rehearsal_state_machine"
+        },
+        {
+          "id": "quiet_finish",
+          "conditions": [
+            "player_in_bedroom",
+            "player_chooses_sleep"
+          ],
+          "effect": "end_micro_mvp"
+        }
+      ]
+    }
+  ],
+  "time_policy": {
+    "walking_consumes_time": false,
+    "reading_consumes_time": false,
+    "sleep_advances_exactly_one_day": true,
+    "nighttime_rehearsal_trigger": "narrative eligibility rather than real-time wall clock"
+  },
+  "escape_hatches": [
+    "exit diner",
+    "leave alley without finishing",
+    "sleep each night",
+    "Friday no-chat alternate short conclusion"
+  ]
+}
