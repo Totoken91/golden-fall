@@ -44,6 +44,12 @@ func prepare(node: Node) -> void:
 				material.emission_energy_multiplier = GLOW.get(str(source.resource_name),.8)
 			mi.set_surface_override_material(i,material)
 		if id.begins_with("C_") or id.begins_with("I_"): mi.create_trimesh_collision()
+		if id.begins_with("Ramp_"):
+			# Collision-only wedges over curbs and the porch step; both faces collide (mirrored sides).
+			mi.create_trimesh_collision()
+			for shape in mi.find_children("*","CollisionShape3D",true,false):
+				(shape.shape as ConcavePolygonShape3D).backface_collision = true
+			mi.visible = false
 		if id.begins_with("I_"):
 			var interaction := id.split("_")[1]
 			mi.set_meta("interaction",interaction)

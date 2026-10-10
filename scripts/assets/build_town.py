@@ -84,6 +84,15 @@ def gable(name, x0, x1, y0, y1, z0, ridge, material, along='y'):
 	o = bpy.data.objects.new(name, me); bpy.context.collection.objects.link(o)
 	return finish(o, material, 2.0)
 
+def ramp(name, x0, x1, y0, y1, z0, z1):
+	"""Invisible walkable wedge rising from z0 at x0 to z1 at x1 (collision only, never rendered).
+	A 15 cm curb is a wall for a capsule; a 20-degree ramp over it is not."""
+	v = [(x0,y0,z0),(x1,y0,z1),(x1,y0,z0),(x0,y1,z0),(x1,y1,z1),(x1,y1,z0)]
+	f = [(0,2,1),(3,4,5),(0,1,4,3),(1,2,5,4),(0,3,5,2)]
+	me = bpy.data.meshes.new(name); me.from_pydata(v, [], f); me.update()
+	o = bpy.data.objects.new(name, me); bpy.context.collection.objects.link(o)
+	return finish(o, 'asphalt')
+
 def empty(name, loc, yaw_deg):
 	o = bpy.data.objects.new(name, None); o.location = loc; o.rotation_euler = (0, 0, math.radians(yaw_deg))
 	bpy.context.collection.objects.link(o); return o
@@ -95,7 +104,8 @@ for side in (-1, 1):
 	x0, x1 = (4, 6.5) if side > 0 else (-6.5, -4)
 	box(f'C_Sidewalk_{side}', x0, x1, -22, 98, -.2, .15, 'sidewalk', 1.5)
 	box(f'C_Curb_{side}', (4 if side > 0 else -4.15), (4.15 if side > 0 else -4), -22, 98, -.2, .16, 'curb')
-	box(f'C_Lawn_{side}', (6.5 if side > 0 else -40), (40 if side > 0 else -6.5), -30, 105, -.2, .05, 'lawn', 3)
+	box(f'C_Lawn_{side}', (6.5 if side > 0 else -40), (40 if side > 0 else -6.5), -30, 105, -.2, .14, 'lawn', 3)
+	ramp(f'Ramp_Curb_{side}', 3.55*side, 4.0*side, -22, 98, 0, .16)
 # Fallen-leaf drifts in the gutters and on lawns (flat, no collision).
 for i in range(40):
 	side = rng.choice((-1, 1)); x = side*rng.uniform(3.6, 4.0) if i < 24 else side*rng.uniform(7, 14)
@@ -106,7 +116,8 @@ for i in range(40):
 box('C_HomeBody', 8, 17, -7, 7, .05, 6.0, 'siding_cream', 2)
 gable('Roof_Home', 7.6, 17.4, -7.4, 7.4, 6.0, 8.6, 'roof')
 box('C_HomePorch', 6.5, 8.0, -2.4, 2.4, .05, .38, 'trim')
-box('C_HomeStep', 6.0, 6.5, -1.0, 1.0, .05, .2, 'trim')
+box('C_HomeStep', 6.0, 6.5, -1.0, 1.0, .05, .26, 'trim')
+ramp('Ramp_Porch', 5.5, 6.5, -1.0, 1.0, .15, .38)
 box('HomePorchRoof', 6.4, 8.0, -2.6, 2.6, 2.75, 2.9, 'roof')
 for y in (-2.3, 2.3): cyl(f'C_HomePost_{y}', 6.6, y, .38, 2.75, .07, 'trim', 6)
 box('I_homedoor_Door', 7.94, 8.0, -.5, .5, .38, 2.45, 'door_wood')
@@ -183,7 +194,7 @@ empty('Spot_june', (-12.8, 54.5, .15), -90)        # June behind the counter (st
 
 # ---------- service alley: north of the diner, 15.5 m to a fence ----------
 AY0, AY1 = DY1, 65.5
-box('C_AlleyGround', -22.5, -6.5, AY0, AY1, -.2, .03, 'asphalt', 3)
+box('C_AlleyGround', -22.5, -6.5, AY0, AY1, -.2, .14, 'asphalt', 3)
 box('C_Hardware', -16, -6.5, AY1, 80, .05, 4.2, 'cinder', 1.5)
 box('HardwareParapet', -16.1, -6.4, AY1-.1, 80.1, 4.2, 4.6, 'cinder')
 box('HardwareWindow', -6.53, -6.48, 68, 77, .8, 2.6, 'window_dark')
@@ -269,7 +280,7 @@ bpy.ops.wm.save_as_mainfile(filepath=str(SOURCE/'town_blockout.blend'))
 # street costs a few dozen draw calls instead of ~900. Interactive objects and lamps stay single.
 groups = {}
 for o in [o for o in bpy.data.objects if o.type == 'MESH']:
-	if o.name.startswith(('I_', 'Lamp_')): continue
+	if o.name.startswith(('I_', 'Lamp_', 'Ramp_')): continue
 	kind = 'C' if o.name.startswith('C_') else 'Vis'
 	groups.setdefault((kind, o.data.materials[0].name), []).append(o)
 for (kind, material), objs in groups.items():

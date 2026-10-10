@@ -135,6 +135,14 @@ func run() -> void:
 	check(game.save_error == OK,"Save after the round trip")
 	var minutes := walk_time/60.0
 	check(minutes < 2.0,"Whole round trip under two minutes of walking (%.2f min)" % minutes)
+	# Curbs, head-on, both directions and both sides: no slowdown beyond plain walking time.
+	game.place("street",town(2.5,0,-10),town(5.0,1.6,-10))
+	for leg in [[town(5.0,0,-10),"up the east curb"],[town(2.5,0,-10),"down the east curb"],[town(-2.5,0,-30),"across the road"],[town(-5.0,0,-30),"up the west curb"],[town(-2.5,0,-30),"down the west curb"]]:
+		var before := walk_time
+		var start: Vector3 = game.walker.global_position
+		await walk_to(leg[0],leg[1])
+		var ideal: float = Vector2(start.x-leg[0].x,start.z-leg[0].z).length()/RoomWalker.SPEED
+		check(walk_time-before < ideal+0.6,"%s without slowing down (%.2f s for %.2f s of walking)" % [leg[1],walk_time-before,ideal])
 	# Review views, frozen rain, same light: street from the porch, diner front, interior, alley.
 	game.place("street",town(6.9,.4,0),town(-4,1.4,0))
 	await capture("01_porch_to_street",town(6.9,.4,0),town(-6,1.8,-14))

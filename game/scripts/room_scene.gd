@@ -17,6 +17,11 @@ var qa_mode := false
 var reticle: Label
 var help: Label
 var ambience: AudioStreamPlayer
+# Outdoor rain (procedural loop) on its own bus with a low-pass: clear on the street, muffled in the
+# diner. The user's indoor recording (ambience) only plays in the bedroom.
+var outdoor: AudioStreamPlayer
+var outdoor_filter: AudioEffectLowPassFilter
+const AUDIO_AREAS := {"bedroom":[-2.0,-80.0,9000.0],"street":[-80.0,-5.0,9000.0],"alley":[-80.0,-7.0,6500.0],"diner":[-80.0,-13.0,650.0]}
 var closing := false
 var weather: RoomWeather
 var room_triangle_count := 0
@@ -86,7 +91,6 @@ func apply_atmosphere(name: String) -> void:
 	daylight.light_energy = a.sun_energy
 	daylight.rotation_degrees = a.sun_rot
 	daylight.directional_shadow_max_distance = 70 if name == "bedroom" else 35
-	if is_instance_valid(ambience): ambience.volume_db = -2.0 if name == "bedroom" else 2.0
 
 # Places the player in a zone at a position, looking at a target. Instant (used by loading too).
 func place(zone_name: String, at: Vector3, look: Vector3) -> void:
@@ -298,7 +302,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode == KEY_E:
 		if not is_modal: interact(walker.target())
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
+	update_audio(delta)
 	if not is_instance_valid(ui) or is_modal: return
 	if OS.has_feature("web") and not qa_mode and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 		ui.prompt.text = "Click to look around"
@@ -307,7 +312,32 @@ func _process(_delta: float) -> void:
 	var id := walker.target()
 	ui.prompt.text = "E · " + captions[id] if captions.has(id) else ""
 
+# Eases the two rain layers toward the player's current area (bedroom / street / alley / diner).
+func update_audio(delta: float) -> void:
+	if not is_instance_valid(outdoor) or not is_instance_valid(walker): return
+	var area := "bedroom" if zone == "bedroom" or not is_instance_valid(town) else town.area_of(walker.global_position)
+	var target: Array = AUDIO_AREAS[area]
+	var k := clampf(delta*3.0,0.0,1.0)
+	ambience.volume_db = lerpf(ambience.volume_db,target[0],k)
+	outdoor.volume_db = lerpf(outdoor.volume_db,target[1],k)
+	outdoor_filter.cutoff_hz = lerpf(outdoor_filter.cutoff_hz,target[2],k)
+
 func start_audio() -> void:
+	var bus := AudioServer.bus_count
+	AudioServer.add_bus(bus)
+	AudioServer.set_bus_name(bus,"Outdoor")
+	outdoor_filter = AudioEffectLowPassFilter.new()
+	outdoor_filter.cutoff_hz = 9000.0
+	AudioServer.add_bus_effect(bus,outdoor_filter)
+	outdoor = AudioStreamPlayer.new()
+	var rain: AudioStreamWAV = load("res://assets/audio/rain_outdoor.wav")
+	rain.loop_mode = AudioStreamWAV.LOOP_FORWARD
+	rain.loop_end = int(rain.get_length()*rain.mix_rate)
+	outdoor.stream = rain
+	outdoor.bus = "Outdoor"
+	outdoor.volume_db = -80.0
+	add_child(outdoor)
+	outdoor.play()
 	ambience = AudioStreamPlayer.new()
 	var stream: AudioStreamWAV = load("res://assets/audio/rain.wav")
 	stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
@@ -323,6 +353,9 @@ func toggle_sound() -> void:
 	if is_instance_valid(ambience):
 		if sound_enabled: ambience.play()
 		else: ambience.stop()
+	if is_instance_valid(outdoor):
+		if sound_enabled: outdoor.play()
+		else: outdoor.stop()
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST: close_game.call_deferred()
