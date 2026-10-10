@@ -43,14 +43,20 @@ func load_materials() -> void:
 		var tint: Array = binding.tint
 		material.albedo_color = Color(tint[0],tint[1],tint[2])
 		material.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS
-		if binding.wet:
-			# Rain-soaked asphalt: a soft sheen that catches the sodium lamps.
-			material.roughness = .8
-			material.metallic_specular = .35
-		else:
-			material.specular_mode = BaseMaterial3D.SPECULAR_DISABLED
+		material.specular_mode = BaseMaterial3D.SPECULAR_DISABLED
 		material.resource_name = name
 		textured[name] = material
+		if float(binding.wet) > 0:
+			# Soaked ground: same real maps, water darkening, puddles, ripples, lamp glints.
+			var wet := ShaderMaterial.new()
+			wet.shader = preload("res://shaders/wet_ground.gdshader")
+			wet.set_shader_parameter("albedo_tex",material.albedo_texture)
+			wet.set_shader_parameter("normal_tex",material.normal_texture)
+			wet.set_shader_parameter("tint",material.albedo_color)
+			wet.set_shader_parameter("uv_scale",Vector2(material.uv1_scale.x,material.uv1_scale.y))
+			wet.set_shader_parameter("puddles",float(binding.wet))
+			wet.resource_name = name
+			textured[name] = wet
 	# Cutout foliage: alpha scissor, both faces, no specular; card normals are authored in Blender.
 	for name in config.get("foliage",{}):
 		var leaves := StandardMaterial3D.new()
@@ -107,9 +113,10 @@ func add_lamp(mi: MeshInstance3D) -> void:
 	light.position = center+Vector3(0,-.25,0)
 	var id := str(mi.name)
 	if id.begins_with("Lamp_Street"):
-		light.light_color = Color("ffae55")
-		light.light_energy = 1.7
-		light.omni_range = 10.0
+		light.light_color = Color("ffa04a")
+		light.light_energy = 3.4
+		light.omni_range = 13.0
+		add_lamp_shaft(mi,light.position)
 	elif id.begins_with("Lamp_Diner"):
 		light.light_color = Color("ffd39a")
 		light.light_energy = 1.3
@@ -122,29 +129,84 @@ func add_lamp(mi: MeshInstance3D) -> void:
 	light.shadow_enabled = false
 	mi.add_child(light)
 
-# Rain that follows the player outdoors: 420 streaks in a 26 x 12 x 26 m box, animated in the shader.
+# Wet-air bloom around each streetlamp head. No light-shaft mesh: the real rain streaks catch the
+# lamp light themselves (rain_follow.gdshader light()), so every drop keeps the same fall and size.
+func add_lamp_shaft(mi: MeshInstance3D, head: Vector3) -> void:
+	var halo := MeshInstance3D.new()
+	var quad := QuadMesh.new()
+	quad.size = Vector2(2.6,2.6)
+	halo.mesh = quad
+	halo.position = head+Vector3(0,.1,0)
+	halo.material_override = halo_material
+	halo.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	mi.add_child(halo)
+
+var halo_material := ShaderMaterial.new()
+var splashes: MultiMeshInstance3D
+var curtains: Array[MeshInstance3D] = []
+
+# Rain around the player: 1,400 lit streaks in a 28 m box, splash crowns on the ground, and two
+# open cylinders of distant rain sheets. All animated in shaders; the nodes only follow the player.
 func build_rain() -> void:
+	halo_material.shader = preload("res://shaders/lamp_halo.gdshader")
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 151003
 	rain = MultiMeshInstance3D.new()
 	rain.name = "TownRain"
 	var quad := QuadMesh.new()
-	quad.size = Vector2(.012,.32)
+	quad.size = Vector2(.014,.38)
 	var multimesh := MultiMesh.new()
 	multimesh.transform_format = MultiMesh.TRANSFORM_3D
 	multimesh.use_custom_data = true
 	multimesh.mesh = quad
-	multimesh.instance_count = 420
-	var rng := RandomNumberGenerator.new()
-	rng.seed = 151003
+	multimesh.instance_count = 1400
 	for i in multimesh.instance_count:
-		multimesh.set_instance_transform(i,Transform3D(Basis(Vector3.BACK,rng.randf_range(-.12,.02)),Vector3(rng.randf_range(-13,13),0,rng.randf_range(-13,13))))
-		multimesh.set_instance_custom_data(i,Color(rng.randf(),rng.randf_range(.75,1.25),rng.randf_range(.35,.8),0))
-	multimesh.custom_aabb = AABB(Vector3(-14,-1,-14),Vector3(28,14,28))
+		multimesh.set_instance_transform(i,Transform3D(Basis.IDENTITY,Vector3(rng.randf_range(-14,14),0,rng.randf_range(-14,14))))
+		multimesh.set_instance_custom_data(i,Color(rng.randf(),rng.randf_range(.8,1.25),rng.randf_range(.25,1.0),0))
+	multimesh.custom_aabb = AABB(Vector3(-16,-1,-16),Vector3(32,14,32))
 	rain.multimesh = multimesh
 	var material := ShaderMaterial.new()
-	material.shader = load("res://shaders/rain_follow.gdshader")
+	material.shader = preload("res://shaders/rain_follow.gdshader")
 	rain.material_override = material
 	rain.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	add_child(rain)
+	splashes = MultiMeshInstance3D.new()
+	splashes.name = "TownSplashes"
+	var splash_mm := MultiMesh.new()
+	splash_mm.transform_format = MultiMesh.TRANSFORM_3D
+	splash_mm.use_custom_data = true
+	splash_mm.mesh = QuadMesh.new()
+	splash_mm.instance_count = 360
+	for i in splash_mm.instance_count:
+		splash_mm.set_instance_custom_data(i,Color(rng.randf(),rng.randf(),rng.randf(),0))
+	splash_mm.custom_aabb = AABB(Vector3(-12,-2,-12),Vector3(24,4,24))
+	splashes.multimesh = splash_mm
+	var splash_material := ShaderMaterial.new()
+	splash_material.shader = preload("res://shaders/rain_splash.gdshader")
+	splash_material.set_shader_parameter("town_origin",ORIGIN)
+	splashes.material_override = splash_material
+	splashes.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	add_child(splashes)
+	for radius in [16.0,32.0]:
+		var curtain := MeshInstance3D.new()
+		var tube := CylinderMesh.new()
+		tube.top_radius = radius
+		tube.bottom_radius = radius
+		tube.height = 26.0
+		tube.radial_segments = 32
+		tube.rings = 1
+		tube.cap_top = false
+		tube.cap_bottom = false
+		curtain.mesh = tube
+		var sheet := ShaderMaterial.new()
+		sheet.shader = preload("res://shaders/rain_curtain.gdshader")
+		sheet.set_shader_parameter("strength",.2 if radius < 20 else .26)
+		sheet.set_shader_parameter("columns",420.0 if radius < 20 else 760.0)
+		curtain.material_override = sheet
+		curtain.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		curtain.extra_cull_margin = 40.0
+		add_child(curtain)
+		curtains.append(curtain)
 
 func area_of(world_position: Vector3) -> String:
 	var p := world_position-ORIGIN
@@ -156,7 +218,15 @@ func _process(_delta: float) -> void:
 	if not visible or not is_instance_valid(game.walker): return
 	var p: Vector3 = game.walker.global_position-ORIGIN
 	rain.position = Vector3(snappedf(p.x,2.0),p.y,snappedf(p.z,2.0))
-	rain.visible = area_of(game.walker.global_position) != "diner"
+	splashes.position = Vector3(snappedf(p.x,1.0),0,snappedf(p.z,1.0))
+	var outside := area_of(game.walker.global_position) != "diner"
+	rain.visible = outside
+	splashes.visible = outside
+	for curtain in curtains:
+		curtain.position = Vector3(p.x,11.0,p.z)
+		curtain.visible = outside
+	var density: float = game.env.fog_density
+	halo_material.set_shader_parameter("fog_density",density)
 
 func toggle_door(id: String) -> void:
 	var mesh: MeshInstance3D = doors.get(id)

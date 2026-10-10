@@ -36,7 +36,9 @@ var fade: ColorRect
 # Atmosphere per zone: bedroom keeps the validated V0.17 values; town is amber overcast dusk.
 const ATMOSPHERE := {
 	"bedroom": {"bg":"5e6969","ambient":"b2aaa0","ambient_energy":.18,"fog":"626b6b","fog_density":.004,"sun":"a6bac1","sun_energy":.24,"sun_rot":Vector3(-40,-25,0)},
-	"town": {"bg":"6f6658","ambient":"b39f86","ambient_energy":.42,"fog":"7a6e5e","fog_density":.028,"sun":"e7b57a","sun_energy":.55,"sun_rot":Vector3(-18,-118,0)},
+	# Town: heavy October downpour at dusk. Overcast light casts no hard sun shadows (which also ends
+	# the shadow cut-off ~35 m ahead); depth comes from fog, wet glints and the sodium lamps.
+	"town": {"bg":"3f3b35","ambient":"a3907a","ambient_energy":.44,"fog":"4f4941","fog_density":.036,"sun":"c4a27c","sun_energy":.26,"sun_rot":Vector3(-62,-118,0),"shadows":false},
 }
 
 func _ready() -> void:
@@ -90,7 +92,7 @@ func apply_atmosphere(name: String) -> void:
 	daylight.light_color = Color(a.sun)
 	daylight.light_energy = a.sun_energy
 	daylight.rotation_degrees = a.sun_rot
-	daylight.directional_shadow_max_distance = 70 if name == "bedroom" else 35
+	daylight.shadow_enabled = a.get("shadows",true)
 
 # Places the player in a zone at a position, looking at a target. Instant (used by loading too).
 func place(zone_name: String, at: Vector3, look: Vector3) -> void:

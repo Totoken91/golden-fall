@@ -22,8 +22,8 @@ DERIVED = ROOT/'game/assets/textures/town'
 # Blockout material -> source key, tint (multiplies albedo), surface response.
 # Tints come from the moodboard palette (docs/golden_fall/12_ART_DIRECTION_MOODBOARD.md).
 BINDINGS = {
-	'asphalt':      {'key': 'polyhaven/asphalt_04/town_psx_128_4ea6ba35', 'tint': [.42, .40, .37], 'wet': True},
-	'sidewalk':     {'key': 'polyhaven/concrete_tiles_02/town_psx_128_4ed5a937', 'tint': [.92, .88, .80]},
+	'asphalt':      {'key': 'polyhaven/asphalt_04/town_psx_128_4ea6ba35', 'tint': [.55, .52, .48], 'wet': .6},
+	'sidewalk':     {'key': 'polyhaven/concrete_tiles_02/town_psx_128_4ed5a937', 'tint': [.92, .88, .80], 'wet': .12},
 	'curb':         {'key': 'polyhaven/rough_concrete/town_psx_128_f91d557a', 'tint': [.62, .60, .55]},
 	'lawn':         {'key': 'polyhaven/forrest_ground_01/town_psx_128_58b98ccd', 'tint': [.78, .66, .46]},
 	'brick':        {'key': 'ambientcg/Bricks094/town_psx_128_6d0e0e96', 'tint': [.82, .72, .64]},
@@ -86,7 +86,7 @@ for material, b in BINDINGS.items():
 		albedo_path = ROOT/entry['godot']['maps']['albedo']['path']
 	side = Image.open(albedo_path).size
 	bindings[material] = {'material': path, 'source_key': source, 'tile_m': tile, 'tint': b['tint'],
-		'wet': b.get('wet', False), 'texels_per_m': round(side[0]/tile[0], 1)}
+		'wet': b.get('wet', 0), 'texels_per_m': round(side[0]/tile[0], 1)}
 (ROOT/'game/data/town_materials.json').write_text(json.dumps({'uv_period_m': [1, 1], 'bindings': bindings, 'foliage': FOLIAGE}, indent=1), encoding='utf-8')
 (ROOT/'assets/textures/town_derived_manifest.json').write_text(json.dumps({'schema_version': 1,
 	'purpose': 'Golden Fall town: hue-neutral siding so one real plank texture serves every house', 'derivations': derived}, indent=1), encoding='utf-8')

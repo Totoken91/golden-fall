@@ -13,6 +13,8 @@ window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 
 [rendering]
+
+limits/opengl/max_lights_per_object=24
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/default_filters/use_nearest_mipmap_filter=false

@@ -240,3 +240,11 @@ Not done
 - `scripts/assets/prepare_town_foliage.py`: original 128 px RGBA maple clumps (orange/amber/copper), fir tier, leaf litter. Bark: Poly Haven bark_brown_02 at 64 px via the pipeline.
 - Godot: foliage materials alpha scissor .5, both faces, nearest with mipmaps. Firs stratified on ~6 m cells.
 - 8 maples, 162 firs, 46 litter decals; town 27,047 triangles. Checks all green; film 40 s. Gallery `captures/art_pass3_trees/`.
+
+## Rain mood and shadows (2026-10-10)
+
+- Shadow cut-off came from the town sun's 35 m directional shadow range. Overcast downpour: town sun casts no shadows (`ATMOSPHERE.town.shadows=false`), bedroom unchanged. Darker sky, ambient, denser fog (.036).
+- `rain_follow.gdshader`: 1,400 streaks, wind gusts, custom light() so drops catch the sodium lamps; drops under 3 m from the eye fade out.
+- New shaders: `rain_curtain` (two open cylinders, 16 m and 32 m, of scrolling streak columns), `rain_splash` (360 crowns re-rolled per cycle, town ground heights, dry in the diner), `wet_ground` (real maps darkened, noise puddles, Zavie-style ripple rings in the normals, fresnel sky reflection, glossy lamp glints) on asphalt and sidewalk, `lamp_halo` (additive bloom, manual fog).
+- Lamp shaft cone tried and removed: its own streaks did not follow the rain (user feedback).
+- Street lamps 3.4 energy, 13 m; `max_lights_per_object` 24 so the merged road receives every lamp. Checks green; film `captures/rain_mood/town_walk.mp4`.
