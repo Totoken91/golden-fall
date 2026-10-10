@@ -224,13 +224,25 @@ func set_modal(value: bool) -> void:
 	if is_instance_valid(help): help.visible = not value
 	if is_instance_valid(ui): ui.prompt.visible = not value
 
+# Browsers only grant pointer lock inside a real click, so a capture requested after a menu
+# button is refused; on the web every click retries it while the mouse should be captured.
+static func recapture_on_click(event: InputEvent) -> void:
+	if OS.has_feature("web") and event is InputEventMouseButton and event.pressed and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _input(event: InputEvent) -> void:
+	if not is_modal and not qa_mode: recapture_on_click(event)
+
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion and not is_modal: walker.look(event.relative)
+	if event is InputEventMouseMotion and not is_modal and (qa_mode or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED): walker.look(event.relative)
 	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode == KEY_E:
 		if not is_modal: interact(walker.target())
 
 func _process(_delta: float) -> void:
 	if not is_instance_valid(ui) or is_modal: return
+	if OS.has_feature("web") and not qa_mode and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+		ui.prompt.text = "Click to look around"
+		return
 	var captions := prompt_captions()
 	var id := walker.target()
 	ui.prompt.text = "E · " + captions[id] if captions.has(id) else ""

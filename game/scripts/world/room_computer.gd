@@ -150,6 +150,7 @@ func leave() -> void:
 
 func _input(event: InputEvent) -> void:
 	if not active:return
+	if not game.qa_mode: RoomScene.recapture_on_click(event)
 	get_viewport().set_input_as_handled()
 	# Only scripted input drives hidden QA captures; normal play accepts all input.
 	if game.qa_mode and not event.has_meta("computer_qa"):return
