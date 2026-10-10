@@ -1,0 +1,11 @@
+{
+  "objects": 69,
+  "triangles": 11538,
+  "collisions": 26,
+  "interactive": [
+    "dinerdoor",
+    "homedoor",
+    "servicedoor"
+  ],
+  "lamps": 12
+}

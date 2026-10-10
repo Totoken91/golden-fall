@@ -23,6 +23,16 @@ var room_triangle_count := 0
 var floor_material_surfaces := 0
 var material_pass = preload("res://scripts/world/room_material_pass.gd").new()
 var computer: RoomComputer
+var env: Environment
+var daylight: DirectionalLight3D
+var town: TownZone
+var zone := "bedroom"
+var fade: ColorRect
+# Atmosphere per zone: bedroom keeps the validated V0.17 values; town is amber overcast dusk.
+const ATMOSPHERE := {
+	"bedroom": {"bg":"5e6969","ambient":"b2aaa0","ambient_energy":.18,"fog":"626b6b","fog_density":.004,"sun":"a6bac1","sun_energy":.24,"sun_rot":Vector3(-40,-25,0)},
+	"town": {"bg":"6f6658","ambient":"b39f86","ambient_energy":.42,"fog":"7a6e5e","fog_density":.028,"sun":"e7b57a","sun_energy":.55,"sun_rot":Vector3(-18,-118,0)},
+}
 
 func _ready() -> void:
 	qa_mode = detect_qa_mode()
@@ -45,6 +55,11 @@ func _ready() -> void:
 	help.add_theme_constant_override("shadow_offset_x",1)
 	help.add_theme_constant_override("shadow_offset_y",1)
 	ui.root.add_child(help)
+	fade = ColorRect.new()
+	fade.color = Color(0,0,0,0)
+	fade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	fade.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ui.root.add_child(fade)
 	set_modal(false)
 	if wants_audio(): start_audio()
 
@@ -55,6 +70,43 @@ func help_text() -> String: return "WASD / ZQSD · mouse · E interact · Esc pa
 func prompt_captions() -> Dictionary: return {}
 func interact(_id: String) -> void: pass
 func show_menu() -> void: pass
+func build_town() -> void:
+	town = TownZone.new(self)
+	scene.add_child(town)
+	town.build()
+
+func apply_atmosphere(name: String) -> void:
+	var a: Dictionary = ATMOSPHERE[name]
+	env.background_color = Color(a.bg)
+	env.ambient_light_color = Color(a.ambient)
+	env.ambient_light_energy = a.ambient_energy
+	env.fog_light_color = Color(a.fog)
+	env.fog_density = a.fog_density
+	daylight.light_color = Color(a.sun)
+	daylight.light_energy = a.sun_energy
+	daylight.rotation_degrees = a.sun_rot
+	daylight.directional_shadow_max_distance = 70 if name == "bedroom" else 35
+	if is_instance_valid(ambience): ambience.volume_db = -2.0 if name == "bedroom" else 2.0
+
+# Places the player in a zone at a position, looking at a target. Instant (used by loading too).
+func place(zone_name: String, at: Vector3, look: Vector3) -> void:
+	zone = zone_name
+	walker.steps_enabled = zone_name != "bedroom"
+	apply_atmosphere("bedroom" if zone_name == "bedroom" else "town")
+	walker.position = at
+	walker.velocity = Vector3.ZERO
+	walker.aim(look)
+
+# Door transition with a short fade; the walk itself is never interrupted elsewhere.
+func travel(zone_name: String, at: Vector3, look: Vector3) -> void:
+	set_modal(true)
+	var tween := create_tween()
+	tween.tween_property(fade,"color:a",1.0,.35)
+	tween.tween_callback(place.bind(zone_name,at,look))
+	tween.tween_interval(.15)
+	tween.tween_property(fade,"color:a",0.0,.45)
+	tween.tween_callback(func(): set_modal(false))
+
 # Called by RoomComputer once the camera is back from the screen.
 func computer_closed() -> void: pass
 
@@ -92,7 +144,7 @@ func build_view() -> void:
 	material_pass.apply(model,room_bindings.get("surfaces",[]))
 	weather.create_rain(scene)
 	var environment := WorldEnvironment.new()
-	var env := Environment.new()
+	env = Environment.new()
 	env.background_mode = Environment.BG_COLOR
 	env.background_color = Color("5e6969")
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
@@ -106,7 +158,7 @@ func build_view() -> void:
 	env.fog_sky_affect = 0
 	environment.environment = env
 	scene.add_child(environment)
-	var daylight := DirectionalLight3D.new()
+	daylight = DirectionalLight3D.new()
 	daylight.light_color = Color("a6bac1")
 	daylight.light_energy = .24
 	daylight.rotation_degrees = Vector3(-40,-25,0)

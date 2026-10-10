@@ -26,17 +26,23 @@ static func read_into(state: GoldenState, path: String = PATH) -> bool:
 	for key in ["dialogue_exchanges","visited_sites","observations","search_history","read_messages"]:
 		if not merged.get(key) is Array: return false
 	if not merged.get("finished_micro_mvp") is bool: return false
-	if not valid_view(merged.view): return false
+	if not merged.get("location") in ["bedroom","street","diner","alley"]: return false
+	if not valid_view(merged.view,merged.location): return false
 	state.data = merged
 	state.changed.emit()
 	return true
 
-# The bedroom is 5.6 x 5.8 m; anything outside means a corrupted or foreign save.
-static func valid_view(view: Dictionary) -> bool:
+# The bedroom is 5.6 x 5.8 m; the town sits 200 m east (TownZone.ORIGIN). A position outside
+# its own area means a corrupted or foreign save.
+static func valid_view(view: Dictionary, location := "bedroom") -> bool:
 	if view.is_empty(): return true
 	var pos = view.get("position")
 	if not pos is Array or pos.size() != 3: return false
 	for number in pos + [view.get("yaw",0),view.get("pitch",0)]:
 		if not (number is float or number is int) or not is_finite(float(number)): return false
-	if absf(float(pos[0])) > 3.0 or absf(float(pos[2])) > 3.5 or float(pos[1]) < -.2 or float(pos[1]) > .5: return false
+	if location == "bedroom":
+		if absf(float(pos[0])) > 3.0 or absf(float(pos[2])) > 3.5 or float(pos[1]) < -.2 or float(pos[1]) > .5: return false
+	else:
+		var local := Vector3(float(pos[0]),float(pos[1]),float(pos[2]))-TownZone.ORIGIN
+		if absf(local.x) > 41.0 or local.z < -106.0 or local.z > 31.0 or local.y < -.5 or local.y > 1.5: return false
 	return absf(float(view.get("pitch",0))) <= 1.31

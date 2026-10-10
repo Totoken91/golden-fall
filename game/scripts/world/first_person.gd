@@ -4,6 +4,8 @@ extends CharacterBody3D
 var camera: Camera3D
 var enabled := true
 var pitch := 0.0
+# Outdoors only: in the bedroom low props (bag, bin) must stay obstacles, not steps.
+var steps_enabled := false
 const SPEED := 1.85
 const SENSITIVITY := 0.0023
 
@@ -25,6 +27,7 @@ func _ready() -> void:
 	camera.far = 70.0
 	add_child(camera)
 	camera.current = true
+	floor_snap_length = STEP+.05
 
 func look(relative: Vector2) -> void:
 	if not enabled: return
@@ -49,7 +52,19 @@ func _physics_process(delta: float) -> void:
 	velocity.z = direction.z*SPEED
 	if is_on_floor(): velocity.y = 0
 	else: velocity.y -= 9.8*delta
+	step_up(Vector3(velocity.x,0,velocity.z)*delta)
 	move_and_slide()
+
+# Curbs and porch steps: if the way ahead is blocked low down but free one step higher, rise
+# onto it. Walls, furniture and the bed are taller than STEP and still block.
+const STEP := 0.3
+func step_up(motion: Vector3) -> void:
+	if not steps_enabled or not is_on_floor() or motion.length() < .0001: return
+	var ahead := motion.normalized()*maxf(motion.length(),.08)
+	if not test_move(global_transform,ahead): return
+	var raised := global_transform.translated(Vector3(0,STEP,0))
+	if test_move(global_transform,Vector3(0,STEP,0)) or test_move(raised,ahead): return
+	global_position.y += STEP
 
 func target() -> String:
 	var from := camera.global_position

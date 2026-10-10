@@ -200,3 +200,20 @@ Tested
 Not done / known limits
 - Street, diner, NPCs, dialogue UI, blips and the Friday event (Stages 1–5).
 - Browser fonts fall back to Godot's default; first-load stall in the browser.
+
+## Stage 1 — street, diner and alley blockout (2026-10-10)
+
+Changed
+- `scripts/assets/build_town.py` (Blender 4.2, bpy): Morrow Creek main street (115 m), player's house with porch, neighbours, Morrow Records, Morrow Diner (8 x 12 m: counter, six stools, back bar, three window booths, kitchen partition), 15 m service alley (locked service door, light, exhaust fan, dumpster, fence), sodium lamps, telephone poles and wires, three parked 1990s cars, orange maples, spruce walls, guardrails/fences as bounds. Flat colours; static meshes merged per material at export (69 objects, 11 538 triangles). Source `assets/blender/town_blockout.blend`, export `game/assets/town/town.glb`.
+- `world/town_zone.gd`: town 200 m east of the bedroom in the same world (no loading between street, diner and alley); C_/I_ contracts, lamp lights, swinging diner door, area detection (street / diner / alley), follow-the-player rain (`rain_follow.gdshader`, hidden indoors).
+- RoomScene: zone atmospheres (amber overcast outdoors, validated bedroom values indoors), fade travel through the house door, `place()`; player steps up curbs and porch steps outdoors only.
+- Campaign: bedroom door → porch, house door → bedroom, diner door toggles, service door says "It won't open." (toast, no panel). Saves keep the location and outdoor position.
+- Layout fix found by the traversal test: the diner door opened onto a booth; door moved to the south end, booths and kitchen partition shifted.
+
+Tested
+- `scripts/qa/town_check.gd`: real W-key walk with real collisions through the whole route and back: 43 checks, 0 failures, 196 m in 1.76 min (pack target: under 2 minutes room → diner). Home loop 55 checks and bedroom regression 82 checks still pass.
+- Engine film `captures/stage1_town/town_walk.mp4` (40 s, Movie Maker, with sound); review page `captures/stage1_town/index.html`.
+- Web build loads with the town.
+
+Not done
+- Art pass (textures, detailed models), footsteps and per-area ambience, NPCs (Stage 2).

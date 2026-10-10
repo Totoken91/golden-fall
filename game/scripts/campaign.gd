@@ -7,18 +7,25 @@ const SAVE_PATH := SaveManager.PATH
 var campaign_started := false
 var save_error := OK
 
+const BEDROOM_START := [Vector3(-1.68,.03,2.30),Vector3(-.05,.95,-1.45)]
+const BEDROOM_FROM_DOOR := [Vector3(-1.55,.03,1.75),Vector3(-.05,.95,-1.45)]
+
 func _ready() -> void:
 	super._ready()
+	build_town()
 	show_menu()
 
 func detect_qa_mode() -> bool: return "--campaign-check" in OS.get_cmdline_user_args()
 func prompt_captions() -> Dictionary:
-	return {"pc":"use the computer", "desk":"look at the desk", "bed":"sleep", "door":"go outside"}
+	return {"pc":"use the computer", "desk":"look at the desk", "bed":"sleep", "door":"go outside",
+		"homedoor":"go inside", "dinerdoor":"close the door" if town.is_open("dinerdoor") else "open the door",
+		"servicedoor":"try the door"}
 
 func campaign_path() -> String:
-	# Automated tests must never replace the player's slot.
+	# Automated tests and review films (which keep sound) must never replace the player's slot.
 	var override := OS.get_environment("LHC_CAMPAIGN_SAVE")
-	return override if qa_mode and not override.is_empty() else SAVE_PATH
+	var scripted := qa_mode or "--film" in OS.get_cmdline_user_args()
+	return override if scripted and not override.is_empty() else SAVE_PATH
 
 func set_modal(value: bool) -> void:
 	super.set_modal(value or not campaign_started or state.data.finished_micro_mvp)
@@ -56,9 +63,7 @@ func start_fresh() -> void:
 	web = WebArchive.new(state)
 	reset_desktop()
 	campaign_started = true
-	walker.position = Vector3(-1.68,.03,2.30)
-	walker.velocity = Vector3.ZERO
-	walker.aim(Vector3(-.05,.95,-1.45))
+	place("bedroom",BEDROOM_START[0],BEDROOM_START[1])
 	walker.camera.fov = 62
 	ui.close()
 	save_game(false)
@@ -105,10 +110,11 @@ func interact(id: String) -> void:
 			col.add_child(ui.button("Leave it",ui.close))
 		"bed": show_bed()
 		"door":
-			var col := ui.panel("The front door",Rect2(300,180,680,330))
-			col.add_child(ui.paragraph("Rain on the porch steps. You can hear the gutter running."))
-			col.add_child(ui.paragraph("(The street isn't in this build yet.)",ui.ink,17))
-			col.add_child(ui.button("Stay in",ui.close))
+			var porch := town.porch_spawn()
+			travel("street",porch[0],porch[1])
+		"homedoor": travel("bedroom",BEDROOM_FROM_DOOR[0],BEDROOM_FROM_DOOR[1])
+		"dinerdoor": town.toggle_door("dinerdoor")
+		"servicedoor": ui.toast("It won't open.")
 
 func show_bed() -> void:
 	var col := ui.panel("Sleep?",Rect2(300,170,680,360))
@@ -129,9 +135,7 @@ func sleep_day() -> void:
 	if state.data.finished_micro_mvp: show_end()
 	else:
 		ui.close()
-		walker.position = Vector3(.65,.03,-.40)
-		walker.velocity = Vector3.ZERO
-		walker.aim(Vector3(-.85,1.0,-1.6))
+		place("bedroom",Vector3(.65,.03,-.40),Vector3(-.85,1.0,-1.6))
 		announce_day()
 
 func show_end() -> void:
@@ -144,7 +148,7 @@ func computer_closed() -> void:
 	save_game(false)
 
 func snapshot() -> void:
-	state.data.location = "bedroom"
+	state.data.location = "bedroom" if zone == "bedroom" else town.area_of(walker.global_position)
 	state.data.view = {"position":[walker.position.x,walker.position.y,walker.position.z],"yaw":walker.rotation.y,"pitch":walker.pitch}
 	var desktop := computer.desktop
 	state.data.pc = {"open":computer.active,"apps":desktop.windows.keys(),"page":desktop.browser_page,"query":desktop.browser_query}
@@ -168,8 +172,7 @@ func continue_game() -> void:
 	reset_desktop()
 	var stored: Dictionary = state.data.view
 	var pos: Array = stored.get("position",[-1.68,.03,2.30])
-	walker.position = Vector3(pos[0],pos[1],pos[2])
-	walker.velocity = Vector3.ZERO
+	place("bedroom" if state.data.location == "bedroom" else "street",Vector3(pos[0],pos[1],pos[2]),Vector3(pos[0],pos[1]+1.6,pos[2]-1))
 	walker.rotation.y = float(stored.get("yaw",0))
 	walker.pitch = float(stored.get("pitch",0))
 	walker.camera.position = Vector3(0,1.62,0)
