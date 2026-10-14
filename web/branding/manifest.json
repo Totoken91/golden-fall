@@ -1,0 +1,8 @@
+{
+  "emblem": "Original Golden Fall film-frame/lens emblem; SVG and raster sources authored in this repository.",
+  "photograph": "captures/forest_trail_refine/after/creek.png",
+  "photograph_method": "Actual approved in-game capture, JPEG encoding only; no external artwork.",
+  "font": "Departure Mono, SIL Open Font License; included license.",
+  "build_command": "python scripts/web/build_branding.py",
+  "prepare_command": "python scripts/web/prepare_branding.py --web-dir web"
+}

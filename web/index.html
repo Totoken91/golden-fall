@@ -1,220 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-		<title>Golden Fall</title>
-		<style>
-html, body, #canvas {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-body {
-	color: white;
-	background-color: black;
-	overflow: hidden;
-	touch-action: none;
-}
-
-#canvas {
-	display: block;
-}
-
-#canvas:focus {
-	outline: none;
-}
-
-#status, #status-splash, #status-progress {
-	position: absolute;
-	left: 0;
-	right: 0;
-}
-
-#status, #status-splash {
-	top: 0;
-	bottom: 0;
-}
-
-#status {
-	background-color: #242424;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	visibility: hidden;
-}
-
-#status-splash {
-	max-height: 100%;
-	max-width: 100%;
-	margin: auto;
-}
-
-#status-splash.show-image--false {
-	display: none;
-}
-
-#status-splash.fullsize--true {
-	height: 100%;
-	width: 100%;
-	object-fit: contain;
-}
-
-#status-splash.use-filter--false {
-	image-rendering: pixelated;
-}
-
-#status-progress, #status-notice {
-	display: none;
-}
-
-#status-progress {
-	bottom: 10%;
-	width: 50%;
-	margin: 0 auto;
-}
-
-#status-notice {
-	background-color: #5b3943;
-	border-radius: 0.5rem;
-	border: 1px solid #9b3943;
-	color: #e0e0e0;
-	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
-	line-height: 1.3;
-	margin: 0 2rem;
-	overflow: hidden;
-	padding: 1rem;
-	text-align: center;
-	z-index: 1;
-}
-		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
-<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-
-	</head>
-	<body>
-		<canvas id="canvas">
-			Your browser does not support the canvas tag.
-		</canvas>
-
-		<noscript>
-			Your browser does not support JavaScript.
-		</noscript>
-
-		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
-			<progress id="status-progress"></progress>
-			<div id="status-notice"></div>
-		</div>
-
-		<script src="index.js"></script>
-		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":18965640,"index.wasm":37686550},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
-const GODOT_THREADS_ENABLED = false;
-const engine = new Engine(GODOT_CONFIG);
-
-(function () {
-	const statusOverlay = document.getElementById('status');
-	const statusProgress = document.getElementById('status-progress');
-	const statusNotice = document.getElementById('status-notice');
-
-	let initializing = true;
-	let statusMode = '';
-
-	function setStatusMode(mode) {
-		if (statusMode === mode || !initializing) {
-			return;
-		}
-		if (mode === 'hidden') {
-			statusOverlay.remove();
-			initializing = false;
-			return;
-		}
-		statusOverlay.style.visibility = 'visible';
-		statusProgress.style.display = mode === 'progress' ? 'block' : 'none';
-		statusNotice.style.display = mode === 'notice' ? 'block' : 'none';
-		statusMode = mode;
-	}
-
-	function setStatusNotice(text) {
-		while (statusNotice.lastChild) {
-			statusNotice.removeChild(statusNotice.lastChild);
-		}
-		const lines = text.split('\n');
-		lines.forEach((line) => {
-			statusNotice.appendChild(document.createTextNode(line));
-			statusNotice.appendChild(document.createElement('br'));
-		});
-	}
-
-	function displayFailureNotice(err) {
-		console.error(err);
-		if (err instanceof Error) {
-			setStatusNotice(err.message);
-		} else if (typeof err === 'string') {
-			setStatusNotice(err);
-		} else {
-			setStatusNotice('An unknown error occurred.');
-		}
-		setStatusMode('notice');
-		initializing = false;
-	}
-
-	const missing = Engine.getMissingFeatures({
-		threads: GODOT_THREADS_ENABLED,
-	});
-
-	if (missing.length !== 0) {
-		if (GODOT_CONFIG['serviceWorker'] && GODOT_CONFIG['ensureCrossOriginIsolationHeaders'] && 'serviceWorker' in navigator) {
-			let serviceWorkerRegistrationPromise;
-			try {
-				serviceWorkerRegistrationPromise = navigator.serviceWorker.getRegistration();
-			} catch (err) {
-				serviceWorkerRegistrationPromise = Promise.reject(new Error('Service worker registration failed.'));
-			}
-			// There's a chance that installing the service worker would fix the issue
-			Promise.race([
-				serviceWorkerRegistrationPromise.then((registration) => {
-					if (registration != null) {
-						return Promise.reject(new Error('Service worker already exists.'));
-					}
-					return registration;
-				}).then(() => engine.installServiceWorker()),
-				// For some reason, `getRegistration()` can stall
-				new Promise((resolve) => {
-					setTimeout(() => resolve(), 2000);
-				}),
-			]).then(() => {
-				// Reload if there was no error.
-				window.location.reload();
-			}).catch((err) => {
-				console.error('Error while registering service worker:', err);
-			});
-		} else {
-			// Display the message as usual
-			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
-			displayFailureNotice(missingMsg + missing.join('\n'));
-		}
-	} else {
-		setStatusMode('progress');
-		engine.startGame({
-			'onProgress': function (current, total) {
-				if (current > 0 && total > 0) {
-					statusProgress.value = current;
-					statusProgress.max = total;
-				} else {
-					statusProgress.removeAttribute('value');
-					statusProgress.removeAttribute('max');
-				}
-			},
-		}).then(() => {
-			setStatusMode('hidden');
-		}, displayFailureNotice);
-	}
-}());
-		</script>
-	</body>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#171a15">
+ <title>Golden Fall</title>
+ <link rel="icon" type="image/svg+xml" href="branding/favicon.svg?v=1">
+ <link rel="icon" type="image/png" sizes="32x32" href="branding/favicon-32.png?v=1">
+ <link rel="apple-touch-icon" href="branding/apple-touch-icon.png?v=1">
+ <style>
+ @font-face{font-family:Departure;src:url('branding/DepartureMono.otf') format('opentype');font-display:swap}
+ *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#10130f;color:#e8d8b5;overflow:hidden}
+ #canvas{display:block;outline:none}#status{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:#171a15;overflow:auto;padding:32px 22px}
+ #status::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,17,13,.74),rgba(15,20,15,.42) 42%,rgba(12,15,11,.94)),url('branding/autumn.jpg') center/cover;image-rendering:pixelated;pointer-events:none}
+ #status::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,#0000000d 3px 4px);pointer-events:none}
+ .album{position:relative;z-index:1;width:min(580px,100%);text-align:center;padding:42px 34px;border:1px solid #b5a27655;box-shadow:inset 0 0 0 7px #10170f44,0 14px 60px #0006;background:#10170f35}
+ .album::before,.album::after{content:'';position:absolute;top:19px;bottom:19px;width:5px;background:repeating-linear-gradient(to bottom,#bcac7b70 0 6px,transparent 6px 24px)}.album::before{left:12px}.album::after{right:12px}
+ .place,.date,.load-line,.footer,#status-notice{font:12px/1.7 Departure,monospace}.place{letter-spacing:2px;color:#c3b47f}.emblem{width:38px;height:38px;margin:24px auto 12px;opacity:.9}
+ h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(58px,11vw,100px);line-height:.84;letter-spacing:.04em;margin:18px 0 26px;color:#ecdbb3;text-shadow:0 3px 24px #0009}
+ h1 span{display:block}h1 span+span{margin-top:10px;letter-spacing:.11em;padding-left:.11em}.date{letter-spacing:3px;color:#bbae85}.rule{height:1px;background:linear-gradient(90deg,transparent,#d6ba77aa,transparent);margin:30px 0}
+ .load-line{display:flex;justify-content:space-between;gap:12px;text-align:left;color:#e4d6b3;font-size:13px;min-height:24px}.load-line output{color:#baaa79}
+ #status-progress{display:block;appearance:none;-webkit-appearance:none;width:100%;height:4px;border:0;background:#69614244;margin:12px 0 0;color:#c4a764;overflow:hidden}
+ #status-progress[hidden]{display:none}#status-progress::-webkit-progress-bar{background:#69614244}#status-progress::-webkit-progress-value{background:#ccb879}#status-progress::-moz-progress-bar{background:#ccb879}
+ #status-progress:not([value]){background:linear-gradient(90deg,#69614244,#ccb879,#69614244);background-size:200% 100%;animation:develop 2s linear infinite}
+ @keyframes develop{to{background-position:200% 0}}
+ .footer{position:relative;z-index:1;margin:20px 0 0;color:#b0a888;letter-spacing:1px;font-size:10px}#status-notice{display:none;margin:22px 0 0;color:#f0cbb1;white-space:pre-wrap;overflow-wrap:anywhere;text-align:left;max-height:25vh;overflow:auto}
+ @media(max-height:680px){.album{padding-top:22px;padding-bottom:22px}.emblem{margin-top:15px}h1{font-size:68px;margin:12px 0 18px}.rule{margin:20px 0}.footer{margin-top:14px}}
+ @media(max-width:420px){.album{padding-left:26px;padding-right:26px}.place{font-size:10px;letter-spacing:1px}.load-line{font-size:11px}h1{font-size:clamp(40px,14vw,62px)}}
+ @media(prefers-reduced-motion:reduce){#status-progress:not([value]){animation:none}}
+ </style>
+ 
+</head>
+<body>
+ <canvas id="canvas" tabindex="0" aria-label="Golden Fall game">Your browser does not support the canvas tag.</canvas>
+ <div id="status" role="status" aria-label="Loading Golden Fall">
+  <div>
+   <main class="album">
+    <div class="place">MORROW CREEK · OREGON</div>
+    <img class="emblem" src="branding/favicon.svg" alt="">
+    <h1><span>GOLDEN</span><span>FALL</span></h1>
+    <div class="date">OCTOBER, 2003</div>
+    <div class="rule"></div>
+    <div class="load-line"><span id="status-label">Loading Morrow Creek…</span><output id="status-percent"></output></div>
+    <progress id="status-progress" aria-label="Download progress"></progress>
+    <div id="status-notice"></div>
+   </main>
+   <p class="footer">AN AUTUMN IN MORROW CREEK</p>
+  </div>
+ </div>
+ <noscript>You need JavaScript enabled to play Golden Fall.</noscript>
+ <script src="index.js"></script>
+ <script>
+ const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":18966280,"index.wasm":37686550},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+ const GODOT_THREADS_ENABLED = false;
+ const engine = new Engine(GODOT_CONFIG);
+ (function(){
+  const overlay=document.getElementById('status'),bar=document.getElementById('status-progress'),label=document.getElementById('status-label'),percent=document.getElementById('status-percent'),notice=document.getElementById('status-notice');
+  let failed=false,ready=false;
+  function showFailure(error){failed=true;label.textContent='Unable to open Golden Fall';percent.textContent='';bar.hidden=true;notice.style.display='block';notice.textContent=error instanceof Error?error.message:String(error);console.error(error)}
+  function preparing(){if(ready||failed)return;label.textContent='Preparing Morrow Creek…';percent.textContent='';bar.removeAttribute('value');bar.removeAttribute('max')}
+  function finish(){if(ready||failed)return;ready=true;overlay.remove()}
+  const missing=Engine.getMissingFeatures({threads:GODOT_THREADS_ENABLED});
+  if(missing.length){showFailure('This browser cannot run Golden Fall. Missing features: '+missing.join(', '));return}
+  engine.startGame({
+   onProgress(current,total){if(ready||failed)return;if(total>0&&current>0&&current<total){label.textContent='Loading Morrow Creek…';bar.max=total;bar.value=current;percent.textContent=Math.floor(current/total*100)+'%'}else if(total>0&&current>=total){preparing()}else{bar.removeAttribute('value');bar.removeAttribute('max')}},
+   // The existing warmup announces completion only after its real draw passes.
+   // Keep the same branded overlay over both download and shader preparation.
+   onPrint(...args){console.log(...args);if(args.join(' ').includes('[WEB_WARMUP] ready in '))finish()},
+   onExit(code){if(!ready)showFailure('The game stopped during loading (code '+code+'). Please reload to try again.')}
+  }).then(preparing,showFailure);
+ })();
+ </script>
+</body>
 </html>
-
