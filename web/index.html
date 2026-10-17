@@ -51,7 +51,7 @@
  <noscript>You need JavaScript enabled to play Golden Fall.</noscript>
  <script src="index.js"></script>
  <script>
- const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":18966280,"index.wasm":37686550},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+ const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":20630552,"index.wasm":37686550},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
  const GODOT_THREADS_ENABLED = false;
  const engine = new Engine(GODOT_CONFIG);
  (function(){
@@ -64,12 +64,13 @@
   if(missing.length){showFailure('This browser cannot run Golden Fall. Missing features: '+missing.join(', '));return}
   engine.startGame({
    onProgress(current,total){if(ready||failed)return;if(total>0&&current>0&&current<total){label.textContent='Loading Morrow Creek…';bar.max=total;bar.value=current;percent.textContent=Math.floor(current/total*100)+'%'}else if(total>0&&current>=total){preparing()}else{bar.removeAttribute('value');bar.removeAttribute('max')}},
-   // The existing warmup announces completion only after its real draw passes.
-   // Keep the same branded overlay over both download and shader preparation.
-   onPrint(...args){console.log(...args);if(args.join(' ').includes('[WEB_WARMUP] ready in '))finish()},
+   // Hand off to the real game's loading cover once its first frame is drawn.
+   // This keeps the WebGL canvas visible to the browser during preparation.
+   onPrint(...args){console.log(...args);const text=args.join(' ');if(text.includes('[WEB_WARMUP] cover ready')||text.includes('[WEB_WARMUP] ready in '))finish()},
    onExit(code){if(!ready)showFailure('The game stopped during loading (code '+code+'). Please reload to try again.')}
   }).then(preparing,showFailure);
  })();
  </script>
 </body>
 </html>
+

@@ -1,9 +1,37 @@
 {
-  "build": "Golden Fall \u2014 branded loading and reserve exit fixes \u2014 2026-10-14",
-  "native_sha256": "2467e43cbe72eeb099f9757575cb1997220b5d1c17e1c76c24c59681d95969a8",
-  "web_sha256": "2467e43cbe72eeb099f9757575cb1997220b5d1c17e1c76c24c59681d95969a8",
-  "previous_native_sha256": "442b8d32bcf5b916d7bdbdcfb2160bca327cbc2c4d0ae7afbc6e6ccd76f343db",
-  "native_resources_preserved": 1658,
-  "branding": 1,
-  "targeted_checks": 130
+  "build": "Golden Fall — current J1/J2, market, shutter and Web shader preparation — 2026-10-17",
+  "native_sha256": "3d6d1977d009831c42b6927fe33c9c151a54936076e46967a5cedef82723313f",
+  "web_sha256": "eca9676246357e4c5f21dca217f9660bcc14862b807e492a20af7448fcdf04bd",
+  "native_resources_preserved": 1694,
+  "web_only_resources_changed": [
+    "res://project.binary",
+    "res://scripts/tools/web_benchmark.gdc",
+    "res://scripts/tools/web_benchmark.gd.remap",
+    "res://scripts/tools/web_warmup.gdc",
+    "res://scripts/tools/web_warmup.gd.remap",
+    "res://scripts/world/frame_watch.gdc",
+    "res://scripts/world/frame_watch.gd.remap"
+  ],
+  "rendering": {
+    "renderer": "gl_compatibility",
+    "render_resolution": [
+      640,
+      360
+    ],
+    "max_lights_per_object": 24,
+    "textures_and_models_preserved": true,
+    "gpu_timing_queries_during_normal_play": false
+  },
+  "validation": "See local work/web_release_20261017/release.json for measurements and scope; a long first preparation is expected on a cold shader cache.",
+  "measured_validation": {
+    "scope": "Authored motion fixtures plus Web GUI/E/VHS/TV/save checks; not a blind human playthrough or guarantee for every device.",
+    "broad_functional_checks": 15,
+    "final_targeted_checks": 5,
+    "final_targeted_failures": 0,
+    "measured_j1_max_ms": 81.1,
+    "final_forest_max_ms": 35.7,
+    "first_reference_street_max_ms": 1671.2,
+    "test_renderer": "Chrome headless / ANGLE D3D11 / RTX 3050 Laptop",
+    "broad_functional_failures": 0
+  }
 }
